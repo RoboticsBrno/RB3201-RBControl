@@ -2528,13 +2528,15 @@ Grid 5.08 mm&lt;p&gt;
 <part name="P+15" library="supply1" deviceset="VCC" device=""/>
 <part name="JP14" library="pinhead" deviceset="PINHD-1X16" device=""/>
 <part name="P+17" library="supply1" deviceset="+5V" device=""/>
+<part name="P+16" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="-121.92" y="22.86" size="1.778" layer="91">//todo: PCA expander
 5V stabilizer
-overit input nebo output only piny</text>
+overit input nebo output only piny
+specialni konektor na chytre LEDky, accelerometer, ...?</text>
 </plain>
 <instances>
 <instance part="IM1" gate="G$1" x="-119.38" y="91.44"/>
@@ -2635,6 +2637,7 @@ overit input nebo output only piny</text>
 <instance part="P+15" gate="VCC" x="-208.28" y="139.7"/>
 <instance part="JP14" gate="A" x="-228.6" y="27.94"/>
 <instance part="P+17" gate="1" x="-111.76" y="53.34" rot="R180"/>
+<instance part="P+16" gate="1" x="-213.36" y="139.7"/>
 </instances>
 <busses>
 </busses>
@@ -4233,6 +4236,11 @@ overit input nebo output only piny</text>
 <pinref part="P+17" gate="1" pin="+5V"/>
 <pinref part="IM1" gate="G$1" pin="5V"/>
 <wire x1="-111.76" y1="55.88" x2="-111.76" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SJ3" gate="1" pin="2"/>
+<pinref part="P+16" gate="1" pin="+5V"/>
+<wire x1="-213.36" y1="134.62" x2="-213.36" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
