@@ -17392,7 +17392,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="JP10" library="pinhead" deviceset="PINHD-1X2" device="" value="IM4_5"/>
 <part name="S2" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="S3" library="switch-omron" deviceset="10-XX" device=""/>
-<part name="LED2" library="led" deviceset="LED" device="3MM"/>
+<part name="LED2" library="led" deviceset="LED" device="3MM" value="RED"/>
 <part name="LED1" library="led" deviceset="LED" device="3MM"/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="0204/2V" value="3k3"/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
@@ -17402,13 +17402,13 @@ DIN A3, landscape with location and doc. field</description>
 <part name="R11" library="resistor" deviceset="R-EU_" device="0204/2V" value="1k"/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
-<part name="LED3" library="led" deviceset="LED" device="3MM"/>
+<part name="LED3" library="led" deviceset="LED" device="3MM" value="YELLOW"/>
 <part name="R12" library="resistor" deviceset="R-EU_" device="0204/2V" value="1k"/>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
-<part name="LED4" library="led" deviceset="LED" device="3MM"/>
+<part name="LED4" library="led" deviceset="LED" device="3MM" value="GREEN"/>
 <part name="R13" library="resistor" deviceset="R-EU_" device="0204/2V" value="1k"/>
 <part name="GND38" library="supply1" deviceset="GND" device=""/>
-<part name="LED5" library="led" deviceset="LED" device="3MM"/>
+<part name="LED5" library="led" deviceset="LED" device="3MM" value="BLUE/WHITE"/>
 <part name="R14" library="resistor" deviceset="R-EU_" device="0204/2V" value="1k"/>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
 <part name="C3" library="rcl_upravena" deviceset="C-EU" device="C1206" value="1u"/>
@@ -17427,11 +17427,21 @@ DIN A3, landscape with location and doc. field</description>
 <part name="GND42" library="supply1" deviceset="GND" device=""/>
 <part name="R5" library="rcl_upravena" deviceset="R-EU_" device="0204/2V" value="100k"/>
 <part name="JP6" library="pinhead" deviceset="PINHD-1X2" device="" value="IC1_INT"/>
-<part name="RN1" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" deviceset="E7R" device="" package3d_urn="urn:adsk.eagle:package:25285/1"/>
-<part name="RN2" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" deviceset="E7R" device="" package3d_urn="urn:adsk.eagle:package:25285/1"/>
-<part name="RN3" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" deviceset="E7R" device="" package3d_urn="urn:adsk.eagle:package:25285/1"/>
-<part name="RN4" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" deviceset="E7R" device="" package3d_urn="urn:adsk.eagle:package:25285/1"/>
-<part name="RN5" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" deviceset="E7R" device="" package3d_urn="urn:adsk.eagle:package:25285/1"/>
+<part name="RN1" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" deviceset="E7R" device="" package3d_urn="urn:adsk.eagle:package:25285/1">
+<attribute name="OC_MOUSER" value="652-4614X-2LF-180"/>
+</part>
+<part name="RN2" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" deviceset="E7R" device="" package3d_urn="urn:adsk.eagle:package:25285/1">
+<attribute name="OC_MOUSER" value="652-4614X-2LF-180"/>
+</part>
+<part name="RN3" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" deviceset="E7R" device="" package3d_urn="urn:adsk.eagle:package:25285/1">
+<attribute name="OC_MOUSER" value="652-4614X-2LF-180"/>
+</part>
+<part name="RN4" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" deviceset="E7R" device="" package3d_urn="urn:adsk.eagle:package:25285/1">
+<attribute name="OC_MOUSER" value="652-4614X-2LF-180"/>
+</part>
+<part name="RN5" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" deviceset="E7R" device="" package3d_urn="urn:adsk.eagle:package:25285/1">
+<attribute name="OC_MOUSER" value="652-4614X-2LF-180"/>
+</part>
 <part name="JP39" library="pinhead" deviceset="PINHD-1X1" device="" value="IM11_HVIOREF"/>
 <part name="JP40" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C1_3V3"/>
 <part name="JP41" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C2_3V3"/>
@@ -17548,6 +17558,7 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="RN1" gate="B" x="269.24" y="124.46" smashed="yes">
 <attribute name="VALUE" x="271.78" y="121.666" size="1.778" layer="96"/>
 <attribute name="NAME" x="256.032" y="124.714" size="1.778" layer="95"/>
+<attribute name="OC_MOUSER" x="269.24" y="124.46" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="RN1" gate="C" x="269.24" y="121.92" smashed="yes">
 <attribute name="VALUE" x="271.78" y="119.126" size="1.778" layer="96"/>
@@ -17580,6 +17591,7 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="RN2" gate="C" x="269.24" y="99.06" smashed="yes">
 <attribute name="VALUE" x="271.78" y="96.266" size="1.778" layer="96"/>
 <attribute name="NAME" x="256.032" y="99.314" size="1.778" layer="95"/>
+<attribute name="OC_MOUSER" x="269.24" y="99.06" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="RN2" gate="D" x="269.24" y="96.52" smashed="yes">
 <attribute name="VALUE" x="271.78" y="93.726" size="1.778" layer="96"/>
@@ -17640,10 +17652,12 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="RN4" gate="G" x="320.04" y="193.04" smashed="yes">
 <attribute name="VALUE" x="322.58" y="190.246" size="1.778" layer="96"/>
 <attribute name="NAME" x="306.832" y="193.294" size="1.778" layer="95"/>
+<attribute name="OC_MOUSER" x="320.04" y="193.04" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="RN5" gate="A" x="228.6" y="190.5" smashed="yes">
 <attribute name="VALUE" x="231.14" y="187.706" size="1.778" layer="96"/>
 <attribute name="NAME" x="215.392" y="190.754" size="1.778" layer="95"/>
+<attribute name="OC_MOUSER" x="228.6" y="190.5" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="RN5" gate="B" x="228.6" y="187.96" smashed="yes">
 <attribute name="VALUE" x="231.14" y="185.166" size="1.778" layer="96"/>
@@ -17676,6 +17690,7 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="RN3" gate="E" x="228.6" y="193.04" smashed="yes">
 <attribute name="VALUE" x="231.14" y="190.246" size="1.778" layer="96"/>
 <attribute name="NAME" x="215.392" y="193.294" size="1.778" layer="95"/>
+<attribute name="OC_MOUSER" x="228.6" y="193.04" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="JP39" gate="G$1" x="231.14" y="63.5" rot="R90"/>
 <instance part="JP40" gate="A" x="60.96" y="50.8"/>
