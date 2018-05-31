@@ -19825,12 +19825,12 @@ MOSFET</text>
 <instances>
 <instance part="IC2" gate="A" x="195.58" y="157.48"/>
 <instance part="IC3" gate="A" x="195.58" y="91.44"/>
-<instance part="X5" gate="-1" x="330.2" y="139.7" rot="R270"/>
-<instance part="X5" gate="-2" x="302.26" y="139.7" rot="R270"/>
-<instance part="X9" gate="-1" x="373.38" y="139.7" rot="R270"/>
-<instance part="X9" gate="-2" x="345.44" y="139.7" rot="R270"/>
-<instance part="X10" gate="-1" x="373.38" y="106.68" rot="R270"/>
-<instance part="X10" gate="-2" x="345.44" y="106.68" rot="R270"/>
+<instance part="X5" gate="-1" x="302.26" y="139.7" rot="R270"/>
+<instance part="X5" gate="-2" x="330.2" y="139.7" rot="R270"/>
+<instance part="X9" gate="-1" x="345.44" y="139.7" rot="R270"/>
+<instance part="X9" gate="-2" x="373.38" y="139.7" rot="R270"/>
+<instance part="X10" gate="-1" x="345.44" y="106.68" rot="R270"/>
+<instance part="X10" gate="-2" x="373.38" y="106.68" rot="R270"/>
 <instance part="X2" gate="-1" x="119.38" y="53.34"/>
 <instance part="X2" gate="-2" x="119.38" y="48.26" smashed="yes">
 <attribute name="VALUE" x="109.22" y="55.88" size="1.778" layer="96"/>
@@ -19850,12 +19850,12 @@ MOSFET</text>
 <instance part="GND28" gate="1" x="322.58" y="93.98" rot="R90"/>
 <instance part="GND32" gate="1" x="365.76" y="93.98" rot="R90"/>
 <instance part="GND24" gate="1" x="226.06" y="73.66"/>
-<instance part="X4" gate="-1" x="330.2" y="172.72" rot="R270"/>
-<instance part="X4" gate="-2" x="302.26" y="172.72" rot="R270"/>
-<instance part="X8" gate="-1" x="373.38" y="172.72" rot="R270"/>
-<instance part="X8" gate="-2" x="345.44" y="172.72" rot="R270"/>
-<instance part="X6" gate="-1" x="330.2" y="106.68" rot="R270"/>
-<instance part="X6" gate="-2" x="302.26" y="106.68" rot="R270"/>
+<instance part="X4" gate="-1" x="302.26" y="172.72" rot="R270"/>
+<instance part="X4" gate="-2" x="330.2" y="172.72" rot="R270"/>
+<instance part="X8" gate="-1" x="345.44" y="172.72" rot="R270"/>
+<instance part="X8" gate="-2" x="373.38" y="172.72" rot="R270"/>
+<instance part="X6" gate="-1" x="302.26" y="106.68" rot="R270"/>
+<instance part="X6" gate="-2" x="330.2" y="106.68" rot="R270"/>
 <instance part="X1" gate="-1" x="119.38" y="198.12" smashed="yes">
 <attribute name="NAME" x="118.11" y="199.009" size="1.778" layer="95" rot="R180"/>
 </instance>
@@ -19863,10 +19863,10 @@ MOSFET</text>
 <attribute name="VALUE" x="109.22" y="200.66" size="1.778" layer="96"/>
 <attribute name="NAME" x="118.11" y="193.929" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="X7" gate="-1" x="373.38" y="208.28" rot="R270"/>
-<instance part="X7" gate="-2" x="345.44" y="208.28" rot="R270"/>
-<instance part="X3" gate="-1" x="330.2" y="208.28" rot="R270"/>
-<instance part="X3" gate="-2" x="302.26" y="208.28" rot="R270"/>
+<instance part="X7" gate="-1" x="345.44" y="208.28" rot="R270"/>
+<instance part="X7" gate="-2" x="373.38" y="208.28" rot="R270"/>
+<instance part="X3" gate="-1" x="302.26" y="208.28" rot="R270"/>
+<instance part="X3" gate="-2" x="330.2" y="208.28" rot="R270"/>
 <instance part="JP26" gate="A" x="160.02" y="200.66" rot="MR90"/>
 <instance part="JP25" gate="A" x="160.02" y="48.26" rot="R270"/>
 <instance part="GND21" gate="1" x="167.64" y="185.42"/>
@@ -20348,12 +20348,12 @@ MOSFET</text>
 <segment>
 <pinref part="IM10" gate="G$1" pin="OUT4"/>
 <wire x1="373.38" y1="83.82" x2="373.38" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="X10" gate="-1" pin="KL"/>
-<wire x1="373.38" y1="99.06" x2="373.38" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="83.82" x2="373.38" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="JP38" gate="A" pin="6"/>
 <wire x1="365.76" y1="111.76" x2="365.76" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="365.76" y1="99.06" x2="373.38" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="X10" gate="-2" pin="KL"/>
+<wire x1="373.38" y1="101.6" x2="373.38" y2="99.06" width="0.1524" layer="91"/>
 <junction x="373.38" y="99.06"/>
 </segment>
 </net>
@@ -20361,25 +20361,25 @@ MOSFET</text>
 <segment>
 <pinref part="IM10" gate="G$1" pin="OUT3"/>
 <wire x1="345.44" y1="86.36" x2="345.44" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="X10" gate="-2" pin="KL"/>
-<wire x1="345.44" y1="99.06" x2="345.44" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="86.36" x2="345.44" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="JP38" gate="A" pin="1"/>
 <wire x1="353.06" y1="111.76" x2="353.06" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="99.06" x2="345.44" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="X10" gate="-1" pin="KL"/>
+<wire x1="345.44" y1="99.06" x2="345.44" y2="101.6" width="0.1524" layer="91"/>
 <junction x="345.44" y="99.06"/>
 </segment>
 </net>
 <net name="IM10_O2" class="0">
 <segment>
 <pinref part="IM10" gate="G$1" pin="OUT2"/>
-<pinref part="X6" gate="-1" pin="KL"/>
 <wire x1="330.2" y1="88.9" x2="330.2" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="330.2" y1="99.06" x2="330.2" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="88.9" x2="330.2" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="JP34" gate="A" pin="6"/>
 <wire x1="322.58" y1="111.76" x2="322.58" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="322.58" y1="99.06" x2="330.2" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="X6" gate="-2" pin="KL"/>
+<wire x1="330.2" y1="99.06" x2="330.2" y2="101.6" width="0.1524" layer="91"/>
 <junction x="330.2" y="99.06"/>
 </segment>
 </net>
@@ -20387,12 +20387,12 @@ MOSFET</text>
 <segment>
 <pinref part="IM10" gate="G$1" pin="OUT1"/>
 <wire x1="302.26" y1="91.44" x2="302.26" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="X6" gate="-2" pin="KL"/>
-<wire x1="302.26" y1="99.06" x2="302.26" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="91.44" x2="302.26" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="JP34" gate="A" pin="1"/>
 <wire x1="309.88" y1="111.76" x2="309.88" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="99.06" x2="302.26" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="X6" gate="-1" pin="KL"/>
+<wire x1="302.26" y1="99.06" x2="302.26" y2="101.6" width="0.1524" layer="91"/>
 <junction x="302.26" y="99.06"/>
 </segment>
 </net>
@@ -20400,12 +20400,12 @@ MOSFET</text>
 <segment>
 <pinref part="IM9" gate="G$1" pin="OUT4"/>
 <wire x1="373.38" y1="116.84" x2="373.38" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="X9" gate="-1" pin="KL"/>
-<wire x1="373.38" y1="132.08" x2="373.38" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="116.84" x2="373.38" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="JP37" gate="A" pin="6"/>
 <wire x1="365.76" y1="144.78" x2="365.76" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="365.76" y1="132.08" x2="373.38" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="X9" gate="-2" pin="KL"/>
+<wire x1="373.38" y1="134.62" x2="373.38" y2="132.08" width="0.1524" layer="91"/>
 <junction x="373.38" y="132.08"/>
 </segment>
 </net>
@@ -20413,25 +20413,25 @@ MOSFET</text>
 <segment>
 <pinref part="IM9" gate="G$1" pin="OUT3"/>
 <wire x1="345.44" y1="119.38" x2="345.44" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="X9" gate="-2" pin="KL"/>
-<wire x1="345.44" y1="132.08" x2="345.44" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="119.38" x2="345.44" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="JP37" gate="A" pin="1"/>
 <wire x1="353.06" y1="144.78" x2="353.06" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="132.08" x2="345.44" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="X9" gate="-1" pin="KL"/>
+<wire x1="345.44" y1="134.62" x2="345.44" y2="132.08" width="0.1524" layer="91"/>
 <junction x="345.44" y="132.08"/>
 </segment>
 </net>
 <net name="IM9_O2" class="0">
 <segment>
 <pinref part="IM9" gate="G$1" pin="OUT2"/>
-<pinref part="X5" gate="-1" pin="KL"/>
 <wire x1="330.2" y1="121.92" x2="330.2" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="330.2" y1="132.08" x2="330.2" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="121.92" x2="330.2" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="JP33" gate="A" pin="6"/>
 <wire x1="322.58" y1="144.78" x2="322.58" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="322.58" y1="132.08" x2="330.2" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="X5" gate="-2" pin="KL"/>
+<wire x1="330.2" y1="134.62" x2="330.2" y2="132.08" width="0.1524" layer="91"/>
 <junction x="330.2" y="132.08"/>
 </segment>
 </net>
@@ -20439,12 +20439,12 @@ MOSFET</text>
 <segment>
 <pinref part="IM9" gate="G$1" pin="OUT1"/>
 <wire x1="302.26" y1="124.46" x2="302.26" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="X5" gate="-2" pin="KL"/>
-<wire x1="302.26" y1="132.08" x2="302.26" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="124.46" x2="302.26" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="JP33" gate="A" pin="1"/>
 <wire x1="309.88" y1="144.78" x2="309.88" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="132.08" x2="302.26" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="X5" gate="-1" pin="KL"/>
+<wire x1="302.26" y1="134.62" x2="302.26" y2="132.08" width="0.1524" layer="91"/>
 <junction x="302.26" y="132.08"/>
 </segment>
 </net>
@@ -20452,12 +20452,12 @@ MOSFET</text>
 <segment>
 <pinref part="IM8" gate="G$1" pin="OUT4"/>
 <wire x1="373.38" y1="149.86" x2="373.38" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="X8" gate="-1" pin="KL"/>
-<wire x1="373.38" y1="165.1" x2="373.38" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="149.86" x2="373.38" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="JP36" gate="A" pin="6"/>
 <wire x1="365.76" y1="177.8" x2="365.76" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="365.76" y1="165.1" x2="373.38" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="X8" gate="-2" pin="KL"/>
+<wire x1="373.38" y1="165.1" x2="373.38" y2="167.64" width="0.1524" layer="91"/>
 <junction x="373.38" y="165.1"/>
 </segment>
 </net>
@@ -20465,25 +20465,25 @@ MOSFET</text>
 <segment>
 <pinref part="IM8" gate="G$1" pin="OUT3"/>
 <wire x1="345.44" y1="152.4" x2="345.44" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="X8" gate="-2" pin="KL"/>
-<wire x1="345.44" y1="165.1" x2="345.44" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="152.4" x2="345.44" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="JP36" gate="A" pin="1"/>
 <wire x1="353.06" y1="177.8" x2="353.06" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="165.1" x2="345.44" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="X8" gate="-1" pin="KL"/>
+<wire x1="345.44" y1="165.1" x2="345.44" y2="167.64" width="0.1524" layer="91"/>
 <junction x="345.44" y="165.1"/>
 </segment>
 </net>
 <net name="IM8_O2" class="0">
 <segment>
 <pinref part="IM8" gate="G$1" pin="OUT2"/>
-<pinref part="X4" gate="-1" pin="KL"/>
 <wire x1="330.2" y1="154.94" x2="330.2" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="330.2" y1="165.1" x2="330.2" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="154.94" x2="330.2" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="JP32" gate="A" pin="6"/>
 <wire x1="322.58" y1="177.8" x2="322.58" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="322.58" y1="165.1" x2="330.2" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="X4" gate="-2" pin="KL"/>
+<wire x1="330.2" y1="167.64" x2="330.2" y2="165.1" width="0.1524" layer="91"/>
 <junction x="330.2" y="165.1"/>
 </segment>
 </net>
@@ -20491,25 +20491,25 @@ MOSFET</text>
 <segment>
 <pinref part="IM8" gate="G$1" pin="OUT1"/>
 <wire x1="302.26" y1="157.48" x2="302.26" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="X4" gate="-2" pin="KL"/>
-<wire x1="302.26" y1="165.1" x2="302.26" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="JP32" gate="A" pin="1"/>
 <wire x1="309.88" y1="177.8" x2="309.88" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="165.1" x2="302.26" y2="165.1" width="0.1524" layer="91"/>
-<junction x="302.26" y="165.1"/>
 <wire x1="264.16" y1="157.48" x2="302.26" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="X4" gate="-1" pin="KL"/>
+<wire x1="302.26" y1="167.64" x2="302.26" y2="165.1" width="0.1524" layer="91"/>
+<junction x="302.26" y="165.1"/>
 </segment>
 </net>
 <net name="IM7_O4" class="0">
 <segment>
 <pinref part="IM7" gate="G$1" pin="OUT4"/>
 <wire x1="373.38" y1="182.88" x2="373.38" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="X7" gate="-1" pin="KL"/>
-<wire x1="373.38" y1="200.66" x2="373.38" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="182.88" x2="373.38" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="JP35" gate="A" pin="6"/>
 <wire x1="365.76" y1="210.82" x2="365.76" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="365.76" y1="200.66" x2="373.38" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="X7" gate="-2" pin="KL"/>
+<wire x1="373.38" y1="200.66" x2="373.38" y2="203.2" width="0.1524" layer="91"/>
 <junction x="373.38" y="200.66"/>
 </segment>
 </net>
@@ -20517,39 +20517,39 @@ MOSFET</text>
 <segment>
 <pinref part="IM7" gate="G$1" pin="OUT3"/>
 <wire x1="345.44" y1="185.42" x2="345.44" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="X7" gate="-2" pin="KL"/>
-<wire x1="345.44" y1="200.66" x2="345.44" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="185.42" x2="345.44" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="JP35" gate="A" pin="1"/>
 <wire x1="353.06" y1="210.82" x2="353.06" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="200.66" x2="345.44" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="X7" gate="-1" pin="KL"/>
+<wire x1="345.44" y1="200.66" x2="345.44" y2="203.2" width="0.1524" layer="91"/>
 <junction x="345.44" y="200.66"/>
 </segment>
 </net>
 <net name="IM7_O2" class="0">
 <segment>
 <pinref part="IM7" gate="G$1" pin="OUT2"/>
-<pinref part="X3" gate="-1" pin="KL"/>
 <wire x1="330.2" y1="187.96" x2="330.2" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="330.2" y1="200.66" x2="330.2" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="JP31" gate="A" pin="6"/>
 <wire x1="322.58" y1="210.82" x2="322.58" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="322.58" y1="200.66" x2="330.2" y2="200.66" width="0.1524" layer="91"/>
-<junction x="330.2" y="200.66"/>
 <wire x1="264.16" y1="187.96" x2="330.2" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-2" pin="KL"/>
+<wire x1="330.2" y1="200.66" x2="330.2" y2="203.2" width="0.1524" layer="91"/>
+<junction x="330.2" y="200.66"/>
 </segment>
 </net>
 <net name="IM7_O1" class="0">
 <segment>
 <pinref part="IM7" gate="G$1" pin="OUT1"/>
 <wire x1="302.26" y1="190.5" x2="302.26" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-2" pin="KL"/>
-<wire x1="302.26" y1="200.66" x2="302.26" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="JP31" gate="A" pin="1"/>
 <wire x1="309.88" y1="210.82" x2="309.88" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="200.66" x2="302.26" y2="200.66" width="0.1524" layer="91"/>
-<junction x="302.26" y="200.66"/>
 <wire x1="264.16" y1="190.5" x2="302.26" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-1" pin="KL"/>
+<wire x1="302.26" y1="200.66" x2="302.26" y2="203.2" width="0.1524" layer="91"/>
+<junction x="302.26" y="200.66"/>
 </segment>
 </net>
 <net name="ENC1A" class="0">

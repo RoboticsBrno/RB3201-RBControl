@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -183,7 +183,7 @@
 <text x="23.622" y="94.866" size="1.6764" layer="51" font="vector" ratio="20" rot="R180">OUT</text>
 <text x="1.019" y="25.781" size="1.6764" layer="51" font="vector" ratio="20" rot="R270">M1</text>
 <text x="1.019" y="15.367" size="1.6764" layer="51" font="vector" ratio="20" rot="R270">M2</text>
-<text x="1.019" y="50.228" size="1.6764" layer="51" font="vector" ratio="20" rot="R270">M3</text>
+<text x="1.019" y="46.418" size="1.6764" layer="51" font="vector" ratio="20" rot="R270">M3</text>
 <text x="0.892" y="35.941" size="1.6764" layer="51" font="vector" ratio="20" rot="R270">M4</text>
 <text x="133.494" y="13.081" size="1.6764" layer="51" font="vector" ratio="20">TXD0</text>
 <text x="133.494" y="10.541" size="1.6764" layer="51" font="vector" ratio="20">RXD0</text>
@@ -3974,12 +3974,12 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <elements>
 <element name="C1" library="rcl_upravena" package="C1206" value="100n" x="34.29" y="62.23"/>
 <element name="C2" library="rcl_upravena" package="C1206" value="100n" x="34.29" y="21.59"/>
-<element name="D1" library="diode" package="SOD123" value="" x="62.23" y="21.59"/>
-<element name="IC1" library="microchip" package="DIL28-3" value="MCP23017SP" x="85.09" y="27.94" rot="R270">
-<attribute name="MF" value="MICROCHIP" x="85.09" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="MCP23017-E/SP" x="85.09" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="1332088" x="85.09" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="31K2959" x="85.09" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="D1" library="diode" package="SOD123" value="" x="71.12" y="36.83" rot="R90"/>
+<element name="IC1" library="microchip" package="DIL28-3" value="MCP23017SP" x="85.09" y="30.48" rot="R270">
+<attribute name="MF" value="MICROCHIP" x="85.09" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="MCP23017-E/SP" x="85.09" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="1332088" x="85.09" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="31K2959" x="85.09" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="IC2" library="74xx-eu" package="SO16" value="74HC595D" x="34.29" y="29.21" rot="R90"/>
 <element name="IC3" library="74xx-eu" package="SO16" value="74HC595D" x="34.29" y="69.85" rot="R90"/>
@@ -3989,24 +3989,24 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <element name="IM3" library="StepDown" package="STEPDOWN" value="STEPDOWN" x="138.43" y="36.83"/>
 <element name="IM4" library="StepDown" package="STEPDOWN" value="STEPDOWN" x="138.43" y="52.07"/>
 <element name="IM5" library="StepDown" package="STEPDOWN" value="STEPDOWN" x="138.43" y="67.31"/>
-<element name="IM6" library="esp32" package="DEVKITC" value="DEVKITC" x="93.98" y="50.8"/>
+<element name="IM6" library="esp32" package="DEVKITC" value="DEVKITC" x="95.25" y="50.8"/>
 <element name="IM7" library="DRV8833board" package="PINHEAD" value="DRV8833_BOARD" x="22.72" y="11.43"/>
 <element name="IM8" library="DRV8833board" package="PINHEAD" value="DRV8833_BOARD" x="22.72" y="31.75"/>
 <element name="IM9" library="DRV8833board" package="PINHEAD" value="DRV8833_BOARD" x="22.72" y="52.07"/>
 <element name="JP1" library="pinhead" package="1X01" value="IM1_EN" x="64.77" y="38.1"/>
 <element name="JP10" library="pinhead" package="1X02" value="IM4_5" x="144.78" y="64.77"/>
-<element name="JP11" library="pinhead" package="1X02" value="POWER_BUTTON" x="69.85" y="39.37" rot="R270"/>
+<element name="JP11" library="pinhead" package="1X02" value="POWER_BUTTON" x="62.23" y="95.25" rot="R270"/>
 <element name="JP12" library="pinhead" package="2X16" value="5V_GND_1" x="130.81" y="30.48" rot="R90"/>
 <element name="JP13" library="pinhead" package="2X16" value="5V_GND_2" x="130.81" y="71.12" rot="R90"/>
 <element name="JP14" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X08" package3d_urn="urn:adsk.eagle:package:22481/2" value="5V_GND_3" x="137.16" y="92.71" rot="R90"/>
 <element name="JP15" library="pinhead" package="2X16" value="SIG1" x="125.73" y="71.12" rot="R90"/>
 <element name="JP16" library="pinhead" package="2X16" value="SIG2" x="125.73" y="30.48" rot="R90"/>
-<element name="JP17" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X08" package3d_urn="urn:adsk.eagle:package:22481/2" value="SIG3" x="128.27" y="95.25" rot="R270"/>
+<element name="JP17" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X08" package3d_urn="urn:adsk.eagle:package:22481/2" value="SIG3" x="105.41" y="12.7" rot="R180"/>
 <element name="JP18" library="pinhead" package="2X16" value="3V3_GND_1" x="120.65" y="71.12" rot="R90"/>
 <element name="JP19" library="pinhead" package="2X16" value="3V3_GND_2" x="120.65" y="30.48" rot="R90"/>
 <element name="JP2" library="pinhead" package="1X01" value="IM2_EN" x="139.7" y="34.29"/>
 <element name="JP20" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X08" package3d_urn="urn:adsk.eagle:package:22481/2" value="3V3_GND_3" x="119.38" y="96.52" rot="R90"/>
-<element name="JP24" library="pinhead" package="1X02" value="SHUTDOWN_ESP" x="73.66" y="39.37" rot="R90"/>
+<element name="JP24" library="pinhead" package="1X02" value="SHUTDOWN_ESP" x="67.31" y="95.25" rot="R90"/>
 <element name="JP25" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X08" package3d_urn="urn:adsk.eagle:package:22409/2" value="EXPANDER_OUT" x="21.72" y="97.79" rot="R180"/>
 <element name="JP26" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X08" package3d_urn="urn:adsk.eagle:package:22409/2" value="EXPANDER_IN" x="21.72" y="2.54" rot="R180"/>
 <element name="JP27" library="pinhead" package="1X01" value="IM7_ULT" x="23.99" y="8.89" rot="R90"/>
@@ -4027,25 +4027,25 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <element name="JP7" library="pinhead" package="1X02" value="IM1_2" x="139.7" y="17.78" rot="R270"/>
 <element name="JP8" library="pinhead" package="1X02" value="IM2_3" x="144.78" y="34.29"/>
 <element name="JP9" library="pinhead" package="1X02" value="IM3_4" x="144.78" y="49.53"/>
-<element name="LED1" library="led" package="LED3MM" value="" x="64.77" y="69.85" rot="R270"/>
-<element name="LED2" library="led" package="LED3MM" value="RED" x="68.58" y="87.63" rot="R180"/>
-<element name="LED3" library="led" package="LED3MM" value="YELLOW" x="62.23" y="87.63" rot="R180"/>
-<element name="LED4" library="led" package="LED3MM" value="GREEN" x="55.88" y="87.63" rot="R180"/>
-<element name="LED5" library="led" package="LED3MM" value="BLUE/WHITE" x="49.53" y="87.63" rot="R180"/>
-<element name="Q1" library="transistors" package="TO220V" value="" x="59.69" y="6.35" rot="R270"/>
-<element name="Q2" library="transistors" package="TO92" value="" x="62.23" y="15.24" rot="R180"/>
-<element name="R1" library="resistor" package="0204V" value="3k3" x="68.58" y="69.85" rot="R270"/>
-<element name="R10" library="rcl_upravena" package="0204V" value="10k" x="111.76" y="52.07" rot="R90"/>
-<element name="R11" library="resistor" package="0204V" value="1k" x="68.58" y="82.55"/>
-<element name="R12" library="resistor" package="0204V" value="1k" x="62.23" y="82.55"/>
-<element name="R13" library="resistor" package="0204V" value="1k" x="55.88" y="82.55"/>
-<element name="R14" library="resistor" package="0204V" value="1k" x="49.53" y="82.55"/>
+<element name="LED1" library="led" package="LED3MM" value="" x="69.85" y="54.61" rot="R270"/>
+<element name="LED2" library="led" package="LED3MM" value="RED" x="115.57" y="3.81"/>
+<element name="LED3" library="led" package="LED3MM" value="YELLOW" x="109.22" y="3.81"/>
+<element name="LED4" library="led" package="LED3MM" value="GREEN" x="102.87" y="3.81"/>
+<element name="LED5" library="led" package="LED3MM" value="BLUE/WHITE" x="96.52" y="3.81"/>
+<element name="Q1" library="transistors" package="TO220V" value="" x="64.77" y="6.35" rot="R270"/>
+<element name="Q2" library="transistors" package="TO92" value="" x="71.12" y="27.94" rot="R180"/>
+<element name="R1" library="resistor" package="0204V" value="3k3" x="69.85" y="74.93" rot="R90"/>
+<element name="R10" library="rcl_upravena" package="0204V" value="10k" x="111.76" y="53.34" rot="R90"/>
+<element name="R11" library="resistor" package="0204V" value="1k" x="115.57" y="7.62" rot="R180"/>
+<element name="R12" library="resistor" package="0204V" value="1k" x="109.22" y="7.62" rot="R180"/>
+<element name="R13" library="resistor" package="0204V" value="1k" x="102.87" y="7.62" rot="R180"/>
+<element name="R14" library="resistor" package="0204V" value="1k" x="96.52" y="7.62" rot="R180"/>
 <element name="R2" library="resistor" package="0204V" value="" x="74.93" y="95.25" rot="R180"/>
 <element name="R3" library="resistor" package="0204V" value="" x="74.93" y="91.44"/>
-<element name="R6" library="resistor" package="0204V" value="3k3" x="97.79" y="38.1" rot="R90"/>
-<element name="R7" library="resistor" package="0204V" value="3k3" x="97.79" y="43.18" rot="R270"/>
-<element name="R8" library="rcl_upravena" package="0204V" value="10k" x="68.58" y="13.97" rot="R270"/>
-<element name="R9" library="rcl_upravena" package="0204V" value="10k" x="111.76" y="57.15" rot="R270"/>
+<element name="R6" library="resistor" package="0204V" value="3k3" x="115.57" y="40.64" rot="R90"/>
+<element name="R7" library="resistor" package="0204V" value="3k3" x="115.57" y="35.56" rot="R90"/>
+<element name="R8" library="rcl_upravena" package="0204V" value="10k" x="71.12" y="20.32" rot="R90"/>
+<element name="R9" library="rcl_upravena" package="0204V" value="10k" x="111.76" y="58.42" rot="R270"/>
 <element name="S1" library="switch-omron" package="B3F-10XX" value="" x="80.01" y="5.08" rot="R90">
 <attribute name="MF" value="" x="80.01" y="5.08" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="80.01" y="5.08" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4064,8 +4064,8 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <attribute name="OC_FARNELL" value="176432" x="71.12" y="5.08" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="36M3542" x="71.12" y="5.08" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="TP1" library="testpad" package="TP20SQ" value="TPTP20SQ" x="68.58" y="96.52">
-<attribute name="TP_SIGNAL_NAME" value="" x="68.58" y="96.52" size="1.778" layer="27" display="off"/>
+<element name="TP1" library="testpad" package="TP20SQ" value="TPTP20SQ" x="71.12" y="96.52">
+<attribute name="TP_SIGNAL_NAME" value="" x="71.12" y="96.52" size="1.778" layer="27" display="off"/>
 </element>
 <element name="TP2" library="testpad" package="TP20SQ" value="TPTP20SQ" x="123.74" y="96.25">
 <attribute name="TP_SIGNAL_NAME" value="" x="123.74" y="96.25" size="1.778" layer="27" display="off"/>
@@ -4073,95 +4073,95 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <element name="TP3" library="testpad" package="TP20SQ" value="TPTP20SQ" x="126.17" y="96.25">
 <attribute name="TP_SIGNAL_NAME" value="" x="126.17" y="96.25" size="1.778" layer="27" display="off"/>
 </element>
-<element name="X1" library="con-wago-508" package="W237-132" value="POWER_IN" x="39.24" y="5.08" rot="R180">
-<attribute name="MF" value="" x="39.24" y="5.08" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="39.24" y="5.08" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="39.24" y="5.08" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="39.24" y="5.08" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="X1" library="con-wago-508" package="W237-132" value="POWER_IN" x="39.37" y="6.35">
+<attribute name="MF" value="" x="39.37" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="39.37" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="39.37" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="39.37" y="6.35" size="1.778" layer="27" display="off"/>
 </element>
-<element name="X10" library="con-wago-508" package="W237-132" value="" x="6.48" y="74.93" rot="R90">
-<attribute name="MF" value="" x="6.48" y="74.93" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="6.48" y="74.93" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="6.48" y="74.93" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="6.48" y="74.93" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="X10" library="con-wago-508" package="W237-132" value="" x="7.62" y="74.93" rot="R270">
+<attribute name="MF" value="" x="7.62" y="74.93" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="7.62" y="74.93" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="7.62" y="74.93" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="7.62" y="74.93" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="X2" library="con-wago-508" package="W237-132" value="POWER_OUT" x="39.24" y="95.25">
-<attribute name="MF" value="" x="39.24" y="95.25" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="39.24" y="95.25" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="39.24" y="95.25" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="39.24" y="95.25" size="1.778" layer="27" display="off"/>
+<element name="X2" library="con-wago-508" package="W237-132" value="POWER_OUT" x="39.37" y="93.98" rot="R180">
+<attribute name="MF" value="" x="39.37" y="93.98" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="39.37" y="93.98" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="39.37" y="93.98" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="39.37" y="93.98" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="X3" library="con-wago-508" package="W237-132" value="" x="6.48" y="24.13" rot="R90">
-<attribute name="MF" value="" x="6.48" y="24.13" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="6.48" y="24.13" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="6.48" y="24.13" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="6.48" y="24.13" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="X3" library="con-wago-508" package="W237-132" value="" x="7.62" y="24.13" rot="R270">
+<attribute name="MF" value="" x="7.62" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="7.62" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="7.62" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="7.62" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="X4" library="con-wago-508" package="W237-132" value="" x="6.48" y="44.45" rot="R90">
-<attribute name="MF" value="" x="6.48" y="44.45" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="6.48" y="44.45" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="6.48" y="44.45" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="6.48" y="44.45" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="X4" library="con-wago-508" package="W237-132" value="" x="7.62" y="44.45" rot="R270">
+<attribute name="MF" value="" x="7.62" y="44.45" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="7.62" y="44.45" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="7.62" y="44.45" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="7.62" y="44.45" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="X5" library="con-wago-508" package="W237-132" value="" x="6.48" y="64.77" rot="R90">
-<attribute name="MF" value="" x="6.48" y="64.77" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="6.48" y="64.77" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="6.48" y="64.77" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="6.48" y="64.77" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="X5" library="con-wago-508" package="W237-132" value="" x="7.62" y="64.77" rot="R270">
+<attribute name="MF" value="" x="7.62" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="7.62" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="7.62" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="7.62" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="X6" library="con-wago-508" package="W237-132" value="" x="6.48" y="85.09" rot="R90">
-<attribute name="MF" value="" x="6.48" y="85.09" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="6.48" y="85.09" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="6.48" y="85.09" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="6.48" y="85.09" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="X6" library="con-wago-508" package="W237-132" value="" x="7.62" y="85.09" rot="R270">
+<attribute name="MF" value="" x="7.62" y="85.09" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="7.62" y="85.09" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="7.62" y="85.09" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="7.62" y="85.09" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="X7" library="con-wago-508" package="W237-132" value="" x="6.48" y="13.97" rot="R90">
-<attribute name="MF" value="" x="6.48" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="6.48" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="6.48" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="6.48" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="X7" library="con-wago-508" package="W237-132" value="" x="7.62" y="13.97" rot="R270">
+<attribute name="MF" value="" x="7.62" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="7.62" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="7.62" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="7.62" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="X8" library="con-wago-508" package="W237-132" value="" x="6.48" y="34.29" rot="R90">
-<attribute name="MF" value="" x="6.48" y="34.29" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="6.48" y="34.29" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="6.48" y="34.29" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="6.48" y="34.29" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="X8" library="con-wago-508" package="W237-132" value="" x="7.62" y="34.29" rot="R270">
+<attribute name="MF" value="" x="7.62" y="34.29" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="7.62" y="34.29" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="7.62" y="34.29" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="7.62" y="34.29" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="X9" library="con-wago-508" package="W237-132" value="" x="6.48" y="54.61" rot="R90">
-<attribute name="MF" value="" x="6.48" y="54.61" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="6.48" y="54.61" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="6.48" y="54.61" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="6.48" y="54.61" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="X9" library="con-wago-508" package="W237-132" value="" x="7.62" y="54.61" rot="R270">
+<attribute name="MF" value="" x="7.62" y="54.61" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="7.62" y="54.61" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="7.62" y="54.61" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="7.62" y="54.61" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C3" library="rcl_upravena" package="C1206" value="1u" x="64.77" y="33.02" rot="R270"/>
-<element name="IM11" library="LevelShifter" package="LEVEL_SHIFTER" value="LEVEL_SHIFTER" x="101.6" y="44.45" rot="R270"/>
-<element name="U$2" library="SolderJumperNormallyClosed" package="SJ_NC" value="SJ_NC" x="59.69" y="71.12" rot="R270"/>
-<element name="R55" library="rcl_upravena" package="0204V" value="2M" x="71.12" y="33.02" rot="R270"/>
-<element name="R56" library="rcl_upravena" package="0204V" value="10k" x="71.12" y="26.67" rot="R90"/>
-<element name="C4" library="rcl_upravena" package="C1206" value="10u" x="64.77" y="26.67" rot="R270"/>
-<element name="D2" library="diode" package="SOD123" value="" x="71.12" y="21.59"/>
-<element name="R5" library="rcl_upravena" package="0204V" value="100k" x="72.39" y="13.97" rot="R90"/>
-<element name="JP6" library="pinhead" package="1X02" value="IC1_INT" x="99.06" y="25.4" rot="R90"/>
-<element name="RN1" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" package="SIL14" package3d_urn="urn:adsk.eagle:package:25285/1" value="" x="92.71" y="27.94" rot="R90">
-<attribute name="MF" value="" x="92.71" y="27.94" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="92.71" y="27.94" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="92.71" y="27.94" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_MOUSER" value="652-4614X-2LF-180" x="92.71" y="27.94" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="92.71" y="27.94" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C3" library="rcl_upravena" package="C1206" value="1u" x="67.31" y="87.63"/>
+<element name="IM11" library="LevelShifter" package="LEVEL_SHIFTER" value="LEVEL_SHIFTER" x="113.03" y="34.29" rot="R90"/>
+<element name="U$2" library="SolderJumperNormallyClosed" package="SJ_NC" value="SJ_NC" x="68.58" y="60.96" rot="R270"/>
+<element name="R55" library="rcl_upravena" package="0204V" value="2M" x="63.5" y="91.44"/>
+<element name="R56" library="rcl_upravena" package="0204V" value="10k" x="67.31" y="78.74"/>
+<element name="C4" library="rcl_upravena" package="C1206" value="10u" x="67.31" y="82.55" rot="R180"/>
+<element name="D2" library="diode" package="SOD123" value="" x="67.31" y="68.58" rot="R90"/>
+<element name="R5" library="rcl_upravena" package="0204V" value="100k" x="64.77" y="74.93" rot="R90"/>
+<element name="JP6" library="pinhead" package="1X02" value="IC1_INT" x="96.52" y="35.56" rot="R90"/>
+<element name="RN1" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" package="SIL14" package3d_urn="urn:adsk.eagle:package:25285/1" value="" x="92.71" y="30.48" rot="R90">
+<attribute name="MF" value="" x="92.71" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="92.71" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="92.71" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_MOUSER" value="652-4614X-2LF-180" x="92.71" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="92.71" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="RN2" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" package="SIL14" package3d_urn="urn:adsk.eagle:package:25285/1" value="" x="77.47" y="27.94" rot="R270">
-<attribute name="MF" value="" x="77.47" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="77.47" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="77.47" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_MOUSER" value="652-4614X-2LF-180" x="77.47" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="77.47" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="RN2" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" package="SIL14" package3d_urn="urn:adsk.eagle:package:25285/1" value="" x="77.47" y="30.48" rot="R270">
+<attribute name="MF" value="" x="77.47" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="77.47" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="77.47" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_MOUSER" value="652-4614X-2LF-180" x="77.47" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="77.47" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="RN3" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" package="SIL14" package3d_urn="urn:adsk.eagle:package:25285/1" value="" x="76.2" y="68.58" rot="R270">
-<attribute name="MF" value="" x="76.2" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="76.2" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="76.2" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_MOUSER" value="652-4614X-2LF-180" x="76.2" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="76.2" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="RN3" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" package="SIL14" package3d_urn="urn:adsk.eagle:package:25285/1" value="" x="78.74" y="68.58" rot="R270">
+<attribute name="MF" value="" x="78.74" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="78.74" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="78.74" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_MOUSER" value="652-4614X-2LF-180" x="78.74" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="78.74" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="RN4" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" package="SIL14" package3d_urn="urn:adsk.eagle:package:25285/1" value="" x="111.76" y="80.01" rot="R270">
 <attribute name="MF" value="" x="111.76" y="80.01" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4170,38 +4170,38 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <attribute name="OC_MOUSER" value="652-4614X-2LF-180" x="111.76" y="80.01" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="111.76" y="80.01" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="RN5" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" package="SIL14" package3d_urn="urn:adsk.eagle:package:25285/1" value="" x="72.39" y="68.58" rot="R270">
-<attribute name="MF" value="" x="72.39" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="72.39" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="72.39" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_MOUSER" value="652-4614X-2LF-180" x="72.39" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="72.39" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="RN5" library="resistor-sil" library_urn="urn:adsk.eagle:library:347" package="SIL14" package3d_urn="urn:adsk.eagle:package:25285/1" value="" x="74.93" y="68.58" rot="R270">
+<attribute name="MF" value="" x="74.93" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="74.93" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="74.93" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_MOUSER" value="652-4614X-2LF-180" x="74.93" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="74.93" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="JP39" library="pinhead" package="1X01" value="IM11_HVIOREF" x="60.96" y="74.93"/>
-<element name="JP40" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C1_3V3" x="102.87" y="8.89"/>
-<element name="JP41" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C2_3V3" x="102.87" y="6.35"/>
-<element name="JP42" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C3_3V3" x="102.87" y="19.05"/>
-<element name="JP43" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C3_5V" x="102.87" y="11.43"/>
-<element name="JP44" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C2_5V" x="102.87" y="13.97"/>
-<element name="JP45" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C1_5V" x="102.87" y="16.51"/>
-<element name="JP22" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="IO2_5V" x="110.49" y="16.51" rot="R270"/>
-<element name="JP23" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="IO1_5V" x="113.03" y="16.51" rot="R270"/>
-<element name="R4" library="resistor" package="0204V" value="3k3" x="104.14" y="25.4" rot="R90"/>
-<element name="R15" library="resistor" package="0204V" value="3k3" x="106.68" y="25.4" rot="R90"/>
-<element name="R16" library="resistor" package="0204V" value="3k3" x="109.22" y="25.4" rot="R90"/>
-<element name="R17" library="resistor" package="0204V" value="3k3" x="111.76" y="25.4" rot="R270"/>
-<element name="JP21" library="pinhead" package="1X02" value="?" x="62.23" y="6.35" rot="R90"/>
-<element name="Q3" library="transistors" package="TO220V" value="" x="52.07" y="6.35" rot="R270"/>
+<element name="JP39" library="pinhead" package="1X01" value="IM11_HVIOREF" x="69.85" y="63.5"/>
+<element name="JP40" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C1_3V3" x="100.33" y="20.32"/>
+<element name="JP41" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C2_3V3" x="100.33" y="17.78"/>
+<element name="JP42" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C3_3V3" x="100.33" y="22.86"/>
+<element name="JP43" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C3_5V" x="100.33" y="25.4"/>
+<element name="JP44" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C2_5V" x="100.33" y="27.94"/>
+<element name="JP45" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C1_5V" x="100.33" y="30.48"/>
+<element name="JP22" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="IO2_5V" x="110.49" y="20.32" rot="R270"/>
+<element name="JP23" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="IO1_5V" x="113.03" y="20.32" rot="R270"/>
+<element name="R4" library="resistor" package="0204V" value="3k3" x="107.95" y="30.48" rot="R90"/>
+<element name="R15" library="resistor" package="0204V" value="3k3" x="110.49" y="30.48" rot="R90"/>
+<element name="R16" library="resistor" package="0204V" value="3k3" x="113.03" y="30.48" rot="R90"/>
+<element name="R17" library="resistor" package="0204V" value="3k3" x="115.57" y="30.48" rot="R270"/>
+<element name="JP21" library="pinhead" package="1X02" value="?" x="57.15" y="95.25" rot="R90"/>
+<element name="Q3" library="transistors" package="TO220V" value="" x="57.15" y="6.35" rot="R270"/>
 </elements>
 <signals>
 <signal name="IC2_QH*">
 <contactref element="IC2" pad="9"/>
 <contactref element="IC3" pad="14"/>
-<wire x1="27.305" y1="33.655" x2="26.67" y2="34.29" width="0.2" layer="1"/>
-<wire x1="27.305" y1="33.655" x2="31.2166" y2="33.655" width="0.2" layer="1"/>
-<wire x1="26.67" y1="67.31" x2="27.305" y2="67.945" width="0.2" layer="1"/>
+<wire x1="31.2166" y1="33.655" x2="27.305" y2="33.655" width="0.2" layer="1"/>
 <wire x1="27.305" y1="67.945" x2="31.2166" y2="67.945" width="0.2" layer="1"/>
-<wire x1="26.67" y1="34.29" x2="26.67" y2="67.31" width="0.2" layer="1"/>
+<wire x1="26.708" y1="67.348" x2="27.305" y2="67.945" width="0.2" layer="1"/>
+<wire x1="27.305" y1="33.655" x2="26.708" y2="34.252" width="0.2" layer="1"/>
+<wire x1="26.708" y1="34.252" x2="26.708" y2="67.348" width="0.2" layer="1"/>
 </signal>
 <signal name="RCKMOT">
 <contactref element="IC2" pad="12"/>
@@ -4213,23 +4213,23 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="R9" pad="1"/>
 <wire x1="31.2166" y1="70.485" x2="32.385" y2="70.485" width="0.2" layer="1"/>
 <wire x1="33.42" y1="75.0956875" x2="31.9156875" y2="76.6" width="0.2" layer="1"/>
-<wire x1="27.40118125" y1="93.37881875" x2="22.99" y2="97.79" width="0.2" layer="1"/>
 <wire x1="32.385" y1="70.485" x2="33.42" y2="71.52" width="0.2" layer="1"/>
-<wire x1="33.42" y1="75.0956875" x2="33.42" y2="71.52" width="0.2" layer="1"/>
+<wire x1="33.42" y1="71.52" x2="33.42" y2="75.0956875" width="0.2" layer="1"/>
 <wire x1="22.99" y1="2.54" x2="22.99" y2="3.948625" width="0.2" layer="1"/>
-<wire x1="22.99" y1="3.948625" x2="27.07" y2="8.028625" width="0.2" layer="1"/>
-<wire x1="27.07" y1="8.028625" x2="27.07" y2="29.21" width="0.2" layer="1"/>
-<wire x1="27.07" y1="29.21" x2="27.705" y2="29.845" width="0.2" layer="1"/>
 <wire x1="27.705" y1="29.845" x2="31.2166" y2="29.845" width="0.2" layer="1"/>
 <wire x1="31.2166" y1="29.845" x2="32.385" y2="29.845" width="0.2" layer="1"/>
 <wire x1="32.385" y1="29.845" x2="33.02" y2="30.48" width="0.2" layer="1"/>
-<wire x1="28.27118125" y1="76.6" x2="27.40118125" y2="77.47" width="0.2" layer="1"/>
 <wire x1="31.9156875" y1="76.6" x2="28.27118125" y2="76.6" width="0.2" layer="1"/>
-<wire x1="27.40118125" y1="77.47" x2="27.40118125" y2="93.37881875" width="0.2" layer="1"/>
-<wire x1="106.68" y1="64.77" x2="111.76" y2="58.42" width="0" layer="19" extent="1-1"/>
-<wire x1="64.13" y1="21.59" x2="106.68" y2="64.77" width="0" layer="19" extent="1-1"/>
-<wire x1="33.42" y1="75.0956875" x2="64.13" y2="21.59" width="0" layer="19" extent="1-1"/>
-<wire x1="33.02" y1="30.48" x2="32.385" y2="70.485" width="0" layer="19" extent="1-1"/>
+<wire x1="28.27118125" y1="76.6" x2="27.508" y2="77.36318125" width="0.2" layer="1"/>
+<wire x1="27.508" y1="77.36318125" x2="27.508" y2="93.272" width="0.2" layer="1"/>
+<wire x1="27.508" y1="93.272" x2="22.99" y2="97.79" width="0.2" layer="1"/>
+<wire x1="27.108" y1="29.248" x2="27.705" y2="29.845" width="0.2" layer="1"/>
+<wire x1="27.108" y1="8.066625" x2="27.108" y2="29.248" width="0.2" layer="1"/>
+<wire x1="22.99" y1="3.948625" x2="27.108" y2="8.066625" width="0.2" layer="1"/>
+<wire x1="111.76" y1="59.69" x2="107.95" y2="64.77" width="0" layer="19" extent="1-1"/>
+<wire x1="71.12" y1="38.73" x2="111.76" y2="59.69" width="0" layer="19" extent="1-1"/>
+<wire x1="33.02" y1="30.48" x2="71.12" y2="38.73" width="0" layer="19" extent="1-1"/>
+<wire x1="32.385" y1="70.485" x2="33.02" y2="30.48" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCKMOT">
 <contactref element="IC2" pad="11"/>
@@ -4237,29 +4237,29 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="JP25" pad="6"/>
 <contactref element="JP26" pad="6"/>
 <contactref element="IM6" pad="26"/>
-<wire x1="32.385" y1="71.755" x2="31.2166" y2="71.755" width="0.2" layer="1"/>
+<wire x1="31.2166" y1="71.755" x2="32.385" y2="71.755" width="0.2" layer="1"/>
 <wire x1="32.385" y1="71.755" x2="33.02" y2="72.39" width="0.2" layer="1"/>
-<wire x1="20.93198125" y1="98.9536" x2="21.6136" y2="98.27198125" width="0.2" layer="1"/>
-<wire x1="19.96801875" y1="98.9536" x2="20.93198125" y2="98.9536" width="0.2" layer="1"/>
-<wire x1="17.91" y1="97.79" x2="18.80441875" y2="97.79" width="0.2" layer="1"/>
-<wire x1="18.80441875" y1="97.79" x2="19.96801875" y2="98.9536" width="0.2" layer="1"/>
+<wire x1="21.6136" y1="98.27198125" x2="20.93198125" y2="98.9536" width="0.2" layer="1"/>
 <wire x1="21.6136" y1="97.39443125" x2="21.6136" y2="98.27198125" width="0.2" layer="1"/>
 <wire x1="33.02" y1="72.39" x2="33.02" y2="74.93" width="0.2" layer="1"/>
-<wire x1="27.00118125" y1="92.00685" x2="21.6136" y2="97.39443125" width="0.2" layer="1"/>
 <wire x1="21.6136" y1="2.05801875" x2="20.93198125" y2="1.3764" width="0.2" layer="1"/>
 <wire x1="20.93198125" y1="1.3764" x2="19.96801875" y2="1.3764" width="0.2" layer="1"/>
 <wire x1="18.80441875" y1="2.54" x2="17.91" y2="2.54" width="0.2" layer="1"/>
 <wire x1="21.6136" y1="3.1379125" x2="21.6136" y2="2.05801875" width="0.2" layer="1"/>
 <wire x1="19.96801875" y1="1.3764" x2="18.80441875" y2="2.54" width="0.2" layer="1"/>
-<wire x1="26.67" y1="8.1943125" x2="21.6136" y2="3.1379125" width="0.2" layer="1"/>
-<wire x1="27.305" y1="31.115" x2="26.67" y2="30.48" width="0.2" layer="1"/>
 <wire x1="31.2166" y1="31.115" x2="27.305" y2="31.115" width="0.2" layer="1"/>
-<wire x1="26.67" y1="30.48" x2="26.67" y2="8.1943125" width="0.2" layer="1"/>
 <wire x1="33.02" y1="74.93" x2="31.75" y2="76.2" width="0.2" layer="1"/>
 <wire x1="31.75" y1="76.2" x2="27.94" y2="76.2" width="0.2" layer="1"/>
-<wire x1="27.94" y1="76.2" x2="27.00118125" y2="77.13881875" width="0.2" layer="1"/>
-<wire x1="27.00118125" y1="77.13881875" x2="27.00118125" y2="92.00685" width="0.2" layer="1"/>
-<wire x1="33.02" y1="72.39" x2="106.68" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="27.94" y1="76.2" x2="27.108" y2="77.032" width="0.2" layer="1"/>
+<wire x1="27.108" y1="77.032" x2="27.108" y2="91.90003125" width="0.2" layer="1"/>
+<wire x1="27.108" y1="91.90003125" x2="22.039015625" y2="96.969015625" width="0.2" layer="1"/>
+<wire x1="22.039015625" y1="96.969015625" x2="21.6136" y2="97.39443125" width="0.2" layer="1"/>
+<wire x1="27.305" y1="31.115" x2="26.708" y2="30.518" width="0.2" layer="1"/>
+<wire x1="26.708" y1="30.518" x2="26.708" y2="8.2323125" width="0.2" layer="1"/>
+<wire x1="26.708" y1="8.2323125" x2="21.6136" y2="3.1379125" width="0.2" layer="1"/>
+<wire x1="19.0736" y1="98.9536" x2="17.91" y2="97.79" width="0.2" layer="1"/>
+<wire x1="20.93198125" y1="98.9536" x2="19.0736" y2="98.9536" width="0.2" layer="1"/>
+<wire x1="33.02" y1="72.39" x2="107.95" y2="67.31" width="0" layer="19" extent="1-1"/>
 <wire x1="31.2166" y1="31.115" x2="31.2166" y2="71.755" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IC2_A">
@@ -4317,12 +4317,12 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="JP25" pad="3"/>
 <via x="24.13" y="93.98" extent="1-16" drill="0.35"/>
 <wire x1="24.13" y1="93.98" x2="24.13" y2="90.696075" width="0.2" layer="1"/>
-<wire x1="24.13" y1="90.696075" x2="26.60118125" y2="88.22489375" width="0.2" layer="1"/>
 <wire x1="24.13" y1="93.98" x2="25.53" y2="95.38" width="0.2" layer="16"/>
 <wire x1="25.53" y1="95.38" x2="25.53" y2="97.79" width="0.2" layer="16"/>
 <wire x1="27.305" y1="74.295" x2="31.2166" y2="74.295" width="0.2" layer="1"/>
-<wire x1="26.60118125" y1="88.22489375" x2="26.60118125" y2="74.99881875" width="0.2" layer="1"/>
-<wire x1="26.60118125" y1="74.99881875" x2="27.305" y2="74.295" width="0.2" layer="1"/>
+<wire x1="26.708" y1="74.892" x2="27.305" y2="74.295" width="0.2" layer="1"/>
+<wire x1="26.708" y1="88.118075" x2="26.708" y2="74.892" width="0.2" layer="1"/>
+<wire x1="24.13" y1="90.696075" x2="26.708" y2="88.118075" width="0.2" layer="1"/>
 </signal>
 <signal name="SERMOT">
 <contactref element="IC2" pad="14"/>
@@ -4330,12 +4330,12 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="JP26" pad="3"/>
 <contactref element="IM6" pad="24"/>
 <wire x1="25.53" y1="2.54" x2="25.53" y2="5.9229375" width="0.2" layer="1"/>
-<wire x1="25.53" y1="5.9229375" x2="27.47" y2="7.8629375" width="0.2" layer="1"/>
-<wire x1="27.47" y1="7.8629375" x2="27.47" y2="26.2" width="0.2" layer="1"/>
 <wire x1="28.575" y1="27.305" x2="31.2166" y2="27.305" width="0.2" layer="1"/>
-<wire x1="27.47" y1="26.2" x2="28.575" y2="27.305" width="0.2" layer="1"/>
-<wire x1="106.68" y1="62.23" x2="111.76" y2="53.34" width="0" layer="19" extent="1-1"/>
-<wire x1="31.2166" y1="27.305" x2="106.68" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="27.508" y1="26.238" x2="28.575" y2="27.305" width="0.2" layer="1"/>
+<wire x1="27.508" y1="7.9009375" x2="27.508" y2="26.238" width="0.2" layer="1"/>
+<wire x1="25.53" y1="5.9229375" x2="27.508" y2="7.9009375" width="0.2" layer="1"/>
+<wire x1="111.76" y1="54.61" x2="107.95" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="31.2166" y1="27.305" x2="107.95" y2="62.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="IC2" pad="13"/>
@@ -4479,21 +4479,27 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="JP21" pad="1"/>
 <contactref element="S3" pad="2"/>
 <contactref element="X2" pad="2"/>
-<polygon width="0.2" layer="1" isolate="0.3">
+<polygon width="0.2" layer="1" isolate="0.3" rank="6">
 <vertex x="0" y="0"/>
 <vertex x="135.94" y="0" curve="60"/>
 <vertex x="135.94" y="100"/>
 <vertex x="0" y="100"/>
 </polygon>
-<polygon width="0.2" layer="16" isolate="0.3">
+<polygon width="0.2" layer="16" isolate="0.3" rank="6">
 <vertex x="0" y="0"/>
 <vertex x="0" y="100"/>
 <vertex x="135.94" y="100" curve="-60"/>
 <vertex x="135.94" y="0"/>
 </polygon>
-<wire x1="16.64" y1="35.56" x2="14.1" y2="35.56" width="2" layer="1"/>
-<wire x1="14.1" y1="55.88" x2="16.64" y2="55.88" width="2" layer="1"/>
+<wire x1="16.64" y1="35.56" x2="14.1" y2="35.56" width="1.8" layer="1"/>
+<wire x1="14.1" y1="55.88" x2="16.64" y2="55.88" width="1.8" layer="1"/>
 <wire x1="14.1" y1="15.24" x2="16.64" y2="15.24" width="1.8" layer="1"/>
+<wire x1="138.43" y1="99.06" x2="138.43" y2="101.6" width="0" layer="19" extent="1-1"/>
+<wire x1="138.43" y1="96.52" x2="138.43" y2="99.06" width="0" layer="19" extent="1-1"/>
+<wire x1="138.43" y1="93.98" x2="138.43" y2="96.52" width="0" layer="19" extent="1-1"/>
+<wire x1="120.65" y1="100.33" x2="120.65" y2="97.79" width="0" layer="19" extent="1-1"/>
+<wire x1="120.65" y1="102.87" x2="120.65" y2="100.33" width="0" layer="19" extent="1-1"/>
+<wire x1="120.65" y1="105.41" x2="120.65" y2="102.87" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXD0">
 <contactref element="JP16" pad="3"/>
@@ -4513,14 +4519,14 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="JP16" pad="9"/>
 <contactref element="JP16" pad="10"/>
 <contactref element="IM6" pad="3"/>
-<wire x1="124.46" y1="21.59" x2="81.28" y2="92.71" width="0" layer="19" extent="1-1"/>
+<wire x1="124.46" y1="21.59" x2="82.55" y2="92.71" width="0" layer="19" extent="1-1"/>
 <wire x1="127" y1="21.59" x2="124.46" y2="21.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IO39">
 <contactref element="JP16" pad="11"/>
 <contactref element="JP16" pad="12"/>
 <contactref element="IM6" pad="4"/>
-<wire x1="124.46" y1="24.13" x2="81.28" y2="90.17" width="0" layer="19" extent="1-1"/>
+<wire x1="124.46" y1="24.13" x2="82.55" y2="90.17" width="0" layer="19" extent="1-1"/>
 <wire x1="127" y1="24.13" x2="124.46" y2="24.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IC2_F">
@@ -4594,248 +4600,250 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 </signal>
 <signal name="IM10_O4">
 <contactref element="IM10" pad="OUT4"/>
-<contactref element="X10" pad="1"/>
 <contactref element="JP38" pad="6"/>
-<wire x1="7.115" y1="72.39" x2="10.29" y2="72.39" width="1.75" layer="16"/>
-<wire x1="10.29" y1="72.39" x2="11.56" y2="71.12" width="1.75" layer="16"/>
-<wire x1="11.56" y1="71.12" x2="15.37" y2="71.12" width="1.75" layer="16"/>
-<wire x1="15.37" y1="71.12" x2="16.64" y2="72.39" width="1.75" layer="16"/>
-<wire x1="16.64" y1="72.39" x2="16.64" y2="73.66" width="1.75" layer="16"/>
-<wire x1="16.64" y1="73.66" x2="19.18" y2="73.66" width="1.75" layer="16"/>
-<wire x1="19.18" y1="73.66" x2="21.72" y2="76.2" width="1.75" layer="16"/>
-<wire x1="21.72" y1="76.2" x2="23.99" y2="76.2" width="1.75" layer="16"/>
+<wire x1="11.56" y1="71.12" x2="10.29" y2="72.39" width="1.8" layer="16"/>
+<wire x1="11.56" y1="71.12" x2="15.37" y2="71.12" width="1.8" layer="16"/>
+<wire x1="15.37" y1="71.12" x2="16.64" y2="72.39" width="1.8" layer="16"/>
+<wire x1="16.64" y1="72.39" x2="16.64" y2="73.66" width="1.8" layer="16"/>
+<wire x1="16.64" y1="73.66" x2="19.18" y2="73.66" width="1.8" layer="16"/>
+<wire x1="19.18" y1="73.66" x2="21.72" y2="76.2" width="1.8" layer="16"/>
+<wire x1="21.72" y1="76.2" x2="23.99" y2="76.2" width="1.8" layer="16"/>
+<contactref element="X10" pad="2"/>
+<wire x1="10.29" y1="72.39" x2="6.985" y2="72.39" width="1.8" layer="16"/>
 </signal>
 <signal name="IM10_O3">
 <contactref element="IM10" pad="OUT3"/>
-<contactref element="X10" pad="2"/>
 <contactref element="JP38" pad="1"/>
-<wire x1="7.115" y1="77.47" x2="5.21" y2="77.47" width="1.75" layer="16"/>
-<wire x1="5.21" y1="77.47" x2="3.94" y2="78.74" width="1.75" layer="16"/>
-<wire x1="3.94" y1="78.74" x2="3.94" y2="88.9" width="1.75" layer="16"/>
-<wire x1="3.94" y1="88.9" x2="5.21" y2="90.17" width="1.75" layer="16"/>
-<wire x1="5.21" y1="90.17" x2="9.02" y2="90.17" width="1.75" layer="16"/>
-<wire x1="9.02" y1="90.17" x2="10.29" y2="88.9" width="1.75" layer="16"/>
-<wire x1="10.29" y1="88.9" x2="15.37" y2="88.9" width="1.75" layer="16"/>
-<wire x1="15.37" y1="88.9" x2="16.64" y2="87.63" width="1.75" layer="16"/>
-<wire x1="16.64" y1="87.63" x2="16.64" y2="86.36" width="1.75" layer="16"/>
-<wire x1="16.64" y1="86.36" x2="17.91" y2="86.36" width="1.75" layer="16"/>
-<wire x1="17.91" y1="86.36" x2="19.18" y2="85.09" width="1.75" layer="16"/>
-<wire x1="19.18" y1="85.09" x2="19.18" y2="80.01" width="1.75" layer="16"/>
-<wire x1="19.18" y1="80.01" x2="20.45" y2="78.74" width="1.75" layer="16"/>
-<wire x1="20.45" y1="78.74" x2="23.99" y2="78.74" width="1.75" layer="16"/>
+<wire x1="3.94" y1="78.74" x2="5.21" y2="77.47" width="1.8" layer="16"/>
+<wire x1="3.94" y1="78.74" x2="3.94" y2="88.9" width="1.8" layer="16"/>
+<wire x1="3.94" y1="88.9" x2="5.21" y2="90.17" width="1.8" layer="16"/>
+<wire x1="5.21" y1="90.17" x2="9.02" y2="90.17" width="1.8" layer="16"/>
+<wire x1="9.02" y1="90.17" x2="10.29" y2="88.9" width="1.8" layer="16"/>
+<wire x1="10.29" y1="88.9" x2="15.37" y2="88.9" width="1.8" layer="16"/>
+<wire x1="15.37" y1="88.9" x2="16.64" y2="87.63" width="1.8" layer="16"/>
+<wire x1="16.64" y1="87.63" x2="16.64" y2="86.36" width="1.8" layer="16"/>
+<wire x1="16.64" y1="86.36" x2="17.91" y2="86.36" width="1.8" layer="16"/>
+<wire x1="17.91" y1="86.36" x2="19.18" y2="85.09" width="1.8" layer="16"/>
+<wire x1="19.18" y1="85.09" x2="19.18" y2="80.01" width="1.8" layer="16"/>
+<wire x1="19.18" y1="80.01" x2="20.45" y2="78.74" width="1.8" layer="16"/>
+<wire x1="20.45" y1="78.74" x2="23.99" y2="78.74" width="1.8" layer="16"/>
+<contactref element="X10" pad="1"/>
+<wire x1="5.21" y1="77.47" x2="6.985" y2="77.47" width="1.8" layer="16"/>
 </signal>
 <signal name="IM10_O2">
 <contactref element="IM10" pad="OUT2"/>
-<contactref element="X6" pad="1"/>
 <contactref element="JP34" pad="6"/>
-<wire x1="14.1" y1="73.66" x2="12.83" y2="73.66" width="1.75" layer="16"/>
-<wire x1="10.29" y1="76.2" x2="10.29" y2="81.28" width="1.75" layer="16"/>
-<wire x1="10.29" y1="81.28" x2="9.02" y2="82.55" width="1.75" layer="16"/>
-<wire x1="9.02" y1="82.55" x2="7.115" y2="82.55" width="1.75" layer="16"/>
-<wire x1="12.83" y1="73.66" x2="10.29" y2="76.2" width="1.75" layer="16"/>
-<wire x1="14.1" y1="73.66" x2="14.1" y2="72.39" width="1.75" layer="1"/>
-<wire x1="14.1" y1="72.39" x2="15.37" y2="71.12" width="1.75" layer="1"/>
-<wire x1="15.37" y1="71.12" x2="19.18" y2="71.12" width="1.75" layer="1"/>
-<wire x1="19.18" y1="71.12" x2="21.72" y2="73.66" width="1.75" layer="1"/>
-<wire x1="21.72" y1="73.66" x2="21.72" y2="80.01" width="1.75" layer="1"/>
-<wire x1="21.72" y1="80.01" x2="22.29" y2="80.58" width="1.75" layer="1"/>
-<wire x1="22.29" y1="80.58" x2="22.99" y2="81.28" width="1.75" layer="1"/>
-<wire x1="22.99" y1="81.28" x2="23.99" y2="81.28" width="1.75" layer="1"/>
+<wire x1="14.1" y1="73.66" x2="12.83" y2="73.66" width="1.8" layer="16"/>
+<wire x1="10.29" y1="76.2" x2="10.29" y2="81.28" width="1.8" layer="16"/>
+<wire x1="10.29" y1="81.28" x2="9.02" y2="82.55" width="1.8" layer="16"/>
+<wire x1="12.83" y1="73.66" x2="10.29" y2="76.2" width="1.8" layer="16"/>
+<wire x1="14.1" y1="73.66" x2="14.1" y2="72.39" width="1.8" layer="1"/>
+<wire x1="14.1" y1="72.39" x2="15.37" y2="71.12" width="1.8" layer="1"/>
+<wire x1="15.37" y1="71.12" x2="19.18" y2="71.12" width="1.8" layer="1"/>
+<wire x1="19.18" y1="71.12" x2="21.72" y2="73.66" width="1.8" layer="1"/>
+<wire x1="21.72" y1="73.66" x2="21.72" y2="80.01" width="1.8" layer="1"/>
+<wire x1="21.72" y1="80.01" x2="22.99" y2="81.28" width="1.8" layer="1"/>
+<wire x1="22.99" y1="81.28" x2="23.99" y2="81.28" width="1.8" layer="1"/>
+<contactref element="X6" pad="2"/>
+<wire x1="9.02" y1="82.55" x2="6.985" y2="82.55" width="1.8" layer="16"/>
 </signal>
 <signal name="IM10_O1">
 <contactref element="IM10" pad="OUT1"/>
-<contactref element="X6" pad="2"/>
 <contactref element="JP34" pad="1"/>
-<wire x1="7.115" y1="87.63" x2="8.385" y2="86.36" width="1.75" layer="16"/>
-<wire x1="8.385" y1="86.36" x2="14.1" y2="86.36" width="1.75" layer="16"/>
-<wire x1="14.1" y1="86.36" x2="14.1" y2="87.63" width="1.75" layer="1"/>
-<wire x1="14.1" y1="87.63" x2="15.37" y2="88.9" width="1.75" layer="1"/>
-<wire x1="22.99" y1="83.82" x2="23.99" y2="83.82" width="1.75" layer="1"/>
-<wire x1="15.37" y1="88.9" x2="17.91" y2="88.9" width="1.75" layer="1"/>
-<wire x1="17.91" y1="88.9" x2="22.99" y2="83.82" width="1.75" layer="1"/>
+<wire x1="8.385" y1="86.36" x2="8.89" y2="86.36" width="1.8" layer="16"/>
+<wire x1="8.89" y1="86.36" x2="14.1" y2="86.36" width="1.8" layer="16"/>
+<wire x1="14.1" y1="86.36" x2="14.1" y2="87.63" width="1.8" layer="1"/>
+<wire x1="14.1" y1="87.63" x2="15.37" y2="88.9" width="1.8" layer="1"/>
+<wire x1="22.99" y1="83.82" x2="23.99" y2="83.82" width="1.8" layer="1"/>
+<wire x1="15.37" y1="88.9" x2="17.91" y2="88.9" width="1.8" layer="1"/>
+<wire x1="17.91" y1="88.9" x2="22.99" y2="83.82" width="1.8" layer="1"/>
+<contactref element="X6" pad="1"/>
+<wire x1="8.385" y1="86.36" x2="8.255" y2="86.36" width="1.8" layer="16"/>
+<wire x1="8.255" y1="86.36" x2="6.985" y2="87.63" width="1.8" layer="16"/>
 </signal>
 <signal name="IM9_O4">
 <contactref element="IM9" pad="OUT4"/>
-<contactref element="X9" pad="1"/>
 <contactref element="JP37" pad="6"/>
-<wire x1="7.115" y1="52.07" x2="10.29" y2="52.07" width="1.8" layer="16"/>
-<wire x1="10.29" y1="52.07" x2="11.56" y2="50.8" width="1.8" layer="16"/>
+<wire x1="11.56" y1="50.8" x2="10.29" y2="52.07" width="1.8" layer="16"/>
 <wire x1="11.56" y1="50.8" x2="15.37" y2="50.8" width="1.8" layer="16"/>
 <wire x1="15.37" y1="50.8" x2="16.64" y2="52.07" width="1.8" layer="16"/>
 <wire x1="16.64" y1="52.07" x2="16.64" y2="53.34" width="1.8" layer="16"/>
-<wire x1="16.64" y1="53.34" x2="19.18" y2="53.34" width="1.75" layer="16"/>
-<wire x1="19.18" y1="53.34" x2="21.72" y2="55.88" width="1.75" layer="16"/>
-<wire x1="21.72" y1="55.88" x2="23.99" y2="55.88" width="1.75" layer="16"/>
+<wire x1="16.64" y1="53.34" x2="19.18" y2="53.34" width="1.8" layer="16"/>
+<wire x1="19.18" y1="53.34" x2="21.72" y2="55.88" width="1.8" layer="16"/>
+<wire x1="21.72" y1="55.88" x2="23.99" y2="55.88" width="1.8" layer="16"/>
+<contactref element="X9" pad="2"/>
+<wire x1="10.29" y1="52.07" x2="6.985" y2="52.07" width="1.8" layer="16"/>
 </signal>
 <signal name="IM9_O3">
 <contactref element="IM9" pad="OUT3"/>
-<contactref element="X9" pad="2"/>
 <contactref element="JP37" pad="1"/>
-<wire x1="7.115" y1="57.15" x2="5.21" y2="57.15" width="1.75" layer="16"/>
-<wire x1="5.21" y1="57.15" x2="3.94" y2="58.42" width="1.75" layer="16"/>
-<wire x1="3.94" y1="68.58" x2="5.21" y2="69.85" width="1.75" layer="16"/>
-<wire x1="5.21" y1="69.85" x2="9.02" y2="69.85" width="1.75" layer="16"/>
-<wire x1="9.02" y1="69.85" x2="10.29" y2="68.58" width="1.75" layer="16"/>
-<wire x1="10.29" y1="68.58" x2="15.37" y2="68.58" width="1.75" layer="16"/>
-<wire x1="15.37" y1="68.58" x2="16.64" y2="67.31" width="1.75" layer="16"/>
-<wire x1="16.64" y1="67.31" x2="16.64" y2="66.04" width="1.75" layer="16"/>
-<wire x1="3.94" y1="58.42" x2="3.94" y2="68.58" width="1.75" layer="16"/>
-<wire x1="16.64" y1="66.04" x2="17.91" y2="66.04" width="1.75" layer="16"/>
-<wire x1="17.91" y1="66.04" x2="19.18" y2="64.77" width="1.75" layer="16"/>
-<wire x1="19.18" y1="64.77" x2="19.18" y2="59.69" width="1.75" layer="16"/>
-<wire x1="19.18" y1="59.69" x2="20.45" y2="58.42" width="1.75" layer="16"/>
-<wire x1="20.45" y1="58.42" x2="23.99" y2="58.42" width="1.75" layer="16"/>
+<wire x1="3.94" y1="58.42" x2="5.21" y2="57.15" width="1.8" layer="16"/>
+<wire x1="3.94" y1="68.58" x2="5.21" y2="69.85" width="1.8" layer="16"/>
+<wire x1="5.21" y1="69.85" x2="9.02" y2="69.85" width="1.8" layer="16"/>
+<wire x1="9.02" y1="69.85" x2="10.29" y2="68.58" width="1.8" layer="16"/>
+<wire x1="10.29" y1="68.58" x2="15.37" y2="68.58" width="1.8" layer="16"/>
+<wire x1="15.37" y1="68.58" x2="16.64" y2="67.31" width="1.8" layer="16"/>
+<wire x1="16.64" y1="67.31" x2="16.64" y2="66.04" width="1.8" layer="16"/>
+<wire x1="3.94" y1="58.42" x2="3.94" y2="68.58" width="1.8" layer="16"/>
+<wire x1="16.64" y1="66.04" x2="17.91" y2="66.04" width="1.8" layer="16"/>
+<wire x1="17.91" y1="66.04" x2="19.18" y2="64.77" width="1.8" layer="16"/>
+<wire x1="19.18" y1="64.77" x2="19.18" y2="59.69" width="1.8" layer="16"/>
+<wire x1="19.18" y1="59.69" x2="20.45" y2="58.42" width="1.8" layer="16"/>
+<wire x1="20.45" y1="58.42" x2="23.99" y2="58.42" width="1.8" layer="16"/>
+<contactref element="X9" pad="1"/>
+<wire x1="5.21" y1="57.15" x2="6.985" y2="57.15" width="1.8" layer="16"/>
 </signal>
 <signal name="IM9_O2">
 <contactref element="IM9" pad="OUT2"/>
-<contactref element="X5" pad="1"/>
 <contactref element="JP33" pad="6"/>
-<wire x1="7.115" y1="62.23" x2="9.02" y2="62.23" width="1.75" layer="16"/>
-<wire x1="9.02" y1="62.23" x2="10.29" y2="60.96" width="1.75" layer="16"/>
-<wire x1="10.29" y1="55.88" x2="12.83" y2="53.34" width="1.75" layer="16"/>
-<wire x1="12.83" y1="53.34" x2="14.1" y2="53.34" width="1.75" layer="16"/>
-<wire x1="10.29" y1="60.96" x2="10.29" y2="55.88" width="1.75" layer="16"/>
-<wire x1="14.1" y1="53.34" x2="14.1" y2="52.07" width="1.75" layer="1"/>
-<wire x1="14.1" y1="52.07" x2="15.37" y2="50.8" width="1.75" layer="1"/>
-<wire x1="15.37" y1="50.8" x2="19.18" y2="50.8" width="1.75" layer="1"/>
-<wire x1="19.18" y1="50.8" x2="21.72" y2="53.34" width="1.75" layer="1"/>
-<wire x1="21.72" y1="53.34" x2="21.72" y2="59.69" width="1.75" layer="1"/>
-<wire x1="21.72" y1="59.69" x2="22.99" y2="60.96" width="1.75" layer="1"/>
-<wire x1="22.99" y1="60.96" x2="23.99" y2="60.96" width="1.75" layer="1"/>
+<wire x1="10.29" y1="60.96" x2="9.02" y2="62.23" width="1.8" layer="16"/>
+<wire x1="10.29" y1="55.88" x2="12.83" y2="53.34" width="1.8" layer="16"/>
+<wire x1="12.83" y1="53.34" x2="14.1" y2="53.34" width="1.8" layer="16"/>
+<wire x1="10.29" y1="60.96" x2="10.29" y2="55.88" width="1.8" layer="16"/>
+<wire x1="14.1" y1="53.34" x2="14.1" y2="52.07" width="1.8" layer="1"/>
+<wire x1="14.1" y1="52.07" x2="15.37" y2="50.8" width="1.8" layer="1"/>
+<wire x1="15.37" y1="50.8" x2="19.18" y2="50.8" width="1.8" layer="1"/>
+<wire x1="19.18" y1="50.8" x2="21.72" y2="53.34" width="1.8" layer="1"/>
+<wire x1="21.72" y1="53.34" x2="21.72" y2="59.69" width="1.8" layer="1"/>
+<wire x1="21.72" y1="59.69" x2="22.99" y2="60.96" width="1.8" layer="1"/>
+<wire x1="22.99" y1="60.96" x2="23.99" y2="60.96" width="1.8" layer="1"/>
+<contactref element="X5" pad="2"/>
+<wire x1="9.02" y1="62.23" x2="6.985" y2="62.23" width="1.8" layer="16"/>
 </signal>
 <signal name="IM9_O1">
 <contactref element="IM9" pad="OUT1"/>
-<contactref element="X5" pad="2"/>
 <contactref element="JP33" pad="1"/>
-<wire x1="7.115" y1="67.31" x2="8.385" y2="66.04" width="1.75" layer="16"/>
-<wire x1="8.385" y1="66.04" x2="14.1" y2="66.04" width="1.75" layer="16"/>
-<wire x1="14.1" y1="66.04" x2="14.1" y2="67.31" width="1.75" layer="1"/>
-<wire x1="14.1" y1="67.31" x2="15.37" y2="68.58" width="1.75" layer="1"/>
-<wire x1="22.99" y1="63.5" x2="23.99" y2="63.5" width="1.75" layer="1"/>
-<wire x1="15.37" y1="68.58" x2="17.91" y2="68.58" width="1.75" layer="1"/>
-<wire x1="17.91" y1="68.58" x2="22.99" y2="63.5" width="1.75" layer="1"/>
+<wire x1="14.1" y1="66.04" x2="14.1" y2="67.31" width="1.8" layer="1"/>
+<wire x1="14.1" y1="67.31" x2="15.37" y2="68.58" width="1.8" layer="1"/>
+<wire x1="22.99" y1="63.5" x2="23.99" y2="63.5" width="1.8" layer="1"/>
+<wire x1="15.37" y1="68.58" x2="17.91" y2="68.58" width="1.8" layer="1"/>
+<wire x1="17.91" y1="68.58" x2="22.99" y2="63.5" width="1.8" layer="1"/>
+<contactref element="X5" pad="1"/>
+<wire x1="8.255" y1="66.04" x2="6.985" y2="67.31" width="1.8" layer="16"/>
+<wire x1="14.1" y1="66.04" x2="8.255" y2="66.04" width="1.8" layer="16"/>
 </signal>
 <signal name="IM8_O4">
 <contactref element="IM8" pad="OUT4"/>
-<contactref element="X8" pad="1"/>
 <contactref element="JP36" pad="6"/>
 <wire x1="16.64" y1="31.75" x2="15.37" y2="30.48" width="1.8" layer="16"/>
 <wire x1="16.64" y1="31.75" x2="16.64" y2="33.02" width="1.8" layer="16"/>
 <wire x1="23.99" y1="35.56" x2="21.72" y2="35.56" width="1.8" layer="16"/>
 <wire x1="21.72" y1="35.56" x2="19.18" y2="33.02" width="1.8" layer="16"/>
 <wire x1="19.18" y1="33.02" x2="16.64" y2="33.02" width="1.8" layer="16"/>
-<wire x1="15.37" y1="30.48" x2="11.56" y2="30.48" width="1.75" layer="16"/>
-<wire x1="11.56" y1="30.48" x2="10.29" y2="31.75" width="1.75" layer="16"/>
-<wire x1="10.29" y1="31.75" x2="7.115" y2="31.75" width="1.75" layer="16"/>
+<wire x1="15.37" y1="30.48" x2="11.56" y2="30.48" width="1.8" layer="16"/>
+<wire x1="11.56" y1="30.48" x2="10.29" y2="31.75" width="1.8" layer="16"/>
+<contactref element="X8" pad="2"/>
+<wire x1="10.29" y1="31.75" x2="6.985" y2="31.75" width="1.8" layer="16"/>
 </signal>
 <signal name="IM8_O3">
 <contactref element="IM8" pad="OUT3"/>
-<contactref element="X8" pad="2"/>
 <contactref element="JP36" pad="1"/>
 <wire x1="23.99" y1="38.1" x2="20.45" y2="38.1" width="1.8" layer="16"/>
 <wire x1="20.45" y1="38.1" x2="19.18" y2="39.37" width="1.8" layer="16"/>
 <wire x1="19.18" y1="39.37" x2="19.18" y2="44.45" width="1.8" layer="16"/>
 <wire x1="19.18" y1="44.45" x2="17.91" y2="45.72" width="1.8" layer="16"/>
 <wire x1="17.91" y1="45.72" x2="16.64" y2="45.72" width="1.8" layer="16"/>
-<wire x1="7.115" y1="36.83" x2="5.21" y2="36.83" width="1.75" layer="16"/>
-<wire x1="5.21" y1="36.83" x2="3.94" y2="38.1" width="1.75" layer="16"/>
-<wire x1="3.94" y1="38.1" x2="3.94" y2="48.26" width="1.75" layer="16"/>
-<wire x1="3.94" y1="48.26" x2="5.21" y2="49.53" width="1.75" layer="16"/>
-<wire x1="5.21" y1="49.53" x2="9.02" y2="49.53" width="1.75" layer="16"/>
-<wire x1="9.02" y1="49.53" x2="10.29" y2="48.26" width="1.75" layer="16"/>
-<wire x1="10.29" y1="48.26" x2="15.37" y2="48.26" width="1.75" layer="16"/>
-<wire x1="15.37" y1="48.26" x2="16.64" y2="46.99" width="1.75" layer="16"/>
-<wire x1="16.64" y1="46.99" x2="16.64" y2="45.72" width="1.75" layer="16"/>
+<wire x1="3.94" y1="38.1" x2="5.21" y2="36.83" width="1.8" layer="16"/>
+<wire x1="3.94" y1="38.1" x2="3.94" y2="48.26" width="1.8" layer="16"/>
+<wire x1="3.94" y1="48.26" x2="5.21" y2="49.53" width="1.8" layer="16"/>
+<wire x1="5.21" y1="49.53" x2="9.02" y2="49.53" width="1.8" layer="16"/>
+<wire x1="9.02" y1="49.53" x2="10.29" y2="48.26" width="1.8" layer="16"/>
+<wire x1="10.29" y1="48.26" x2="15.37" y2="48.26" width="1.8" layer="16"/>
+<wire x1="15.37" y1="48.26" x2="16.64" y2="46.99" width="1.8" layer="16"/>
+<wire x1="16.64" y1="46.99" x2="16.64" y2="45.72" width="1.8" layer="16"/>
+<contactref element="X8" pad="1"/>
+<wire x1="5.21" y1="36.83" x2="6.985" y2="36.83" width="1.8" layer="16"/>
 </signal>
 <signal name="IM8_O2">
 <contactref element="IM8" pad="OUT2"/>
-<contactref element="X4" pad="1"/>
 <contactref element="JP32" pad="6"/>
 <wire x1="19.18" y1="30.48" x2="21.72" y2="33.02" width="1.8" layer="1"/>
-<wire x1="16.64" y1="30.48" x2="19.18" y2="30.48" width="1.8" layer="1"/>
-<wire x1="14.1" y1="33.02" x2="14.1" y2="31.75" width="1.75" layer="1"/>
-<wire x1="14.1" y1="31.75" x2="15.37" y2="30.48" width="1.75" layer="1"/>
-<wire x1="15.37" y1="30.48" x2="16.64" y2="30.48" width="1.75" layer="1"/>
-<wire x1="7.115" y1="41.91" x2="9.02" y2="41.91" width="1.75" layer="16"/>
-<wire x1="9.02" y1="41.91" x2="10.29" y2="40.64" width="1.75" layer="16"/>
-<wire x1="10.29" y1="40.64" x2="10.29" y2="35.56" width="1.75" layer="16"/>
-<wire x1="10.29" y1="35.56" x2="12.83" y2="33.02" width="1.75" layer="16"/>
-<wire x1="12.83" y1="33.02" x2="14.1" y2="33.02" width="1.75" layer="16"/>
-<wire x1="21.72" y1="33.02" x2="21.72" y2="39.37" width="1.75" layer="1"/>
-<wire x1="21.72" y1="39.37" x2="22.99" y2="40.64" width="1.75" layer="1"/>
-<wire x1="22.99" y1="40.64" x2="23.99" y2="40.64" width="1.75" layer="1"/>
+<wire x1="15.37" y1="30.48" x2="19.18" y2="30.48" width="1.8" layer="1"/>
+<wire x1="14.1" y1="33.02" x2="14.1" y2="31.75" width="1.8" layer="1"/>
+<wire x1="14.1" y1="31.75" x2="15.37" y2="30.48" width="1.8" layer="1"/>
+<wire x1="10.29" y1="40.64" x2="9.02" y2="41.91" width="1.8" layer="16"/>
+<wire x1="10.29" y1="40.64" x2="10.29" y2="35.56" width="1.8" layer="16"/>
+<wire x1="10.29" y1="35.56" x2="12.83" y2="33.02" width="1.8" layer="16"/>
+<wire x1="12.83" y1="33.02" x2="14.1" y2="33.02" width="1.8" layer="16"/>
+<wire x1="21.72" y1="33.02" x2="21.72" y2="39.37" width="1.8" layer="1"/>
+<wire x1="21.72" y1="39.37" x2="22.99" y2="40.64" width="1.8" layer="1"/>
+<wire x1="22.99" y1="40.64" x2="23.99" y2="40.64" width="1.8" layer="1"/>
+<contactref element="X4" pad="2"/>
+<wire x1="9.02" y1="41.91" x2="6.985" y2="41.91" width="1.8" layer="16"/>
 </signal>
 <signal name="IM8_O1">
 <contactref element="IM8" pad="OUT1"/>
-<contactref element="X4" pad="2"/>
 <contactref element="JP32" pad="1"/>
-<wire x1="7.115" y1="46.99" x2="8.385" y2="45.72" width="1.75" layer="16"/>
-<wire x1="8.385" y1="45.72" x2="14.1" y2="45.72" width="1.75" layer="16"/>
-<wire x1="14.1" y1="45.72" x2="14.1" y2="46.99" width="1.75" layer="1"/>
-<wire x1="14.1" y1="46.99" x2="15.37" y2="48.26" width="1.75" layer="1"/>
-<wire x1="22.99" y1="43.18" x2="23.99" y2="43.18" width="1.75" layer="1"/>
-<wire x1="15.37" y1="48.26" x2="17.91" y2="48.26" width="1.75" layer="1"/>
-<wire x1="17.91" y1="48.26" x2="22.99" y2="43.18" width="1.75" layer="1"/>
+<wire x1="14.1" y1="45.72" x2="14.1" y2="46.99" width="1.8" layer="1"/>
+<wire x1="14.1" y1="46.99" x2="15.37" y2="48.26" width="1.8" layer="1"/>
+<wire x1="22.99" y1="43.18" x2="23.99" y2="43.18" width="1.8" layer="1"/>
+<wire x1="15.37" y1="48.26" x2="17.91" y2="48.26" width="1.8" layer="1"/>
+<wire x1="17.91" y1="48.26" x2="22.99" y2="43.18" width="1.8" layer="1"/>
+<contactref element="X4" pad="1"/>
+<wire x1="8.255" y1="45.72" x2="6.985" y2="46.99" width="1.8" layer="16"/>
+<wire x1="14.1" y1="45.72" x2="8.255" y2="45.72" width="1.8" layer="16"/>
 </signal>
 <signal name="IM7_O4">
 <contactref element="IM7" pad="OUT4"/>
-<contactref element="X7" pad="1"/>
 <contactref element="JP35" pad="6"/>
 <wire x1="16.64" y1="12.7" x2="16.64" y2="11.43" width="1.8" layer="16"/>
 <wire x1="16.64" y1="11.43" x2="15.37" y2="10.16" width="1.8" layer="16"/>
-<wire x1="15.37" y1="10.16" x2="11.56" y2="10.16" width="1.8" layer="16"/>
+<wire x1="15.37" y1="10.16" x2="12.7" y2="10.16" width="1.8" layer="16"/>
+<wire x1="12.7" y1="10.16" x2="11.56" y2="10.16" width="1.8" layer="16"/>
 <wire x1="11.56" y1="10.16" x2="10.29" y2="11.43" width="1.8" layer="16"/>
-<wire x1="10.29" y1="11.43" x2="7.115" y2="11.43" width="1.8" layer="16"/>
-<wire x1="16.64" y1="12.7" x2="19.18" y2="12.7" width="1.75" layer="16"/>
-<wire x1="19.18" y1="12.7" x2="21.72" y2="15.24" width="1.75" layer="16"/>
-<wire x1="21.72" y1="15.24" x2="23.99" y2="15.24" width="1.75" layer="16"/>
+<wire x1="16.64" y1="12.7" x2="19.18" y2="12.7" width="1.8" layer="16"/>
+<wire x1="19.18" y1="12.7" x2="21.72" y2="15.24" width="1.8" layer="16"/>
+<wire x1="21.72" y1="15.24" x2="23.99" y2="15.24" width="1.8" layer="16"/>
+<contactref element="X7" pad="2"/>
+<wire x1="10.29" y1="11.43" x2="6.985" y2="11.43" width="1.8" layer="16"/>
 </signal>
 <signal name="IM7_O3">
 <contactref element="IM7" pad="OUT3"/>
-<contactref element="X7" pad="2"/>
 <contactref element="JP35" pad="1"/>
-<wire x1="5.21" y1="16.51" x2="7.115" y2="16.51" width="1.8" layer="16"/>
 <wire x1="14.1" y1="27.94" x2="16.64" y2="25.4" width="1.8" layer="16"/>
 <wire x1="3.94" y1="27.94" x2="5.21" y2="29.21" width="1.8" layer="16"/>
 <wire x1="3.94" y1="27.94" x2="3.94" y2="17.78" width="1.8" layer="16"/>
-<wire x1="3.94" y1="17.78" x2="5.21" y2="16.51" width="1.8" layer="16"/>
-<wire x1="16.64" y1="25.4" x2="17.91" y2="25.4" width="1.75" layer="16"/>
-<wire x1="17.91" y1="25.4" x2="19.18" y2="24.13" width="1.75" layer="16"/>
-<wire x1="19.18" y1="24.13" x2="19.18" y2="19.05" width="1.75" layer="16"/>
-<wire x1="19.18" y1="19.05" x2="20.45" y2="17.78" width="1.75" layer="16"/>
-<wire x1="20.45" y1="17.78" x2="23.99" y2="17.78" width="1.75" layer="16"/>
-<wire x1="5.21" y1="29.21" x2="9.02" y2="29.21" width="1.75" layer="16"/>
-<wire x1="9.02" y1="29.21" x2="10.29" y2="27.94" width="1.75" layer="16"/>
-<wire x1="10.29" y1="27.94" x2="14.1" y2="27.94" width="1.75" layer="16"/>
+<wire x1="5.21" y1="16.51" x2="3.94" y2="17.78" width="1.8" layer="16"/>
+<wire x1="16.64" y1="25.4" x2="17.91" y2="25.4" width="1.8" layer="16"/>
+<wire x1="17.91" y1="25.4" x2="19.18" y2="24.13" width="1.8" layer="16"/>
+<wire x1="19.18" y1="24.13" x2="19.18" y2="19.05" width="1.8" layer="16"/>
+<wire x1="19.18" y1="19.05" x2="20.45" y2="17.78" width="1.8" layer="16"/>
+<wire x1="20.45" y1="17.78" x2="23.99" y2="17.78" width="1.8" layer="16"/>
+<wire x1="5.21" y1="29.21" x2="9.02" y2="29.21" width="1.8" layer="16"/>
+<wire x1="9.02" y1="29.21" x2="10.29" y2="27.94" width="1.8" layer="16"/>
+<wire x1="10.29" y1="27.94" x2="14.1" y2="27.94" width="1.8" layer="16"/>
+<contactref element="X7" pad="1"/>
+<wire x1="6.985" y1="16.51" x2="5.21" y2="16.51" width="1.8" layer="16"/>
 </signal>
 <signal name="IM7_O2">
 <contactref element="IM7" pad="OUT2"/>
-<contactref element="X3" pad="1"/>
 <contactref element="JP31" pad="6"/>
 <wire x1="14.1" y1="12.7" x2="12.83" y2="12.7" width="1.8" layer="16"/>
 <wire x1="10.29" y1="20.32" x2="9.02" y2="21.59" width="1.8" layer="16"/>
-<wire x1="9.02" y1="21.59" x2="7.115" y2="21.59" width="1.8" layer="16"/>
 <wire x1="12.83" y1="12.7" x2="10.29" y2="15.24" width="1.8" layer="16"/>
 <wire x1="10.29" y1="15.24" x2="10.29" y2="20.32" width="1.8" layer="16"/>
-<wire x1="14.1" y1="12.7" x2="14.1" y2="11.43" width="1.75" layer="1"/>
-<wire x1="14.1" y1="11.43" x2="15.37" y2="10.16" width="1.75" layer="1"/>
-<wire x1="15.37" y1="10.16" x2="17.91" y2="10.16" width="1.75" layer="1"/>
-<wire x1="21.72" y1="13.97" x2="21.72" y2="19.05" width="1.75" layer="1"/>
-<wire x1="17.91" y1="10.16" x2="21.72" y2="13.97" width="1.75" layer="1"/>
-<wire x1="22.99" y1="20.32" x2="23.99" y2="20.32" width="1.75" layer="1"/>
-<wire x1="21.72" y1="19.05" x2="22.99" y2="20.32" width="1.75" layer="1"/>
+<wire x1="14.1" y1="12.7" x2="14.1" y2="11.43" width="1.8" layer="1"/>
+<wire x1="14.1" y1="11.43" x2="15.37" y2="10.16" width="1.8" layer="1"/>
+<wire x1="15.37" y1="10.16" x2="17.91" y2="10.16" width="1.8" layer="1"/>
+<wire x1="21.72" y1="13.97" x2="21.72" y2="19.05" width="1.8" layer="1"/>
+<wire x1="17.91" y1="10.16" x2="21.72" y2="13.97" width="1.8" layer="1"/>
+<wire x1="22.99" y1="20.32" x2="23.99" y2="20.32" width="1.8" layer="1"/>
+<wire x1="21.72" y1="19.05" x2="22.99" y2="20.32" width="1.8" layer="1"/>
+<contactref element="X3" pad="2"/>
+<wire x1="9.02" y1="21.59" x2="6.985" y2="21.59" width="1.8" layer="16"/>
 </signal>
 <signal name="IM7_O1">
 <contactref element="IM7" pad="OUT1"/>
-<contactref element="X3" pad="2"/>
 <contactref element="JP31" pad="1"/>
-<wire x1="15.37" y1="27.94" x2="14.1" y2="26.67" width="1.75" layer="1"/>
-<wire x1="14.1" y1="26.67" x2="14.1" y2="25.4" width="1.75" layer="1"/>
-<wire x1="23.99" y1="22.86" x2="22.99" y2="22.86" width="1.75" layer="1"/>
-<wire x1="7.115" y1="26.67" x2="8.385" y2="25.4" width="1.75" layer="16"/>
-<wire x1="8.385" y1="25.4" x2="14.1" y2="25.4" width="1.75" layer="16"/>
-<wire x1="17.91" y1="27.94" x2="15.37" y2="27.94" width="1.75" layer="1"/>
-<wire x1="22.99" y1="22.86" x2="17.91" y2="27.94" width="1.75" layer="1"/>
+<wire x1="15.37" y1="27.94" x2="14.1" y2="26.67" width="1.8" layer="1"/>
+<wire x1="14.1" y1="26.67" x2="14.1" y2="25.4" width="1.8" layer="1"/>
+<wire x1="23.99" y1="22.86" x2="22.99" y2="22.86" width="1.8" layer="1"/>
+<wire x1="14.1" y1="25.4" x2="8.385" y2="25.4" width="1.8" layer="16"/>
+<wire x1="17.91" y1="27.94" x2="15.37" y2="27.94" width="1.8" layer="1"/>
+<wire x1="22.99" y1="22.86" x2="17.91" y2="27.94" width="1.8" layer="1"/>
+<contactref element="X3" pad="1"/>
+<wire x1="8.385" y1="25.4" x2="7.115" y2="26.67" width="1.8" layer="16"/>
+<wire x1="7.115" y1="26.67" x2="6.985" y2="26.67" width="1.8" layer="16"/>
 </signal>
 <signal name="ENC1A">
 <contactref element="JP31" pad="3"/>
@@ -4889,8 +4897,8 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="20.704" y1="20.32" x2="21.974" y2="19.05" width="0.2" layer="16"/>
 <wire x1="21.974" y1="19.05" x2="25.53" y2="19.05" width="0.2" layer="16"/>
 <wire x1="124.46" y1="59.69" x2="127" y2="59.69" width="0" layer="19" extent="1-1"/>
-<wire x1="76.2" y1="82.55" x2="124.46" y2="59.69" width="0" layer="19" extent="1-1"/>
-<wire x1="25.53" y1="19.05" x2="76.2" y2="82.55" width="0" layer="19" extent="16-16"/>
+<wire x1="78.74" y1="82.55" x2="124.46" y2="59.69" width="0" layer="19" extent="1-1"/>
+<wire x1="25.53" y1="19.05" x2="78.74" y2="82.55" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="ENC4A">
 <contactref element="JP36" pad="3"/>
@@ -4905,9 +4913,9 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="25.4" y1="41.91" x2="34.8664" y2="51.3764" width="0.2" layer="16"/>
 <wire x1="34.8664" y1="51.3764" x2="45.12335625" y2="51.3764" width="0.2" layer="16"/>
 <wire x1="45.12335625" y1="51.3764" x2="47.19335625" y2="53.4464" width="0.2" layer="16"/>
-<wire x1="127" y1="67.31" x2="124.46" y2="67.31" width="0" layer="19" extent="1-16"/>
-<wire x1="76.2" y1="57.15" x2="124.46" y2="67.31" width="0" layer="19" extent="1-1"/>
-<wire x1="47.19335625" y1="53.4464" x2="76.2" y2="57.15" width="0" layer="19" extent="16-16"/>
+<wire x1="124.46" y1="67.31" x2="127" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="78.74" y1="57.15" x2="124.46" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="47.19335625" y1="53.4464" x2="78.74" y2="57.15" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="ENC4B">
 <contactref element="JP36" pad="4"/>
@@ -4925,9 +4933,9 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="50.01198125" y1="53.4464" x2="52.04558125" y2="55.48" width="0.2" layer="16"/>
 <wire x1="45.28904375" y1="50.9764" x2="47.75904375" y2="53.4464" width="0.2" layer="16"/>
 <wire x1="47.75904375" y1="53.4464" x2="50.01198125" y2="53.4464" width="0.2" layer="16"/>
-<wire x1="127" y1="69.85" x2="124.46" y2="69.85" width="0" layer="19" extent="1-16"/>
-<wire x1="72.39" y1="54.61" x2="124.46" y2="69.85" width="0" layer="19" extent="1-1"/>
-<wire x1="62.23" y1="55.48" x2="72.39" y2="54.61" width="0" layer="19" extent="16-16"/>
+<wire x1="124.46" y1="69.85" x2="127" y2="69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="74.93" y1="54.61" x2="124.46" y2="69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="62.23" y1="55.48" x2="74.93" y2="54.61" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="ENC3A">
 <contactref element="JP32" pad="3"/>
@@ -4948,17 +4956,15 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <via x="63.5" y="55.8214" extent="1-16" drill="0.35"/>
 <wire x1="49.06126875" y1="55.88" x2="63.4414" y2="55.88" width="0.2" layer="16"/>
 <wire x1="124.46" y1="62.23" x2="127" y2="62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="76.2" y1="77.47" x2="124.46" y2="62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="63.4414" y1="55.88" x2="76.2" y2="77.47" width="0" layer="19" extent="16-16"/>
+<wire x1="78.74" y1="77.47" x2="124.46" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="63.4414" y1="55.88" x2="78.74" y2="77.47" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="ENC3B">
 <contactref element="JP32" pad="4"/>
 <contactref element="JP15" pad="11"/>
 <contactref element="JP15" pad="12"/>
 <contactref element="RN3" pad="6"/>
-<wire x1="14.1" y1="38.1" x2="15.37" y2="36.83" width="0.2" layer="16"/>
-<wire x1="15.37" y1="36.83" x2="25.53" y2="36.83" width="0.2" layer="16"/>
-<wire x1="25.53" y1="36.83" x2="39.2764" y2="50.5764" width="0.2" layer="16"/>
+<wire x1="39.2764" y1="50.5764" x2="25.53" y2="36.83" width="0.2" layer="16"/>
 <wire x1="39.2764" y1="50.5764" x2="45.45473125" y2="50.5764" width="0.2" layer="16"/>
 <wire x1="45.45473125" y1="50.5764" x2="45.78473125" y2="50.9064" width="0.2" layer="16"/>
 <wire x1="45.78473125" y1="50.9064" x2="50.01198125" y2="50.9064" width="0.2" layer="16"/>
@@ -4967,9 +4973,11 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <via x="62.215984375" y="54.595984375" extent="1-16" drill="0.35"/>
 <wire x1="62.215984375" y1="54.595984375" x2="62.8064" y2="55.1864" width="0.2" layer="1"/>
 <wire x1="54.18558125" y1="55.08" x2="61.73196875" y2="55.08" width="0.2" layer="16"/>
+<wire x1="25.53" y1="36.83" x2="15.37" y2="36.83" width="0.2" layer="16"/>
+<wire x1="15.37" y1="36.83" x2="14.1" y2="38.1" width="0.2" layer="16"/>
 <wire x1="124.46" y1="64.77" x2="127" y2="64.77" width="0" layer="19" extent="1-1"/>
-<wire x1="76.2" y1="72.39" x2="124.46" y2="64.77" width="0" layer="19" extent="1-1"/>
-<wire x1="62.8064" y1="55.1864" x2="76.2" y2="72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="78.74" y1="72.39" x2="124.46" y2="64.77" width="0" layer="19" extent="1-1"/>
+<wire x1="62.8064" y1="55.1864" x2="78.74" y2="72.39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC5A">
 <contactref element="JP33" pad="3"/>
@@ -4990,9 +4998,9 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="50.01198125" y1="59.5836" x2="51.17558125" y2="58.42" width="0.2" layer="16"/>
 <wire x1="43.82801875" y1="59.5836" x2="50.01198125" y2="59.5836" width="0.2" layer="16"/>
 <wire x1="124.46" y1="72.39" x2="127" y2="72.39" width="0" layer="19" extent="1-1"/>
-<wire x1="102.87" y1="33.02" x2="124.46" y2="72.39" width="0" layer="19" extent="1-1"/>
-<wire x1="72.39" y1="59.69" x2="102.87" y2="33.02" width="0" layer="19" extent="1-1"/>
-<wire x1="51.17558125" y1="58.42" x2="72.39" y2="59.69" width="0" layer="19" extent="16-16"/>
+<wire x1="111.76" y1="45.72" x2="124.46" y2="72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="74.93" y1="59.69" x2="111.76" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="51.17558125" y1="58.42" x2="74.93" y2="59.69" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="ENC5B">
 <contactref element="JP33" pad="4"/>
@@ -5007,9 +5015,9 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="36.4265375" y1="52.1764" x2="44.79198125" y2="52.1764" width="0.2" layer="16"/>
 <wire x1="65.03303125" y1="56.4564" x2="49.07198125" y2="56.4564" width="0.2" layer="16"/>
 <wire x1="124.46" y1="74.93" x2="127" y2="74.93" width="0" layer="19" extent="1-1"/>
-<wire x1="102.87" y1="30.48" x2="124.46" y2="74.93" width="0" layer="19" extent="1-1"/>
-<wire x1="65.03303125" y1="56.4564" x2="102.87" y2="30.48" width="0" layer="19" extent="16-16"/>
-<wire x1="72.39" y1="64.77" x2="65.03303125" y2="56.4564" width="0" layer="19" extent="16-16"/>
+<wire x1="111.76" y1="48.26" x2="124.46" y2="74.93" width="0" layer="19" extent="1-1"/>
+<wire x1="74.93" y1="64.77" x2="111.76" y2="48.26" width="0" layer="19" extent="1-1"/>
+<wire x1="65.03303125" y1="56.4564" x2="74.93" y2="64.77" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="ENC6A">
 <contactref element="JP37" pad="3"/>
@@ -5020,13 +5028,11 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="17.91" y1="60.96" x2="19.18" y2="62.23" width="0.2" layer="1"/>
 <wire x1="19.18" y1="62.23" x2="21.59" y2="62.23" width="0.2" layer="1"/>
 <via x="21.59" y="62.23" extent="1-16" drill="0.35"/>
-<wire x1="68.30088125" y1="58.0095625" x2="68.30088125" y2="58.14088125" width="0" layer="19" extent="1-16"/>
 <wire x1="27.5043125" y1="62.23" x2="32.4779125" y2="57.2564" width="0.2" layer="16"/>
 <wire x1="21.59" y1="62.23" x2="27.5043125" y2="62.23" width="0.2" layer="16"/>
 <wire x1="124.46" y1="77.47" x2="127" y2="77.47" width="0" layer="19" extent="1-1"/>
-<wire x1="72.39" y1="69.85" x2="124.46" y2="77.47" width="0" layer="19" extent="1-1"/>
-<wire x1="68.30088125" y1="58.14088125" x2="72.39" y2="69.85" width="0" layer="19" extent="16-16"/>
-<wire x1="32.4779125" y1="57.2564" x2="68.30088125" y2="58.0095625" width="0" layer="19" extent="16-16"/>
+<wire x1="74.93" y1="69.85" x2="124.46" y2="77.47" width="0" layer="19" extent="1-1"/>
+<wire x1="32.4779125" y1="57.2564" x2="74.93" y2="69.85" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="ENC6B">
 <contactref element="JP37" pad="4"/>
@@ -5039,14 +5045,13 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="20.704" y1="60.96" x2="21.974" y2="59.69" width="0.2" layer="16"/>
 <wire x1="29.478625" y1="59.69" x2="34.452225" y2="54.7164" width="0.2" layer="16"/>
 <wire x1="21.974" y1="59.69" x2="29.478625" y2="59.69" width="0.2" layer="16"/>
-<wire x1="72.39" y1="74.93" x2="64.77" y2="71.12" width="0" layer="19" extent="1-16"/>
 <via x="64.77" y="57.0914" extent="1-16" drill="0.35"/>
 <wire x1="46.76629375" y1="54.7164" x2="49.14129375" y2="57.0914" width="0.2" layer="16"/>
 <wire x1="49.14129375" y1="57.0914" x2="64.77" y2="57.0914" width="0.2" layer="16"/>
 <wire x1="34.452225" y1="54.7164" x2="46.76629375" y2="54.7164" width="0.2" layer="16"/>
 <wire x1="124.46" y1="80.01" x2="127" y2="80.01" width="0" layer="19" extent="1-1"/>
-<wire x1="72.39" y1="74.93" x2="124.46" y2="80.01" width="0" layer="19" extent="1-1"/>
-<wire x1="64.77" y1="57.0914" x2="64.77" y2="71.12" width="0" layer="19" extent="1-1"/>
+<wire x1="74.93" y1="74.93" x2="124.46" y2="80.01" width="0" layer="19" extent="1-1"/>
+<wire x1="64.77" y1="57.0914" x2="74.93" y2="74.93" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC7A">
 <contactref element="JP34" pad="3"/>
@@ -5066,8 +5071,8 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="42.66441875" y1="78.74" x2="43.82801875" y2="79.9036" width="0.2" layer="16"/>
 <wire x1="44.79198125" y1="79.9036" x2="45.95558125" y2="78.74" width="0.2" layer="16"/>
 <wire x1="124.46" y1="82.55" x2="127" y2="82.55" width="0" layer="19" extent="1-1"/>
-<wire x1="72.39" y1="80.01" x2="124.46" y2="82.55" width="0" layer="19" extent="1-1"/>
-<wire x1="45.95558125" y1="78.74" x2="72.39" y2="80.01" width="0" layer="19" extent="16-16"/>
+<wire x1="74.93" y1="80.01" x2="124.46" y2="82.55" width="0" layer="19" extent="1-1"/>
+<wire x1="45.95558125" y1="78.74" x2="74.93" y2="80.01" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="ENC7B">
 <contactref element="JP34" pad="4"/>
@@ -5076,8 +5081,7 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="RN5" pad="1"/>
 <wire x1="14.1" y1="78.74" x2="15.37" y2="77.47" width="0.2" layer="16"/>
 <wire x1="15.37" y1="77.47" x2="25.53" y2="77.47" width="0.2" layer="16"/>
-<wire x1="25.53" y1="77.47" x2="26.1" y2="78.04" width="0.2" layer="16"/>
-<wire x1="26.1" y1="78.04" x2="26.8" y2="78.74" width="0.2" layer="16"/>
+<wire x1="25.53" y1="77.47" x2="26.8" y2="78.74" width="0.2" layer="16"/>
 <wire x1="26.8" y1="78.74" x2="29.21" y2="78.74" width="0.2" layer="16"/>
 <via x="29.21" y="78.74" extent="1-16" drill="0.35"/>
 <wire x1="29.21" y1="78.74" x2="30.48" y2="78.74" width="0.2" layer="1"/>
@@ -5087,8 +5091,8 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="36.7236" y1="84.9836" x2="44.79198125" y2="84.9836" width="0.2" layer="16"/>
 <wire x1="31.75" y1="80.01" x2="36.7236" y2="84.9836" width="0.2" layer="16"/>
 <wire x1="124.46" y1="85.09" x2="127" y2="85.09" width="0" layer="19" extent="1-1"/>
-<wire x1="72.39" y1="85.09" x2="124.46" y2="85.09" width="0" layer="19" extent="1-1"/>
-<wire x1="45.95558125" y1="83.82" x2="72.39" y2="85.09" width="0" layer="19" extent="16-16"/>
+<wire x1="74.93" y1="85.09" x2="124.46" y2="85.09" width="0" layer="19" extent="1-1"/>
+<wire x1="45.95558125" y1="83.82" x2="74.93" y2="85.09" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="ENC8A">
 <contactref element="JP38" pad="3"/>
@@ -5104,9 +5108,9 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="32.4779125" y1="77.5764" x2="54.5036" y2="77.5764" width="0.2" layer="16"/>
 <wire x1="21.59" y1="82.55" x2="27.5043125" y2="82.55" width="0.2" layer="16"/>
 <wire x1="124.46" y1="87.63" x2="127" y2="87.63" width="0" layer="19" extent="1-1"/>
-<wire x1="76.2" y1="64.77" x2="124.46" y2="87.63" width="0" layer="19" extent="1-1"/>
-<wire x1="73.66" y1="40.64" x2="76.2" y2="64.77" width="0" layer="19" extent="1-1"/>
-<wire x1="54.5036" y1="77.5764" x2="76.2" y2="64.77" width="0" layer="19" extent="16-16"/>
+<wire x1="78.74" y1="64.77" x2="124.46" y2="87.63" width="0" layer="19" extent="1-1"/>
+<wire x1="54.5036" y1="77.5764" x2="78.74" y2="64.77" width="0" layer="19" extent="16-16"/>
+<wire x1="67.31" y1="96.52" x2="54.5036" y2="77.5764" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="ENC8B">
 <contactref element="JP38" pad="4"/>
@@ -5116,30 +5120,29 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="19.434" y1="81.534" x2="20.704" y2="81.534" width="0.2" layer="1"/>
 <via x="20.704" y="81.534" extent="1-16" drill="0.35"/>
 <wire x1="22.228" y1="80.01" x2="20.704" y2="81.534" width="0.2" layer="16"/>
-<wire x1="22.228" y1="80.01" x2="25.53" y2="80.01" width="0.2" layer="16"/>
 <wire x1="16.64" y1="78.74" x2="19.434" y2="81.534" width="0.2" layer="1"/>
-<wire x1="25.53" y1="80.01" x2="29.478625" y2="80.01" width="0.2" layer="16"/>
+<wire x1="22.228" y1="80.01" x2="29.478625" y2="80.01" width="0.2" layer="16"/>
 <wire x1="44.79198125" y1="75.0364" x2="45.95558125" y2="76.2" width="0.2" layer="16"/>
 <wire x1="45.95558125" y1="76.2" x2="54.61" y2="76.2" width="0.2" layer="16"/>
 <wire x1="29.478625" y1="80.01" x2="34.452225" y2="75.0364" width="0.2" layer="16"/>
 <wire x1="34.452225" y1="75.0364" x2="44.79198125" y2="75.0364" width="0.2" layer="16"/>
 <wire x1="124.46" y1="90.17" x2="127" y2="90.17" width="0" layer="19" extent="1-1"/>
-<wire x1="81.28" y1="85.09" x2="124.46" y2="90.17" width="0" layer="19" extent="1-1"/>
-<wire x1="54.61" y1="76.2" x2="81.28" y2="85.09" width="0" layer="19" extent="16-16"/>
+<wire x1="82.55" y1="85.09" x2="124.46" y2="90.17" width="0" layer="19" extent="1-1"/>
+<wire x1="54.61" y1="76.2" x2="82.55" y2="85.09" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="EA6">
 <contactref element="JP16" pad="25"/>
 <contactref element="JP16" pad="26"/>
 <contactref element="RN1" pad="14"/>
 <wire x1="124.46" y1="41.91" x2="127" y2="41.91" width="0" layer="19" extent="1-1"/>
-<wire x1="92.71" y1="44.45" x2="124.46" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="46.99" x2="124.46" y2="41.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EA7">
 <contactref element="JP16" pad="27"/>
 <contactref element="JP16" pad="28"/>
 <contactref element="RN3" pad="8"/>
 <wire x1="124.46" y1="44.45" x2="127" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="76.2" y1="67.31" x2="124.46" y2="44.45" width="0" layer="19" extent="1-1"/>
+<wire x1="78.74" y1="67.31" x2="124.46" y2="44.45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EINT0">
 <contactref element="JP16" pad="29"/>
@@ -5147,8 +5150,8 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="IC1" pad="20"/>
 <contactref element="JP6" pad="2"/>
 <wire x1="124.46" y1="46.99" x2="127" y2="46.99" width="0" layer="19" extent="1-1"/>
-<wire x1="99.06" y1="26.67" x2="124.46" y2="46.99" width="0" layer="19" extent="1-1"/>
-<wire x1="88.9" y1="24.13" x2="99.06" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="96.52" y1="36.83" x2="124.46" y2="46.99" width="0" layer="19" extent="1-1"/>
+<wire x1="88.9" y1="26.67" x2="96.52" y2="36.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EINT1">
 <contactref element="JP16" pad="31"/>
@@ -5156,8 +5159,8 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="IC1" pad="19"/>
 <contactref element="JP6" pad="1"/>
 <wire x1="124.46" y1="49.53" x2="127" y2="49.53" width="0" layer="19" extent="1-1"/>
-<wire x1="99.06" y1="24.13" x2="124.46" y2="49.53" width="0" layer="19" extent="1-1"/>
-<wire x1="88.9" y1="21.59" x2="99.06" y2="24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="96.52" y1="34.29" x2="124.46" y2="49.53" width="0" layer="19" extent="1-1"/>
+<wire x1="88.9" y1="24.13" x2="96.52" y2="34.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="IM6" pad="19"/>
@@ -5184,8 +5187,8 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="JP45" pad="4"/>
 <contactref element="JP44" pad="4"/>
 <contactref element="JP43" pad="4"/>
-<wire x1="14.1" y1="43.18" x2="16.64" y2="43.18" width="2" layer="1"/>
-<wire x1="14.1" y1="63.5" x2="16.64" y2="63.5" width="2" layer="1"/>
+<wire x1="14.1" y1="43.18" x2="16.64" y2="43.18" width="1.8" layer="1"/>
+<wire x1="14.1" y1="63.5" x2="16.64" y2="63.5" width="1.8" layer="1"/>
 <wire x1="14.1" y1="22.86" x2="16.64" y2="22.86" width="1.8" layer="1"/>
 <wire x1="129.54" y1="26.67" x2="129.54" y2="29.21" width="0" layer="19" extent="1-1"/>
 <wire x1="129.54" y1="24.13" x2="129.54" y2="26.67" width="0" layer="19" extent="1-1"/>
@@ -5195,13 +5198,13 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="129.54" y1="13.97" x2="129.54" y2="16.51" width="0" layer="19" extent="1-1"/>
 <wire x1="129.54" y1="11.43" x2="129.54" y2="13.97" width="0" layer="19" extent="1-1"/>
 <wire x1="139.7" y1="16.51" x2="129.54" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="106.68" y1="16.51" x2="129.54" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="106.68" y1="13.97" x2="106.68" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="106.68" y1="11.43" x2="106.68" y2="13.97" width="0" layer="19" extent="1-1"/>
-<wire x1="81.28" y1="52.07" x2="106.68" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="64.77" y1="49.53" x2="81.28" y2="52.07" width="0" layer="19" extent="1-1"/>
-<wire x1="60.69" y1="69.52" x2="64.77" y2="49.53" width="0" layer="19" extent="1-1"/>
-<wire x1="64.77" y1="71.12" x2="60.69" y2="69.52" width="0" layer="19" extent="1-1"/>
+<wire x1="104.14" y1="30.48" x2="129.54" y2="29.21" width="0" layer="19" extent="1-1"/>
+<wire x1="104.14" y1="27.94" x2="104.14" y2="30.48" width="0" layer="19" extent="1-1"/>
+<wire x1="104.14" y1="25.4" x2="104.14" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="82.55" y1="52.07" x2="104.14" y2="30.48" width="0" layer="19" extent="1-1"/>
+<wire x1="69.85" y1="55.88" x2="82.55" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="69.58" y1="59.36" x2="69.85" y2="55.88" width="0" layer="19" extent="1-1"/>
+<wire x1="64.77" y1="49.53" x2="69.85" y2="55.88" width="0" layer="19" extent="1-1"/>
 <wire x1="16.64" y1="43.18" x2="64.77" y2="49.53" width="0" layer="19" extent="1-1"/>
 <wire x1="16.64" y1="63.5" x2="16.64" y2="43.18" width="0" layer="19" extent="1-1"/>
 <wire x1="16.64" y1="83.82" x2="16.64" y2="63.5" width="0" layer="19" extent="1-1"/>
@@ -5294,7 +5297,15 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="32.89" y1="62.23" x2="31.75" y2="62.23" width="0.5" layer="1"/>
 <wire x1="31.75" y1="62.23" x2="31.2166" y2="62.7634" width="0.5" layer="1"/>
 <wire x1="31.2166" y1="62.7634" x2="31.2166" y2="65.405" width="0.5" layer="1"/>
+<wire x1="118.11" y1="102.87" x2="118.11" y2="105.41" width="0" layer="19" extent="1-1"/>
+<wire x1="118.11" y1="100.33" x2="118.11" y2="102.87" width="0" layer="19" extent="1-1"/>
+<wire x1="118.11" y1="97.79" x2="118.11" y2="100.33" width="0" layer="19" extent="1-1"/>
+<wire x1="118.11" y1="95.25" x2="118.11" y2="97.79" width="0" layer="19" extent="1-1"/>
+<wire x1="118.11" y1="92.71" x2="118.11" y2="95.25" width="0" layer="19" extent="1-1"/>
+<wire x1="118.11" y1="90.17" x2="118.11" y2="92.71" width="0" layer="19" extent="1-1"/>
+<wire x1="119.38" y1="90.17" x2="118.11" y2="90.17" width="0" layer="19" extent="1-1"/>
 <wire x1="119.38" y1="87.63" x2="119.38" y2="90.17" width="0" layer="19" extent="1-1"/>
+<wire x1="118.11" y1="87.63" x2="119.38" y2="87.63" width="0" layer="19" extent="1-1"/>
 <wire x1="119.38" y1="85.09" x2="119.38" y2="87.63" width="0" layer="19" extent="1-1"/>
 <wire x1="119.38" y1="82.55" x2="119.38" y2="85.09" width="0" layer="19" extent="1-1"/>
 <wire x1="119.38" y1="80.01" x2="119.38" y2="82.55" width="0" layer="19" extent="1-1"/>
@@ -5325,33 +5336,25 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="119.38" y1="16.51" x2="119.38" y2="19.05" width="0" layer="19" extent="1-1"/>
 <wire x1="119.38" y1="13.97" x2="119.38" y2="16.51" width="0" layer="19" extent="1-1"/>
 <wire x1="119.38" y1="11.43" x2="119.38" y2="13.97" width="0" layer="19" extent="1-1"/>
-<wire x1="111.76" y1="55.88" x2="119.38" y2="57.15" width="0" layer="19" extent="1-1"/>
-<wire x1="106.68" y1="19.05" x2="119.38" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="106.68" y1="8.89" x2="106.68" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="106.68" y1="6.35" x2="106.68" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="102.87" y1="38.1" x2="119.38" y2="39.37" width="0" layer="19" extent="1-1"/>
-<wire x1="97.79" y1="39.37" x2="102.87" y2="38.1" width="0" layer="19" extent="1-1"/>
-<wire x1="97.79" y1="41.91" x2="97.79" y2="39.37" width="0" layer="19" extent="1-1"/>
-<wire x1="88.9" y1="11.43" x2="106.68" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="81.28" y1="24.13" x2="88.9" y2="11.43" width="0" layer="19" extent="1-1"/>
-<wire x1="118.11" y1="87.63" x2="81.28" y2="24.13" width="0" layer="19" extent="1-1"/>
-<wire x1="118.11" y1="90.17" x2="118.11" y2="87.63" width="0" layer="19" extent="1-1"/>
-<wire x1="118.11" y1="92.71" x2="118.11" y2="90.17" width="0" layer="19" extent="1-1"/>
-<wire x1="118.11" y1="95.25" x2="118.11" y2="92.71" width="0" layer="19" extent="1-1"/>
-<wire x1="118.11" y1="97.79" x2="118.11" y2="95.25" width="0" layer="19" extent="1-1"/>
-<wire x1="118.11" y1="100.33" x2="118.11" y2="97.79" width="0" layer="19" extent="1-1"/>
-<wire x1="118.11" y1="102.87" x2="118.11" y2="100.33" width="0" layer="19" extent="1-1"/>
-<wire x1="118.11" y1="105.41" x2="118.11" y2="102.87" width="0" layer="19" extent="1-1"/>
-<wire x1="32.89" y1="21.59" x2="118.11" y2="87.63" width="0" layer="19" extent="1-1"/>
+<wire x1="115.57" y1="41.91" x2="119.38" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="115.57" y1="36.83" x2="119.38" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="111.76" y1="40.64" x2="115.57" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="111.76" y1="57.15" x2="119.38" y2="57.15" width="0" layer="19" extent="1-1"/>
+<wire x1="104.14" y1="22.86" x2="119.38" y2="24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="104.14" y1="20.32" x2="104.14" y2="22.86" width="0" layer="19" extent="1-1"/>
+<wire x1="104.14" y1="17.78" x2="104.14" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="88.9" y1="13.97" x2="104.14" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="81.28" y1="26.67" x2="88.9" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="71.12" y1="21.59" x2="81.28" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="71.12" y1="26.035" x2="71.12" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="32.89" y1="21.59" x2="71.12" y2="26.035" width="0" layer="19" extent="1-1"/>
 <wire x1="30.61" y1="2.54" x2="31.75" y2="21.59" width="0" layer="19" extent="1-1"/>
-<wire x1="71.12" y1="25.4" x2="118.11" y2="105.41" width="0" layer="19" extent="1-1"/>
-<wire x1="69.22" y1="21.59" x2="71.12" y2="25.4" width="0" layer="19" extent="1-1"/>
-<wire x1="68.58" y1="12.7" x2="69.22" y2="21.59" width="0" layer="19" extent="1-1"/>
-<wire x1="62.23" y1="13.335" x2="68.58" y2="12.7" width="0" layer="19" extent="1-1"/>
-<wire x1="68.58" y1="96.52" x2="62.23" y2="13.335" width="0" layer="19" extent="1-1"/>
-<wire x1="81.28" y1="97.79" x2="68.58" y2="96.52" width="0" layer="19" extent="1-1"/>
-<wire x1="30.61" y1="97.79" x2="68.58" y2="12.7" width="0" layer="19" extent="1-1"/>
-<wire x1="31.2166" y1="65.405" x2="69.22" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="82.55" y1="97.79" x2="118.11" y2="97.79" width="0" layer="19" extent="1-1"/>
+<wire x1="71.12" y1="96.52" x2="82.55" y2="97.79" width="0" layer="19" extent="1-1"/>
+<wire x1="66.04" y1="78.74" x2="71.12" y2="96.52" width="0" layer="19" extent="1-1"/>
+<wire x1="67.31" y1="66.68" x2="66.04" y2="78.74" width="0" layer="19" extent="1-1"/>
+<wire x1="32.89" y1="62.23" x2="67.31" y2="66.68" width="0" layer="19" extent="1-1"/>
+<wire x1="30.61" y1="97.79" x2="31.2166" y2="65.405" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="IM10" pad="VCC"/>
@@ -5368,19 +5371,36 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="IM4" pad="IN"/>
 <contactref element="IM5" pad="IN"/>
 <contactref element="Q3" pad="1"/>
+<polygon width="0.2" layer="1" rank="2">
+<vertex x="44.196" y="87.376"/>
+<vertex x="44.196" y="12.446"/>
+<vertex x="43.18" y="11.43"/>
+<vertex x="36.83" y="11.43"/>
+<vertex x="34.29" y="8.89"/>
+<vertex x="34.29" y="0"/>
+<vertex x="54.61" y="0"/>
+<vertex x="54.61" y="7.62"/>
+<vertex x="62.23" y="15.24"/>
+<vertex x="62.23" y="41.91"/>
+<vertex x="63.5" y="43.18"/>
+<vertex x="64.77" y="43.18"/>
+<vertex x="64.77" y="45.72"/>
+<vertex x="63.5" y="45.72"/>
+<vertex x="62.23" y="46.99"/>
+<vertex x="62.23" y="85.09"/>
+<vertex x="50.8" y="96.52"/>
+<vertex x="40.64" y="96.52"/>
+<vertex x="39.37" y="95.25"/>
+<vertex x="39.37" y="90.17"/>
+<vertex x="41.91" y="87.63"/>
+<vertex x="43.942" y="87.63"/>
+</polygon>
 <wire x1="139.7" y1="58.42" x2="139.7" y2="73.66" width="0" layer="19" extent="1-1"/>
 <wire x1="139.7" y1="43.18" x2="139.7" y2="58.42" width="0" layer="19" extent="1-1"/>
 <wire x1="139.7" y1="27.94" x2="139.7" y2="43.18" width="0" layer="19" extent="1-1"/>
 <wire x1="73.66" y1="95.25" x2="139.7" y2="73.66" width="0" layer="19" extent="1-1"/>
-<wire x1="49.53" y1="8.89" x2="73.66" y2="95.25" width="0" layer="19" extent="1-1"/>
-<wire x1="41.78" y1="5.715" x2="49.53" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="44.31" y1="78.74" x2="49.53" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="69.85" y1="40.64" x2="44.31" y2="78.74" width="0" layer="19" extent="1-1"/>
-<wire x1="44.31" y1="58.42" x2="69.85" y2="40.64" width="0" layer="19" extent="1-1"/>
-<wire x1="64.77" y1="44.45" x2="44.31" y2="58.42" width="0" layer="19" extent="1-1"/>
-<wire x1="44.31" y1="38.1" x2="64.77" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="44.31" y1="17.78" x2="44.31" y2="38.1" width="0" layer="19" extent="1-1"/>
-<wire x1="36.7" y1="94.615" x2="44.31" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="62.23" y1="96.52" x2="73.66" y2="95.25" width="0" layer="19" extent="1-1"/>
+<wire x1="41.91" y1="94.615" x2="62.23" y2="96.52" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EN">
 <contactref element="IM10" pad="!SLEEP"/>
@@ -5396,28 +5416,26 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="IC1" pad="18"/>
 <contactref element="R8" pad="1"/>
 <contactref element="Q2" pad="1"/>
-<wire x1="26.20118125" y1="73.025" x2="26.20118125" y2="88.05920625" width="0.2" layer="1"/>
-<wire x1="26.20118125" y1="73.025" x2="26.20118125" y2="32.385" width="0.2" layer="1"/>
-<wire x1="26.20118125" y1="32.385" x2="26.20118125" y2="8.29118125" width="0.2" layer="1"/>
-<wire x1="26.20118125" y1="8.29118125" x2="20.45" y2="2.54" width="0.2" layer="1"/>
-<wire x1="31.2166" y1="32.385" x2="26.20118125" y2="32.385" width="0.2" layer="1"/>
-<wire x1="31.2166" y1="73.025" x2="26.20118125" y2="73.025" width="0.2" layer="1"/>
-<wire x1="62.23" y1="7.62" x2="81.28" y2="95.25" width="0" layer="19" extent="1-1"/>
-<wire x1="63.5" y1="15.24" x2="62.23" y2="7.62" width="0" layer="19" extent="1-1"/>
-<wire x1="68.58" y1="15.24" x2="63.5" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="31.2166" y1="73.025" x2="68.58" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="23.99" y1="86.36" x2="26.20118125" y2="88.05920625" width="0" layer="19" extent="1-1"/>
-<wire x1="23.99" y1="66.04" x2="26.20118125" y2="73.025" width="0" layer="19" extent="1-1"/>
-<wire x1="23.99" y1="25.4" x2="26.20118125" y2="32.385" width="0" layer="19" extent="1-1"/>
-<wire x1="23.99" y1="45.72" x2="26.20118125" y2="32.385" width="0" layer="19" extent="1-1"/>
-<wire x1="31.2166" y1="32.385" x2="88.9" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="26.20118125" y1="88.05920625" x2="20.45" y2="93.8103875" width="0.2" layer="1"/>
 <wire x1="20.45" y1="93.8103875" x2="20.45" y2="97.79" width="0.2" layer="1"/>
+<wire x1="26.308" y1="87.9523875" x2="20.45" y2="93.8103875" width="0.2" layer="1"/>
+<wire x1="26.308" y1="8.398" x2="26.308" y2="87.9523875" width="0.2" layer="1"/>
+<wire x1="20.45" y1="2.54" x2="26.308" y2="8.398" width="0.2" layer="1"/>
+<wire x1="57.15" y1="96.52" x2="82.55" y2="95.25" width="0" layer="19" extent="1-1"/>
+<wire x1="26.308" y1="87.9523875" x2="57.15" y2="96.52" width="0" layer="19" extent="1-1"/>
+<wire x1="23.99" y1="86.36" x2="26.308" y2="87.9523875" width="0" layer="19" extent="1-1"/>
+<wire x1="31.2166" y1="73.025" x2="23.99" y2="86.36" width="0" layer="19" extent="1-1"/>
+<wire x1="23.99" y1="66.04" x2="31.2166" y2="73.025" width="0" layer="19" extent="1-1"/>
+<wire x1="23.99" y1="25.4" x2="26.308" y2="8.398" width="0" layer="19" extent="1-1"/>
+<wire x1="31.2166" y1="32.385" x2="23.99" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="23.99" y1="45.72" x2="31.2166" y2="32.385" width="0" layer="19" extent="1-1"/>
+<wire x1="72.39" y1="27.94" x2="31.2166" y2="32.385" width="0" layer="19" extent="1-1"/>
+<wire x1="71.12" y1="19.05" x2="72.39" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="88.9" y1="21.59" x2="71.12" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="_EN_">
 <contactref element="Q2" pad="3"/>
 <contactref element="D1" pad="C"/>
-<wire x1="60.33" y1="21.59" x2="60.96" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="69.85" y1="27.94" x2="71.12" y2="34.93" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!FAULT0">
 <contactref element="IM7" pad="ULT"/>
@@ -5451,16 +5469,22 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="JP40" pad="2"/>
 <contactref element="JP16" pad="5"/>
 <contactref element="JP16" pad="6"/>
-<wire x1="97.79" y1="44.45" x2="111.76" y2="93.98" width="0" layer="19" extent="1-1"/>
-<wire x1="102.87" y1="43.18" x2="97.79" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="101.6" y1="19.05" x2="102.87" y2="43.18" width="0" layer="19" extent="1-1"/>
-<wire x1="101.6" y1="8.89" x2="101.6" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="101.6" y1="6.35" x2="101.6" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="81.28" y1="13.97" x2="101.6" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="124.46" y1="16.51" x2="101.6" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="15.37" y1="97.79" x2="19.561" y2="93.599" width="0.2" layer="1"/>
+<wire x1="19.9966875" y1="93.599" x2="25.908" y2="87.6876875" width="0.2" layer="1"/>
+<wire x1="19.561" y1="93.599" x2="19.9966875" y2="93.599" width="0.2" layer="1"/>
+<wire x1="25.908" y1="87.6876875" x2="25.908" y2="8.5636875" width="0.2" layer="1"/>
+<wire x1="17.91" y1="5.08" x2="15.37" y2="2.54" width="0.2" layer="1"/>
+<wire x1="22.4243125" y1="5.08" x2="17.91" y2="5.08" width="0.2" layer="1"/>
+<wire x1="25.908" y1="8.5636875" x2="22.4243125" y2="5.08" width="0.2" layer="1"/>
+<wire x1="111.76" y1="35.56" x2="111.76" y2="93.98" width="0" layer="19" extent="1-1"/>
+<wire x1="115.57" y1="34.29" x2="111.76" y2="35.56" width="0" layer="19" extent="1-1"/>
+<wire x1="99.06" y1="22.86" x2="111.76" y2="35.56" width="0" layer="19" extent="1-1"/>
+<wire x1="99.06" y1="20.32" x2="99.06" y2="22.86" width="0" layer="19" extent="1-1"/>
+<wire x1="99.06" y1="17.78" x2="99.06" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="81.28" y1="16.51" x2="99.06" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="124.46" y1="16.51" x2="115.57" y2="34.29" width="0" layer="19" extent="1-1"/>
 <wire x1="127" y1="16.51" x2="124.46" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="15.37" y1="2.54" x2="81.28" y2="13.97" width="0" layer="19" extent="1-1"/>
-<wire x1="15.37" y1="97.79" x2="111.76" y2="93.98" width="0" layer="19" extent="1-1"/>
+<wire x1="25.908" y1="8.5636875" x2="81.28" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
 <contactref element="R6" pad="1"/>
@@ -5474,16 +5498,23 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="JP40" pad="1"/>
 <contactref element="JP16" pad="7"/>
 <contactref element="JP16" pad="8"/>
-<wire x1="102.87" y1="40.64" x2="111.76" y2="88.9" width="0" layer="19" extent="1-1"/>
-<wire x1="97.79" y1="36.83" x2="102.87" y2="40.64" width="0" layer="19" extent="1-1"/>
-<wire x1="99.06" y1="19.05" x2="97.79" y2="36.83" width="0" layer="19" extent="1-1"/>
-<wire x1="99.06" y1="8.89" x2="99.06" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="99.06" y1="6.35" x2="99.06" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="81.28" y1="16.51" x2="99.06" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="124.46" y1="19.05" x2="99.06" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="12.83" y1="2.54" x2="15.77" y2="5.48" width="0.2" layer="1"/>
+<wire x1="15.77" y1="5.48" x2="22.258625" y2="5.48" width="0.2" layer="1"/>
+<wire x1="22.258625" y1="5.48" x2="25.508" y2="8.729375" width="0.2" layer="1"/>
+<wire x1="25.508" y1="8.729375" x2="25.508" y2="87.522" width="0.2" layer="1"/>
+<wire x1="25.508" y1="87.522" x2="20.32" y2="92.71" width="0.2" layer="1"/>
+<wire x1="20.32" y1="92.71" x2="19.831" y2="93.199" width="0.2" layer="1"/>
+<wire x1="17.421" y1="93.199" x2="12.83" y2="97.79" width="0.2" layer="1"/>
+<wire x1="19.831" y1="93.199" x2="17.421" y2="93.199" width="0.2" layer="1"/>
+<wire x1="115.57" y1="39.37" x2="111.76" y2="88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="111.76" y1="38.1" x2="115.57" y2="39.37" width="0" layer="19" extent="1-1"/>
+<wire x1="96.52" y1="22.86" x2="111.76" y2="38.1" width="0" layer="19" extent="1-1"/>
+<wire x1="96.52" y1="20.32" x2="96.52" y2="22.86" width="0" layer="19" extent="1-1"/>
+<wire x1="96.52" y1="17.78" x2="96.52" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="81.28" y1="19.05" x2="96.52" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="124.46" y1="19.05" x2="115.57" y2="39.37" width="0" layer="19" extent="1-1"/>
 <wire x1="127" y1="19.05" x2="124.46" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="12.83" y1="2.54" x2="81.28" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="12.83" y1="97.79" x2="12.83" y2="2.54" width="0" layer="19" extent="1-1"/>
+<wire x1="25.508" y1="8.729375" x2="81.28" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESP_!SHUTDOWN">
 <contactref element="R56" pad="2"/>
@@ -5497,21 +5528,30 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="RN3" pad="14"/>
 <contactref element="JP17" pad="16"/>
 <contactref element="JP17" pad="15"/>
-<wire x1="73.02" y1="21.59" x2="72.39" y2="12.7" width="0" layer="19" extent="1-1"/>
-<wire x1="71.12" y1="27.94" x2="73.02" y2="21.59" width="0" layer="19" extent="1-1"/>
-<wire x1="73.66" y1="38.1" x2="71.12" y2="27.94" width="0" layer="19" extent="1-1"/>
-<wire x1="64.77" y1="28.07" x2="71.12" y2="27.94" width="0" layer="19" extent="1-1"/>
-<wire x1="64.77" y1="31.62" x2="64.77" y2="28.07" width="0" layer="19" extent="1-1"/>
-<wire x1="71.12" y1="31.75" x2="64.77" y2="31.62" width="0" layer="19" extent="1-1"/>
-<wire x1="57.15" y1="8.89" x2="72.39" y2="12.7" width="0" layer="19" extent="1-1"/>
-<wire x1="76.2" y1="52.07" x2="71.12" y2="31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="129.54" y1="86.36" x2="76.2" y2="52.07" width="0" layer="19" extent="1-1"/>
-<wire x1="127" y1="86.36" x2="129.54" y2="86.36" width="0" layer="19" extent="1-1"/>
+<wire x1="64.77" y1="91.44" x2="67.31" y2="93.98" width="0" layer="19" extent="1-1"/>
+<wire x1="68.71" y1="87.63" x2="64.77" y2="91.44" width="0" layer="19" extent="1-1"/>
+<wire x1="68.71" y1="82.55" x2="68.71" y2="87.63" width="0" layer="19" extent="1-1"/>
+<wire x1="68.58" y1="78.74" x2="68.71" y2="82.55" width="0" layer="19" extent="1-1"/>
+<wire x1="64.77" y1="73.66" x2="68.58" y2="78.74" width="0" layer="19" extent="1-1"/>
+<wire x1="67.31" y1="70.48" x2="64.77" y2="73.66" width="0" layer="19" extent="1-1"/>
+<wire x1="78.74" y1="52.07" x2="67.31" y2="70.48" width="0" layer="19" extent="1-1"/>
+<wire x1="96.52" y1="13.97" x2="78.74" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="96.52" y1="11.43" x2="96.52" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="62.23" y1="8.89" x2="96.52" y2="11.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BATT_ANODE">
 <contactref element="X1" pad="2"/>
 <contactref element="Q3" pad="2"/>
-<wire x1="36.7" y1="5.715" x2="49.53" y2="6.35" width="0" layer="19" extent="1-1"/>
+<polygon width="0.2" layer="16">
+<vertex x="39.37" y="0"/>
+<vertex x="52.07" y="0"/>
+<vertex x="52.07" y="5.08"/>
+<vertex x="54.61" y="5.08"/>
+<vertex x="54.61" y="7.62"/>
+<vertex x="52.07" y="7.62"/>
+<vertex x="50.8" y="8.89"/>
+<vertex x="39.37" y="8.89"/>
+</polygon>
 </signal>
 <signal name="5V_2">
 <contactref element="JP13" pad="2"/>
@@ -5543,6 +5583,14 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="JP8" pad="2"/>
 <contactref element="JP7" pad="1"/>
 <contactref element="IM2" pad="OUT"/>
+<wire x1="135.89" y1="99.06" x2="135.89" y2="101.6" width="0" layer="19" extent="1-1"/>
+<wire x1="135.89" y1="96.52" x2="135.89" y2="99.06" width="0" layer="19" extent="1-1"/>
+<wire x1="135.89" y1="93.98" x2="135.89" y2="96.52" width="0" layer="19" extent="1-1"/>
+<wire x1="135.89" y1="91.44" x2="135.89" y2="93.98" width="0" layer="19" extent="1-1"/>
+<wire x1="135.89" y1="88.9" x2="135.89" y2="91.44" width="0" layer="19" extent="1-1"/>
+<wire x1="135.89" y1="86.36" x2="135.89" y2="88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="135.89" y1="83.82" x2="135.89" y2="86.36" width="0" layer="19" extent="1-1"/>
+<wire x1="129.54" y1="90.17" x2="135.89" y2="91.44" width="0" layer="19" extent="1-1"/>
 <wire x1="129.54" y1="87.63" x2="129.54" y2="90.17" width="0" layer="19" extent="1-1"/>
 <wire x1="129.54" y1="85.09" x2="129.54" y2="87.63" width="0" layer="19" extent="1-1"/>
 <wire x1="129.54" y1="82.55" x2="129.54" y2="85.09" width="0" layer="19" extent="1-1"/>
@@ -5563,61 +5611,53 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="139.7" y1="22.86" x2="129.54" y2="31.75" width="0" layer="19" extent="1-1"/>
 <wire x1="139.7" y1="19.05" x2="139.7" y2="22.86" width="0" layer="19" extent="1-1"/>
 <wire x1="146.05" y1="34.29" x2="139.7" y2="22.86" width="0" layer="19" extent="1-1"/>
-<wire x1="135.89" y1="93.98" x2="129.54" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="135.89" y1="96.52" x2="135.89" y2="93.98" width="0" layer="19" extent="1-1"/>
-<wire x1="135.89" y1="99.06" x2="135.89" y2="96.52" width="0" layer="19" extent="1-1"/>
-<wire x1="135.89" y1="101.6" x2="135.89" y2="99.06" width="0" layer="19" extent="1-1"/>
-<wire x1="135.89" y1="91.44" x2="135.89" y2="93.98" width="0" layer="19" extent="1-1"/>
-<wire x1="135.89" y1="88.9" x2="135.89" y2="91.44" width="0" layer="19" extent="1-1"/>
-<wire x1="135.89" y1="86.36" x2="135.89" y2="88.9" width="0" layer="19" extent="1-1"/>
-<wire x1="135.89" y1="83.82" x2="135.89" y2="86.36" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="IM1" pad="EN"/>
 <contactref element="JP1" pad="1"/>
-<wire x1="64.77" y1="41.91" x2="64.77" y2="38.1" width="0" layer="19" extent="1-1"/>
+<wire x1="64.77" y1="38.1" x2="64.77" y2="41.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EA0">
 <contactref element="JP16" pad="13"/>
 <contactref element="JP16" pad="14"/>
 <contactref element="RN1" pad="2"/>
 <wire x1="124.46" y1="26.67" x2="127" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="92.71" y1="13.97" x2="124.46" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="16.51" x2="124.46" y2="26.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EA1">
 <contactref element="JP16" pad="15"/>
 <contactref element="JP16" pad="16"/>
 <contactref element="RN1" pad="4"/>
 <wire x1="124.46" y1="29.21" x2="127" y2="29.21" width="0" layer="19" extent="1-1"/>
-<wire x1="92.71" y1="19.05" x2="124.46" y2="29.21" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="21.59" x2="124.46" y2="29.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EA2">
 <contactref element="JP16" pad="17"/>
 <contactref element="JP16" pad="18"/>
 <contactref element="RN1" pad="6"/>
 <wire x1="124.46" y1="31.75" x2="127" y2="31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="92.71" y1="24.13" x2="124.46" y2="31.75" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="26.67" x2="124.46" y2="31.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EA3">
 <contactref element="JP16" pad="19"/>
 <contactref element="JP16" pad="20"/>
 <contactref element="RN1" pad="8"/>
 <wire x1="124.46" y1="34.29" x2="127" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="92.71" y1="29.21" x2="124.46" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="31.75" x2="124.46" y2="34.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EA4">
 <contactref element="JP16" pad="21"/>
 <contactref element="JP16" pad="22"/>
 <contactref element="RN1" pad="10"/>
 <wire x1="124.46" y1="36.83" x2="127" y2="36.83" width="0" layer="19" extent="1-1"/>
-<wire x1="92.71" y1="34.29" x2="124.46" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="36.83" x2="124.46" y2="36.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EA5">
 <contactref element="JP16" pad="23"/>
 <contactref element="JP16" pad="24"/>
 <contactref element="RN1" pad="12"/>
 <wire x1="124.46" y1="39.37" x2="127" y2="39.37" width="0" layer="19" extent="1-1"/>
-<wire x1="92.71" y1="39.37" x2="124.46" y2="39.37" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="41.91" x2="124.46" y2="39.37" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EB0">
 <contactref element="JP17" pad="1"/>
@@ -5625,10 +5665,10 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="S1" pad="3"/>
 <contactref element="S1" pad="4"/>
 <contactref element="RN2" pad="2"/>
-<wire x1="129.54" y1="104.14" x2="77.47" y2="41.91" width="0" layer="19" extent="1-1"/>
-<wire x1="127" y1="104.14" x2="129.54" y2="104.14" width="0" layer="19" extent="1-1"/>
-<wire x1="82.2706" y1="8.3312" x2="127" y2="104.14" width="0" layer="19" extent="1-1"/>
+<wire x1="114.3" y1="11.43" x2="114.3" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="82.2706" y1="8.3312" x2="114.3" y2="11.43" width="0" layer="19" extent="1-1"/>
 <wire x1="82.2706" y1="1.8288" x2="82.2706" y2="8.3312" width="0" layer="19" extent="1-1"/>
+<wire x1="77.47" y1="44.45" x2="82.2706" y2="8.3312" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EB1">
 <contactref element="JP17" pad="3"/>
@@ -5636,10 +5676,10 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="S2" pad="3"/>
 <contactref element="S2" pad="4"/>
 <contactref element="RN2" pad="4"/>
-<wire x1="129.54" y1="101.6" x2="77.47" y2="36.83" width="0" layer="19" extent="1-1"/>
-<wire x1="127" y1="101.6" x2="129.54" y2="101.6" width="0" layer="19" extent="1-1"/>
-<wire x1="91.1606" y1="8.3312" x2="77.47" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="111.76" y1="11.43" x2="111.76" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="91.1606" y1="8.3312" x2="111.76" y2="11.43" width="0" layer="19" extent="1-1"/>
 <wire x1="91.1606" y1="1.8288" x2="91.1606" y2="8.3312" width="0" layer="19" extent="1-1"/>
+<wire x1="77.47" y1="39.37" x2="91.1606" y2="8.3312" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EB2">
 <contactref element="JP17" pad="5"/>
@@ -5647,46 +5687,46 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="S3" pad="3"/>
 <contactref element="RN2" pad="6"/>
 <contactref element="S3" pad="4"/>
-<wire x1="129.54" y1="99.06" x2="77.47" y2="31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="127" y1="99.06" x2="129.54" y2="99.06" width="0" layer="19" extent="1-1"/>
-<wire x1="73.3806" y1="8.3312" x2="127" y2="99.06" width="0" layer="19" extent="1-1"/>
+<wire x1="109.22" y1="11.43" x2="109.22" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="73.3806" y1="8.3312" x2="109.22" y2="11.43" width="0" layer="19" extent="1-1"/>
 <wire x1="73.3806" y1="1.8288" x2="73.3806" y2="8.3312" width="0" layer="19" extent="1-1"/>
+<wire x1="77.47" y1="34.29" x2="73.3806" y2="8.3312" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EB3">
 <contactref element="JP17" pad="7"/>
 <contactref element="JP17" pad="8"/>
 <contactref element="LED2" pad="A"/>
 <contactref element="RN2" pad="8"/>
-<wire x1="127" y1="96.52" x2="129.54" y2="96.52" width="0" layer="19" extent="1-1"/>
-<wire x1="77.47" y1="26.67" x2="129.54" y2="96.52" width="0" layer="19" extent="1-1"/>
-<wire x1="69.85" y1="87.63" x2="77.47" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="106.68" y1="11.43" x2="106.68" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="114.3" y1="3.81" x2="106.68" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="77.47" y1="29.21" x2="106.68" y2="13.97" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EB4">
 <contactref element="JP17" pad="9"/>
 <contactref element="JP17" pad="10"/>
 <contactref element="LED3" pad="A"/>
 <contactref element="RN2" pad="10"/>
-<wire x1="127" y1="93.98" x2="129.54" y2="93.98" width="0" layer="19" extent="1-1"/>
-<wire x1="77.47" y1="21.59" x2="129.54" y2="93.98" width="0" layer="19" extent="1-1"/>
-<wire x1="63.5" y1="87.63" x2="77.47" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="104.14" y1="11.43" x2="104.14" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="107.95" y1="3.81" x2="104.14" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="77.47" y1="24.13" x2="104.14" y2="13.97" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EB5">
 <contactref element="JP17" pad="11"/>
 <contactref element="JP17" pad="12"/>
 <contactref element="LED4" pad="A"/>
 <contactref element="RN2" pad="12"/>
-<wire x1="127" y1="91.44" x2="129.54" y2="91.44" width="0" layer="19" extent="1-1"/>
-<wire x1="77.47" y1="16.51" x2="129.54" y2="91.44" width="0" layer="19" extent="1-1"/>
-<wire x1="57.15" y1="87.63" x2="77.47" y2="16.51" width="0" layer="19" extent="1-1"/>
+<wire x1="101.6" y1="11.43" x2="101.6" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="101.6" y1="3.81" x2="101.6" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="77.47" y1="19.05" x2="101.6" y2="13.97" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EB6">
 <contactref element="JP17" pad="13"/>
 <contactref element="JP17" pad="14"/>
 <contactref element="LED5" pad="A"/>
 <contactref element="RN2" pad="14"/>
-<wire x1="127" y1="88.9" x2="129.54" y2="88.9" width="0" layer="19" extent="1-1"/>
-<wire x1="77.47" y1="11.43" x2="129.54" y2="88.9" width="0" layer="19" extent="1-1"/>
-<wire x1="50.8" y1="87.63" x2="77.47" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="99.06" y1="11.43" x2="99.06" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="95.25" y1="3.81" x2="99.06" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="77.47" y1="13.97" x2="95.25" y2="3.81" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="IM2" pad="EN"/>
@@ -5706,7 +5746,7 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <signal name="N$8">
 <contactref element="IM5" pad="EN"/>
 <contactref element="JP5" pad="1"/>
-<wire x1="139.7" y1="80.01" x2="139.7" y2="76.2" width="0" layer="19" extent="1-1"/>
+<wire x1="139.7" y1="76.2" x2="139.7" y2="80.01" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V_3">
 <contactref element="JP8" pad="1"/>
@@ -5730,7 +5770,7 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="143.51" y1="49.53" x2="139.7" y2="53.34" width="0" layer="19" extent="1-1"/>
 <wire x1="129.54" y1="44.45" x2="139.7" y2="53.34" width="0" layer="19" extent="1-1"/>
 <wire x1="129.54" y1="41.91" x2="129.54" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="113.03" y1="16.51" x2="129.54" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="113.03" y1="20.32" x2="129.54" y2="41.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V_5">
 <contactref element="IM5" pad="OUT"/>
@@ -5741,39 +5781,39 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="143.51" y1="64.77" x2="139.7" y2="68.58" width="0" layer="19" extent="1-1"/>
 <wire x1="129.54" y1="49.53" x2="143.51" y2="64.77" width="0" layer="19" extent="1-1"/>
 <wire x1="129.54" y1="46.99" x2="129.54" y2="49.53" width="0" layer="19" extent="1-1"/>
-<wire x1="110.49" y1="16.51" x2="129.54" y2="46.99" width="0" layer="19" extent="1-1"/>
+<wire x1="110.49" y1="20.32" x2="129.54" y2="46.99" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="R1" pad="2"/>
 <contactref element="LED1" pad="K"/>
-<wire x1="64.77" y1="68.58" x2="68.58" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="69.85" y1="53.34" x2="69.85" y2="76.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$10">
 <contactref element="R11" pad="1"/>
 <contactref element="LED2" pad="K"/>
-<wire x1="67.31" y1="87.63" x2="67.31" y2="82.55" width="0" layer="19" extent="1-1"/>
+<wire x1="116.84" y1="3.81" x2="116.84" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15">
 <contactref element="R12" pad="1"/>
 <contactref element="LED3" pad="K"/>
-<wire x1="60.96" y1="87.63" x2="60.96" y2="82.55" width="0" layer="19" extent="1-1"/>
+<wire x1="110.49" y1="3.81" x2="110.49" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$16">
 <contactref element="R13" pad="1"/>
 <contactref element="LED4" pad="K"/>
-<wire x1="54.61" y1="87.63" x2="54.61" y2="82.55" width="0" layer="19" extent="1-1"/>
+<wire x1="104.14" y1="3.81" x2="104.14" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$17">
 <contactref element="R14" pad="1"/>
 <contactref element="LED5" pad="K"/>
-<wire x1="48.26" y1="87.63" x2="48.26" y2="82.55" width="0" layer="19" extent="1-1"/>
+<wire x1="97.79" y1="3.81" x2="97.79" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$19">
 <contactref element="JP11" pad="2"/>
 <contactref element="R55" pad="1"/>
 <contactref element="C3" pad="1"/>
-<wire x1="71.12" y1="34.29" x2="69.85" y2="38.1" width="0" layer="19" extent="1-1"/>
-<wire x1="64.77" y1="34.42" x2="71.12" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="62.23" y1="91.44" x2="62.23" y2="93.98" width="0" layer="19" extent="1-1"/>
+<wire x1="65.91" y1="87.63" x2="62.23" y2="91.44" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDA5V">
 <contactref element="IM11" pad="12"/>
@@ -5781,10 +5821,10 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="JP44" pad="2"/>
 <contactref element="JP43" pad="2"/>
 <contactref element="R4" pad="2"/>
-<wire x1="104.14" y1="26.67" x2="113.03" y2="43.18" width="0" layer="19" extent="1-1"/>
-<wire x1="101.6" y1="16.51" x2="104.14" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="101.6" y1="13.97" x2="101.6" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="101.6" y1="11.43" x2="101.6" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="99.06" y1="30.48" x2="101.6" y2="35.56" width="0" layer="19" extent="1-1"/>
+<wire x1="99.06" y1="27.94" x2="99.06" y2="30.48" width="0" layer="19" extent="1-1"/>
+<wire x1="99.06" y1="25.4" x2="99.06" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="107.95" y1="31.75" x2="101.6" y2="35.56" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL5V">
 <contactref element="IM11" pad="11"/>
@@ -5792,206 +5832,206 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="JP44" pad="1"/>
 <contactref element="JP43" pad="1"/>
 <contactref element="R15" pad="2"/>
-<wire x1="106.68" y1="26.67" x2="113.03" y2="40.64" width="0" layer="19" extent="1-1"/>
-<wire x1="99.06" y1="16.51" x2="106.68" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="99.06" y1="13.97" x2="99.06" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="99.06" y1="11.43" x2="99.06" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="96.52" y1="30.48" x2="101.6" y2="38.1" width="0" layer="19" extent="1-1"/>
+<wire x1="96.52" y1="27.94" x2="96.52" y2="30.48" width="0" layer="19" extent="1-1"/>
+<wire x1="96.52" y1="25.4" x2="96.52" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="110.49" y1="31.75" x2="101.6" y2="38.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="A5V">
 <contactref element="IM11" pad="8"/>
 <contactref element="JP22" pad="1"/>
 <contactref element="R16" pad="2"/>
-<wire x1="109.22" y1="26.67" x2="113.03" y2="33.02" width="0" layer="19" extent="1-1"/>
-<wire x1="110.49" y1="19.05" x2="109.22" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="113.03" y1="31.75" x2="101.6" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="110.49" y1="22.86" x2="113.03" y2="31.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B5V">
 <contactref element="IM11" pad="7"/>
 <contactref element="JP23" pad="1"/>
 <contactref element="R17" pad="2"/>
-<wire x1="111.76" y1="24.13" x2="113.03" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="113.03" y1="19.05" x2="111.76" y2="24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="115.57" y1="29.21" x2="101.6" y2="48.26" width="0" layer="19" extent="1-1"/>
+<wire x1="113.03" y1="22.86" x2="115.57" y2="29.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EA0_">
 <contactref element="IC1" pad="21"/>
 <contactref element="RN1" pad="1"/>
-<wire x1="92.71" y1="11.43" x2="88.9" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="13.97" x2="88.9" y2="29.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EA1_">
 <contactref element="IC1" pad="22"/>
 <contactref element="RN1" pad="3"/>
-<wire x1="92.71" y1="16.51" x2="88.9" y2="29.21" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="19.05" x2="88.9" y2="31.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EA2_">
 <contactref element="IC1" pad="23"/>
 <contactref element="RN1" pad="5"/>
-<wire x1="92.71" y1="21.59" x2="88.9" y2="31.75" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="24.13" x2="88.9" y2="34.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EA3_">
 <contactref element="IC1" pad="24"/>
 <contactref element="RN1" pad="7"/>
-<wire x1="92.71" y1="26.67" x2="88.9" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="29.21" x2="88.9" y2="36.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EA4_">
 <contactref element="IC1" pad="25"/>
 <contactref element="RN1" pad="9"/>
-<wire x1="92.71" y1="31.75" x2="88.9" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="34.29" x2="88.9" y2="39.37" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EA5_">
 <contactref element="IC1" pad="26"/>
 <contactref element="RN1" pad="11"/>
-<wire x1="92.71" y1="36.83" x2="88.9" y2="39.37" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="39.37" x2="88.9" y2="41.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EA6_">
 <contactref element="IC1" pad="27"/>
 <contactref element="RN1" pad="13"/>
-<wire x1="88.9" y1="41.91" x2="92.71" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="88.9" y1="44.45" x2="92.71" y2="44.45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EA7_">
 <contactref element="IC1" pad="28"/>
 <contactref element="RN3" pad="7"/>
-<wire x1="88.9" y1="44.45" x2="76.2" y2="69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="88.9" y1="46.99" x2="78.74" y2="69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EB6_">
 <contactref element="IC1" pad="7"/>
 <contactref element="RN2" pad="13"/>
-<wire x1="77.47" y1="13.97" x2="81.28" y2="29.21" width="0" layer="19" extent="1-1"/>
+<wire x1="77.47" y1="16.51" x2="81.28" y2="31.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EB5_">
 <contactref element="IC1" pad="6"/>
 <contactref element="RN2" pad="11"/>
-<wire x1="77.47" y1="19.05" x2="81.28" y2="31.75" width="0" layer="19" extent="1-1"/>
+<wire x1="77.47" y1="21.59" x2="81.28" y2="34.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EB4_">
 <contactref element="IC1" pad="5"/>
 <contactref element="RN2" pad="9"/>
-<wire x1="77.47" y1="24.13" x2="81.28" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="77.47" y1="26.67" x2="81.28" y2="36.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EB3_">
 <contactref element="IC1" pad="4"/>
 <contactref element="RN2" pad="7"/>
-<wire x1="77.47" y1="29.21" x2="81.28" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="77.47" y1="31.75" x2="81.28" y2="39.37" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EB2_">
 <contactref element="IC1" pad="3"/>
 <contactref element="RN2" pad="5"/>
-<wire x1="77.47" y1="34.29" x2="81.28" y2="39.37" width="0" layer="19" extent="1-1"/>
+<wire x1="77.47" y1="36.83" x2="81.28" y2="41.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EB1_">
 <contactref element="IC1" pad="2"/>
 <contactref element="RN2" pad="3"/>
-<wire x1="77.47" y1="39.37" x2="81.28" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="77.47" y1="41.91" x2="81.28" y2="44.45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EB0_">
 <contactref element="IC1" pad="1"/>
 <contactref element="RN2" pad="1"/>
-<wire x1="77.47" y1="44.45" x2="81.28" y2="44.45" width="0" layer="19" extent="1-1"/>
+<wire x1="77.47" y1="46.99" x2="81.28" y2="46.99" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC8A_">
 <contactref element="IM6" pad="7"/>
 <contactref element="RN3" pad="10"/>
-<wire x1="76.2" y1="62.23" x2="81.28" y2="82.55" width="0" layer="19" extent="1-1"/>
+<wire x1="78.74" y1="62.23" x2="82.55" y2="82.55" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC7B_">
 <contactref element="IM6" pad="8"/>
 <contactref element="RN5" pad="2"/>
-<wire x1="72.39" y1="82.55" x2="81.28" y2="80.01" width="0" layer="19" extent="1-1"/>
+<wire x1="74.93" y1="82.55" x2="82.55" y2="80.01" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC7A_">
 <contactref element="IM6" pad="9"/>
 <contactref element="RN5" pad="4"/>
-<wire x1="72.39" y1="77.47" x2="81.28" y2="77.47" width="0" layer="19" extent="1-1"/>
+<wire x1="74.93" y1="77.47" x2="82.55" y2="77.47" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC6B_">
 <contactref element="IM6" pad="10"/>
 <contactref element="RN5" pad="6"/>
-<wire x1="72.39" y1="72.39" x2="81.28" y2="74.93" width="0" layer="19" extent="1-1"/>
+<wire x1="74.93" y1="72.39" x2="82.55" y2="74.93" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC6A_">
 <contactref element="IM6" pad="11"/>
 <contactref element="RN5" pad="8"/>
-<wire x1="72.39" y1="67.31" x2="81.28" y2="72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="74.93" y1="67.31" x2="82.55" y2="72.39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC5A_">
 <contactref element="IM6" pad="13"/>
 <contactref element="RN5" pad="12"/>
-<wire x1="72.39" y1="57.15" x2="81.28" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="74.93" y1="57.15" x2="82.55" y2="67.31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC5B_">
 <contactref element="IM6" pad="12"/>
 <contactref element="RN5" pad="10"/>
-<wire x1="72.39" y1="62.23" x2="81.28" y2="69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="74.93" y1="62.23" x2="82.55" y2="69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC4B_">
 <contactref element="IM6" pad="15"/>
 <contactref element="RN5" pad="14"/>
-<wire x1="72.39" y1="52.07" x2="81.28" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="74.93" y1="52.07" x2="82.55" y2="62.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC4A_">
 <contactref element="IM6" pad="23"/>
 <contactref element="RN3" pad="11"/>
-<wire x1="76.2" y1="59.69" x2="106.68" y2="59.69" width="0" layer="19" extent="1-1"/>
+<wire x1="78.74" y1="59.69" x2="107.95" y2="59.69" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC3B_">
 <contactref element="IM6" pad="27"/>
 <contactref element="RN3" pad="5"/>
-<wire x1="76.2" y1="74.93" x2="106.68" y2="69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="78.74" y1="74.93" x2="107.95" y2="69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC3A_">
 <contactref element="IM6" pad="28"/>
 <contactref element="RN3" pad="3"/>
-<wire x1="76.2" y1="80.01" x2="106.68" y2="72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="78.74" y1="80.01" x2="107.95" y2="72.39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC2B_">
 <contactref element="IM6" pad="29"/>
 <contactref element="RN3" pad="1"/>
-<wire x1="76.2" y1="85.09" x2="106.68" y2="74.93" width="0" layer="19" extent="1-1"/>
+<wire x1="78.74" y1="85.09" x2="107.95" y2="74.93" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC2A_">
 <contactref element="IM6" pad="30"/>
 <contactref element="RN4" pad="13"/>
-<wire x1="111.76" y1="66.04" x2="106.68" y2="77.47" width="0" layer="19" extent="1-1"/>
+<wire x1="111.76" y1="66.04" x2="107.95" y2="77.47" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC1B_">
 <contactref element="IM6" pad="31"/>
 <contactref element="RN4" pad="11"/>
-<wire x1="111.76" y1="71.12" x2="106.68" y2="80.01" width="0" layer="19" extent="1-1"/>
+<wire x1="111.76" y1="71.12" x2="107.95" y2="80.01" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC1A_">
 <contactref element="IM6" pad="33"/>
 <contactref element="RN4" pad="9"/>
-<wire x1="111.76" y1="76.2" x2="106.68" y2="85.09" width="0" layer="19" extent="1-1"/>
+<wire x1="111.76" y1="76.2" x2="107.95" y2="85.09" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RXD0_">
 <contactref element="IM6" pad="34"/>
 <contactref element="RN4" pad="7"/>
-<wire x1="111.76" y1="81.28" x2="106.68" y2="87.63" width="0" layer="19" extent="1-1"/>
+<wire x1="111.76" y1="81.28" x2="107.95" y2="87.63" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXD0_">
 <contactref element="IM6" pad="35"/>
 <contactref element="RN4" pad="5"/>
-<wire x1="106.68" y1="90.17" x2="111.76" y2="86.36" width="0" layer="19" extent="1-1"/>
+<wire x1="107.95" y1="90.17" x2="111.76" y2="86.36" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL_">
 <contactref element="IM6" pad="36"/>
 <contactref element="RN4" pad="3"/>
-<wire x1="106.68" y1="92.71" x2="111.76" y2="91.44" width="0" layer="19" extent="1-1"/>
+<wire x1="107.95" y1="92.71" x2="111.76" y2="91.44" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDA_">
 <contactref element="IM6" pad="37"/>
 <contactref element="RN4" pad="1"/>
-<wire x1="106.68" y1="95.25" x2="111.76" y2="96.52" width="0" layer="19" extent="1-1"/>
+<wire x1="107.95" y1="95.25" x2="111.76" y2="96.52" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BATT_REF">
 <contactref element="IM6" pad="5"/>
 <contactref element="R3" pad="2"/>
 <contactref element="R2" pad="1"/>
-<wire x1="76.2" y1="91.44" x2="81.28" y2="87.63" width="0" layer="19" extent="1-1"/>
-<wire x1="76.2" y1="95.25" x2="76.2" y2="91.44" width="0" layer="19" extent="1-1"/>
+<wire x1="76.2" y1="91.44" x2="76.2" y2="95.25" width="0" layer="19" extent="1-1"/>
+<wire x1="82.55" y1="87.63" x2="76.2" y2="91.44" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESP_!SHUTDOWN!_">
 <contactref element="IC1" pad="8"/>
 <contactref element="RN3" pad="13"/>
-<wire x1="81.28" y1="26.67" x2="76.2" y2="54.61" width="0" layer="19" extent="1-1"/>
+<wire x1="81.28" y1="29.21" x2="78.74" y2="54.61" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HVIOREF">
 <contactref element="R17" pad="1"/>
@@ -6001,17 +6041,22 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <contactref element="IM11" pad="10"/>
 <contactref element="U$2" pad="P$1"/>
 <contactref element="JP39" pad="1"/>
-<wire x1="111.76" y1="26.67" x2="113.03" y2="38.1" width="0" layer="19" extent="1-1"/>
-<wire x1="109.22" y1="24.13" x2="111.76" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="106.68" y1="24.13" x2="109.22" y2="24.13" width="0" layer="19" extent="1-1"/>
-<wire x1="104.14" y1="24.13" x2="106.68" y2="24.13" width="0" layer="19" extent="1-1"/>
-<wire x1="60.96" y1="74.93" x2="104.14" y2="24.13" width="0" layer="19" extent="1-1"/>
-<wire x1="60.69" y1="70.72" x2="60.96" y2="74.93" width="0" layer="19" extent="1-1"/>
+<wire x1="113.03" y1="29.21" x2="115.57" y2="31.75" width="0" layer="19" extent="1-1"/>
+<wire x1="110.49" y1="29.21" x2="113.03" y2="29.21" width="0" layer="19" extent="1-1"/>
+<wire x1="107.95" y1="29.21" x2="110.49" y2="29.21" width="0" layer="19" extent="1-1"/>
+<wire x1="101.6" y1="40.64" x2="107.95" y2="29.21" width="0" layer="19" extent="1-1"/>
+<wire x1="69.58" y1="60.56" x2="101.6" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="69.85" y1="63.5" x2="69.58" y2="60.56" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BATT_ANODE2">
 <contactref element="Q1" pad="3"/>
 <contactref element="Q3" pad="3"/>
-<wire x1="57.15" y1="3.81" x2="49.53" y2="3.81" width="0" layer="19" extent="1-1"/>
+<polygon width="0.2" layer="1">
+<vertex x="54.61" y="0"/>
+<vertex x="63.5" y="0"/>
+<vertex x="63.5" y="5.08"/>
+<vertex x="54.61" y="5.08"/>
+</polygon>
 </signal>
 </signals>
 </board>
