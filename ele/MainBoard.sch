@@ -20982,7 +20982,7 @@ MOSFET</text>
 <junction x="66.04" y="200.66"/>
 </segment>
 </net>
-<net name="BATT_ANODE" class="0">
+<net name="BATT_CATHODE" class="0">
 <segment>
 <pinref part="X1" gate="-2" pin="KL"/>
 <wire x1="124.46" y1="193.04" x2="127" y2="193.04" width="0.1524" layer="91"/>
@@ -21111,7 +21111,7 @@ MOSFET</text>
 <wire x1="63.5" y1="116.84" x2="63.5" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="BATT_ANODE2" class="0">
+<net name="BATT_CATHODE2" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="S"/>
 <wire x1="15.24" y1="198.12" x2="15.24" y2="193.04" width="0.1524" layer="91"/>
