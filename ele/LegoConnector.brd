@@ -3,7 +3,7 @@
 <eagle version="9.0.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -162,7 +162,7 @@
 <wire x1="25" y1="29" x2="24" y2="30" width="0" layer="20" curve="90"/>
 <wire x1="24" y1="30" x2="1" y2="30" width="0" layer="20"/>
 <wire x1="1" y1="30" x2="0" y2="29" width="0" layer="20" curve="90"/>
-<text x="24.511" y="0.508" size="1.4224" layer="51" font="vector" ratio="20" rot="R90">RB3201-RBControl
+<text x="24.511" y="0.508" size="1.397" layer="51" font="vector" ratio="20" rot="R90">RB3201-RBControl 
 LegoConnector</text>
 <text x="24.511" y="26.162" size="1.27" layer="51" font="vector" ratio="20" rot="R90">v1.0</text>
 <text x="18.415" y="7.112" size="1.27" layer="51" font="vector" ratio="20" rot="R270">M2</text>
@@ -178,6 +178,7 @@ RED</text>
 <text x="15.113" y="21.082" size="0.8128" layer="51" font="vector" ratio="20" rot="R90">MB</text>
 <text x="15.113" y="16.002" size="0.8128" layer="51" font="vector" ratio="20" rot="R90">EB</text>
 <text x="15.113" y="13.462" size="0.8128" layer="51" font="vector" ratio="20" rot="R90">EA</text>
+<text x="24.511" y="0.508" size="1.397" layer="1" font="vector" ratio="20" rot="R90">LegoConnector</text>
 </plain>
 <libraries>
 <library name="pinhead">
@@ -1744,8 +1745,8 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="22.0186" y1="19.8914" x2="22.0186" y2="5.5086" width="1.778" layer="1"/>
 <wire x1="19.05" y1="2.54" x2="8.89" y2="2.54" width="1.778" layer="1"/>
 <wire x1="2.54" y1="19.05" x2="4.45" y2="20.96" width="1.778" layer="1"/>
-<wire x1="4.45" y1="20.96" x2="8.1312" y2="20.96" width="1.778" layer="1"/>
-<wire x1="8.1312" y1="20.96" x2="8.269" y2="20.96" width="0" layer="19" extent="1-1"/>
+<wire x1="8.1312" y1="20.96" x2="4.45" y2="20.96" width="1.778" layer="1"/>
+<wire x1="8.269" y1="20.96" x2="8.1312" y2="20.96" width="0.1524" layer="1"/>
 </signal>
 </signals>
 </board>
