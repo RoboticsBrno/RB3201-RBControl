@@ -567,6 +567,24 @@ GND
 POWERMA</text>
 <text x="55.88" y="73.66" size="1.778" layer="97">ENC1B</text>
 <text x="55.88" y="76.2" size="1.778" layer="97">ENC1A</text>
+<text x="86.106" y="4.572" size="2.1844" layer="97" font="vector">github:roboticsbrno/
+RB3201-RBControl
+
+RobotikaBrno.cz
+Robotarna
+CC BY-SA 4.0</text>
+<text x="140.97" y="20.32" size="2.54" layer="97" font="vector" ratio="14">RobotikaBrno</text>
+<text x="171.45" y="5.08" size="2.54" layer="97" font="vector" ratio="14">v1.0</text>
+<text x="127" y="40.64" size="1.778" layer="97" font="vector" align="center">Released under the Creative Commons Attribution-ShareAlike 4.0 License
+https://creativecommons.org/licenses/by-sa/4.0/
+Designed by: JM &amp; JP &amp; JS &amp; JV &amp; JM &amp; BS &amp; RobotikaBrno
+
+RB3201-RBControl
+https://github.com/RoboticsBrno/RB3201-RBControl
+
+RoboticsBrno.eu
+RobotikaBrno.cz
+Robotarna</text>
 </plain>
 <instances>
 <instance part="X1" gate="G$1" x="134.62" y="81.28" rot="MR0"/>
