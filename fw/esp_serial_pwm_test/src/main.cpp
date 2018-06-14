@@ -9,8 +9,8 @@ using fmt::print;
 void setup() {
     Serial.begin(115200);
     print(Serial, "\n\nESP32 serial PWM test\n\t{} {}\n\n", __DATE__, __TIME__);
-    const int channels = 8;
-    SerialPCM pwm {channels, {21}, 23, 22, 19};
+    const int channels = 16;
+    SerialPCM pwm {channels, {2}, 0, 4};
     int pwmi = 0;
     for (int i = 0; i != channels; ++i)
         pwm[i] = i + 1;
@@ -41,6 +41,7 @@ void setup() {
                 pwm.update();
                 break;
             case '-':
+                // decrement pwm of channel
                 if (pwm[pwmi] > 0)
                     --pwm[pwmi];
                 print(Serial, "pwm[{}] = {:3}\n", pwmi, pwm[pwmi]);
@@ -48,16 +49,25 @@ void setup() {
                 break;
 
             case '<':
+                // decrement index of channel
                 if (pwmi > 0)
                     --pwmi;
                 print("channel {}\n", pwmi);
                 print(Serial, "pwm[{}] = {:3}\n", pwmi, pwm[pwmi]);
                 break;
             case '>':
+                // increment index of channel
                 if (pwmi < (channels - 1))
                     ++pwmi;
                 print("channel {}\n", pwmi);
                 print(Serial, "pwm[{}] = {:3}\n", pwmi, pwm[pwmi]);
+                break;
+            case ' ':
+                for(int i = 0; i < channels; ++i) {
+                    pwm[i] = 0;  
+                }
+                pwm.update();
+                print(Serial, "all pwm[] = 0\n");
                 break;
             }
         }
