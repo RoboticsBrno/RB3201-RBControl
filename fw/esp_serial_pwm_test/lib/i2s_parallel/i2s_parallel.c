@@ -144,7 +144,7 @@ void i2s_parallel_setup(i2s_dev_t *dev, const i2s_parallel_config_t *cfg) {
     dev->sample_rate_conf.rx_bits_mod=cfg->bits;
     dev->sample_rate_conf.tx_bits_mod=cfg->bits;
     dev->sample_rate_conf.rx_bck_div_num=2;
-    dev->sample_rate_conf.tx_bck_div_num=2;
+    dev->sample_rate_conf.tx_bck_div_num=8;
     
     dev->clkm_conf.val=0;
     dev->clkm_conf.clka_en=0;

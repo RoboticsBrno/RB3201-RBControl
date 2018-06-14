@@ -96,7 +96,7 @@ public:
         cfg.inv_wclk = false;
         cfg.gpio_bclk = clock_pin;
         cfg.inv_bclk = false;
-        cfg.clkspeed = 3;
+        cfg.clkspeed = 1023 ;
         cfg.bufa = m_buffer_descriptors[0];
         cfg.bufb = m_buffer_descriptors[1];
 

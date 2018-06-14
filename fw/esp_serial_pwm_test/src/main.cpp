@@ -23,31 +23,32 @@ void setup() {
             case '\r':
                 Serial.write('\n');
                 break;
-
             case '0' ... '9':
+				// set pwm of selected channel:  0 = 0%, ... ,9 = 90% 
                 pwm[pwmi] = (c - '0') * pwm.resolution() / 10;
                 print(Serial, "pwm[{}] = {:3}\n", pwmi, pwm[pwmi]);
                 pwm.update();
                 break;
             case '*':
+				// set pwm of selected channel: 100% 
                 pwm[pwmi] = pwm.resolution();
                 print(Serial, "pwm[{}] = {:3}\n", pwmi, pwm[pwmi]);
                 pwm.update();
                 break;
             case '+':
+                // increment pwm of selected channel: +1
                 if (pwm[pwmi] < pwm.resolution())
                     ++pwm[pwmi];
                 print(Serial, "pwm[{}] = {:3}\n", pwmi, pwm[pwmi]);
                 pwm.update();
                 break;
             case '-':
-                // decrement pwm of channel
+                // decrement pwm of selected channel: -1
                 if (pwm[pwmi] > 0)
                     --pwm[pwmi];
                 print(Serial, "pwm[{}] = {:3}\n", pwmi, pwm[pwmi]);
                 pwm.update();
                 break;
-
             case '<':
                 // decrement index of channel
                 if (pwmi > 0)
@@ -63,6 +64,7 @@ void setup() {
                 print(Serial, "pwm[{}] = {:3}\n", pwmi, pwm[pwmi]);
                 break;
             case ' ':
+                // set all channels to 0
                 for(int i = 0; i < channels; ++i) {
                     pwm[i] = 0;  
                 }
