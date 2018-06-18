@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -159,12 +159,14 @@
 </layers>
 <board>
 <plain>
-<wire x1="120.7" y1="0" x2="120.7" y2="100" width="0" layer="20" curve="60"/>
-<wire x1="120.7" y1="100" x2="2" y2="100" width="0" layer="20"/>
+<wire x1="122" y1="2" x2="122" y2="98" width="0" layer="20" curve="60"/>
+<wire x1="122" y1="98" x2="118.763934375" y2="100" width="0" layer="20" curve="63.434927"/>
+<wire x1="118.763934375" y1="100" x2="2" y2="100" width="0" layer="20"/>
 <wire x1="2" y1="100" x2="0" y2="98" width="0" layer="20" curve="90"/>
 <wire x1="0" y1="98" x2="0" y2="2" width="0" layer="20"/>
 <wire x1="0" y1="2" x2="2" y2="0" width="0" layer="20" curve="90"/>
-<wire x1="2" y1="0" x2="120.7" y2="0" width="0" layer="20"/>
+<wire x1="2" y1="0" x2="118.763934375" y2="0" width="0" layer="20"/>
+<wire x1="118.763934375" y1="0" x2="122" y2="2" width="0" layer="20" curve="63.434971"/>
 <hole x="6" y="5" drill="3.5"/>
 <hole x="6" y="95" drill="3.5"/>
 <hole x="116.76" y="96" drill="3.5"/>
@@ -8454,8 +8456,8 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <vertex x="39.37" y="10.16"/>
 <vertex x="48.26" y="0"/>
 <vertex x="120.65" y="0"/>
-<vertex x="126.365" y="11.43"/>
-<vertex x="133.35" y="36.195"/>
+<vertex x="129.365" y="15.43"/>
+<vertex x="134.35" y="35.195"/>
 <vertex x="128.27" y="41.275"/>
 <vertex x="128.27" y="72.39"/>
 <vertex x="125.095" y="74.93"/>
@@ -9572,9 +9574,9 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="87.3125" y1="35.103875" x2="91.57103125" y2="30.84534375" width="0.2" layer="16"/>
 <wire x1="132.687796875" y1="54.582796875" x2="131.445" y2="53.34" width="0.2" layer="16"/>
 <wire x1="131.445" y1="53.34" x2="133.219515625" y2="55.114515625" width="0.2" layer="16"/>
-<wire x1="133.219515625" y1="55.114515625" x2="120.269" y2="99.06" width="0.2" layer="16" curve="27"/>
-<wire x1="120.269" y1="99.06" x2="119.675" y2="99.4" width="0.2" layer="16"/>
-<wire x1="119.675" y1="99.4" x2="98.13" y2="99.4" width="0.2" layer="16"/>
+<wire x1="133.219515625" y1="55.114515625" x2="120.869" y2="98.16" width="0.2" layer="16" curve="27"/>
+<wire x1="120.869" y1="98.16" x2="118.775" y2="99.4" width="0.2" layer="16"/>
+<wire x1="118.775" y1="99.4" x2="98.13" y2="99.4" width="0.2" layer="16"/>
 <wire x1="85.09" y1="43.815" x2="85.09" y2="44.45" width="0.2" layer="1"/>
 <wire x1="85.09" y1="44.45" x2="82.55" y2="46.99" width="0.2" layer="1"/>
 </signal>
