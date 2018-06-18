@@ -207,8 +207,6 @@
 <text x="103.014" y="9.779" size="1.5" layer="51" font="vector" ratio="20" rot="R270">3V3</text>
 <text x="115.714" y="9.779" size="1.5" layer="51" font="vector" ratio="20" rot="R270">-</text>
 <text x="113.174" y="9.779" size="1.5" layer="51" font="vector" ratio="20" rot="R270">5V</text>
-<text x="92.075" y="15.875" size="1.778" layer="1" font="vector" ratio="14" distance="40" rot="R90" align="top-left">RB3201
-v1.1</text>
 <text x="118.508" y="26.035" size="1" layer="51" font="vector" ratio="20">A0</text>
 <text x="121.048" y="28.575" size="1" layer="51" font="vector" ratio="20">A1</text>
 <text x="121.048" y="31.115" size="1" layer="51" font="vector" ratio="20">A2</text>
@@ -382,10 +380,6 @@ SHDN</text>
 <text x="129.032" y="59.052" size="1" layer="51" font="vector" ratio="20" rot="R180">GND</text>
 <text x="129.032" y="56.512" size="1" layer="51" font="vector" ratio="20" rot="R180">5V_5</text>
 <text x="129.032" y="53.972" size="1" layer="51" font="vector" ratio="20" rot="R180">IO12</text>
-<text x="89.535" y="71.755" size="1.778" layer="16" font="vector" ratio="14" distance="40" rot="MR0" align="top-left">RB3201
-RBControl
-v1.1
-CC BY-SA 4.0</text>
 <text x="47.244" y="70.739" size="2.54" layer="51" font="vector" ratio="20" distance="40" rot="R90" align="bottom-center">RB3201-RBControl v1.1</text>
 <text x="49.53" y="72.39" size="1.4224" layer="21" font="vector" ratio="20" rot="R90">RoboticsBrno.eu</text>
 <text x="52.705" y="52.07" size="1.2" layer="21" font="vector" ratio="16" rot="R90">github:roboticsbrno/
@@ -7916,7 +7910,7 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="82.820140625" y1="48.391515625" x2="83.547225" y2="49.1186" width="0.2" layer="16"/>
 <wire x1="83.547225" y1="49.1186" x2="86.36" y2="49.1186" width="0.2" layer="16"/>
 <wire x1="73.26" y1="63.9693125" x2="74.96465625" y2="62.26465625" width="0.2" layer="1"/>
-<wire x1="74.96465625" y1="50.139375" x2="74.96465625" y2="62.26465625" width="0.2" layer="1"/>
+<wire x1="74.96465625" y1="50.139375" x2="74.96465625" y2="62.26465625" width="0" layer="19" extent="1-16"/>
 <wire x1="76.068484375" y1="48.391515625" x2="76.068484375" y2="49.035546875" width="0.2" layer="1"/>
 <wire x1="76.068484375" y1="49.035546875" x2="74.96465625" y2="50.139375" width="0.2" layer="1"/>
 </signal>
