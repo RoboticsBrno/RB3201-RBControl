@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -26738,7 +26738,7 @@ Robotarna</text>
 <junction x="38.1" y="218.44"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="START_GATE" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="Q1" gate="G$1" pin="G"/>
@@ -26757,7 +26757,7 @@ Robotarna</text>
 <junction x="63.5" y="210.82"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="START_BUTTON" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="JP11" gate="G$1" pin="1"/>
