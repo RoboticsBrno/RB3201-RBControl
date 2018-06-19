@@ -20424,7 +20424,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP20" library="pinhead" deviceset="PINHD-1X2" device="" value="STOP_BUTTON"/>
 <part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$1" library="piezo" deviceset="PIEZO" device=""/>
+<part name="PIEZO" library="piezo" deviceset="PIEZO" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22066,7 +22066,7 @@ Robotarna</text>
 <instance part="JP17" gate="A" x="86.36" y="106.68"/>
 <instance part="GND14" gate="1" x="25.4" y="91.44"/>
 <instance part="P+27" gate="1" x="48.26" y="124.46"/>
-<instance part="U$1" gate="G$1" x="185.42" y="193.04" rot="R180"/>
+<instance part="PIEZO" gate="G$1" x="185.42" y="193.04" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -22769,7 +22769,7 @@ Robotarna</text>
 <label x="205.74" y="187.96" size="1.778" layer="95" rot="R180"/>
 <pinref part="RN5" gate="B" pin="1"/>
 <wire x1="223.52" y1="187.96" x2="190.5" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="+"/>
+<pinref part="PIEZO" gate="G$1" pin="+"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="203.2" x2="83.82" y2="203.2" width="0.1524" layer="91"/>
@@ -23932,7 +23932,7 @@ Robotarna</text>
 <wire x1="236.22" y1="190.5" x2="236.22" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="195.58" x2="193.04" y2="195.58" width="0.1524" layer="91"/>
 <junction x="236.22" y="190.5"/>
-<pinref part="U$1" gate="G$1" pin="-"/>
+<pinref part="PIEZO" gate="G$1" pin="-"/>
 <wire x1="193.04" y1="195.58" x2="193.04" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="190.5" x2="190.5" y2="190.5" width="0.1524" layer="91"/>
 </segment>
