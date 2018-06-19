@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.0">
+<eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -20126,6 +20126,66 @@ DIN A3, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="piezo">
+<packages>
+<package name="PIEZO">
+<wire x1="0.635" y1="7.62" x2="1.905" y2="7.62" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="1.905" x2="0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="2.54" x2="1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="2.54" x2="2.54" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="0" x2="1.905" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="0" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="8.255" x2="0" y2="9.525" width="0.1524" layer="21"/>
+<wire x1="0" y1="9.525" x2="0.635" y2="10.16" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="10.16" x2="1.905" y2="10.16" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="10.16" x2="2.54" y2="9.525" width="0.1524" layer="21"/>
+<wire x1="0" y1="8.255" x2="0.635" y2="7.62" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="7.62" x2="2.54" y2="8.255" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="9.525" x2="2.54" y2="8.255" width="0.1524" layer="21"/>
+<pad name="-" x="1.27" y="1.27" drill="1.016" shape="long" rot="R180"/>
+<pad name="+" x="1.27" y="8.89" drill="1.016" shape="long" rot="R180"/>
+<text x="-0.5588" y="2.4638" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<rectangle x1="1.016" y1="1.016" x2="1.524" y2="1.524" layer="51" rot="R90"/>
+<rectangle x1="1.016" y1="8.636" x2="1.524" y2="9.144" layer="51" rot="R90"/>
+<circle x="1.27" y="5.08" radius="5.6796125" width="0.1524" layer="21"/>
+<circle x="1.27" y="8.89" radius="1.79605" width="0.1524" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PIEZO">
+<wire x1="0" y1="0" x2="0" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="0" y1="7.62" x2="2.54" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="5.08" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<pin name="+" x="-5.08" y="5.08" length="middle"/>
+<pin name="-" x="-5.08" y="2.54" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PIEZO">
+<gates>
+<gate name="G$1" symbol="PIEZO" x="5.08" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="PIEZO">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -20364,6 +20424,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP20" library="pinhead" deviceset="PINHD-1X2" device="" value="STOP_BUTTON"/>
 <part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U$1" library="piezo" deviceset="PIEZO" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22005,6 +22066,7 @@ Robotarna</text>
 <instance part="JP17" gate="A" x="86.36" y="106.68"/>
 <instance part="GND14" gate="1" x="25.4" y="91.44"/>
 <instance part="P+27" gate="1" x="48.26" y="124.46"/>
+<instance part="U$1" gate="G$1" x="185.42" y="193.04" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -22706,7 +22768,8 @@ Robotarna</text>
 <segment>
 <label x="205.74" y="187.96" size="1.778" layer="95" rot="R180"/>
 <pinref part="RN5" gate="B" pin="1"/>
-<wire x1="223.52" y1="187.96" x2="205.74" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="187.96" x2="190.5" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="+"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="203.2" x2="83.82" y2="203.2" width="0.1524" layer="91"/>
@@ -23862,9 +23925,16 @@ Robotarna</text>
 <net name="ENC7B_" class="0">
 <segment>
 <pinref part="RN5" gate="A" pin="2"/>
-<wire x1="248.92" y1="190.5" x2="233.68" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="190.5" x2="236.22" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="IM6" gate="G$1" pin="IO33"/>
 <label x="238.76" y="190.5" size="1.778" layer="95"/>
+<wire x1="236.22" y1="190.5" x2="233.68" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="190.5" x2="236.22" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="195.58" x2="193.04" y2="195.58" width="0.1524" layer="91"/>
+<junction x="236.22" y="190.5"/>
+<pinref part="U$1" gate="G$1" pin="-"/>
+<wire x1="193.04" y1="195.58" x2="193.04" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="190.5" x2="190.5" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC7A_" class="0">
