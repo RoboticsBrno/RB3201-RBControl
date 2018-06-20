@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -20389,7 +20389,6 @@ DIN A3, landscape with location and doc. field</description>
 <part name="JP40" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C1_3V3"/>
 <part name="JP41" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C2_3V3"/>
 <part name="JP42" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C3_3V3"/>
-<part name="JP43" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C3_5V"/>
 <part name="JP44" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C2_5V"/>
 <part name="JP45" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2" value="I2C1_5V"/>
 <part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -22038,7 +22037,6 @@ Robotarna</text>
 <instance part="JP40" gate="A" x="60.96" y="50.8"/>
 <instance part="JP41" gate="A" x="73.66" y="50.8"/>
 <instance part="JP42" gate="A" x="86.36" y="50.8"/>
-<instance part="JP43" gate="A" x="86.36" y="30.48"/>
 <instance part="JP44" gate="A" x="73.66" y="30.48"/>
 <instance part="JP45" gate="A" x="60.96" y="30.48"/>
 <instance part="GND43" gate="1" x="45.72" y="30.48" rot="R270"/>
@@ -22445,7 +22443,6 @@ Robotarna</text>
 <pinref part="JP44" gate="A" pin="3"/>
 <wire x1="58.42" y1="30.48" x2="71.12" y2="30.48" width="0.1524" layer="91"/>
 <junction x="58.42" y="30.48"/>
-<pinref part="JP43" gate="A" pin="3"/>
 <wire x1="71.12" y1="30.48" x2="83.82" y2="30.48" width="0.1524" layer="91"/>
 <junction x="71.12" y="30.48"/>
 </segment>
@@ -22945,7 +22942,6 @@ Robotarna</text>
 <pinref part="JP44" gate="A" pin="4"/>
 <wire x1="58.42" y1="27.94" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
 <junction x="58.42" y="27.94"/>
-<pinref part="JP43" gate="A" pin="4"/>
 <wire x1="71.12" y1="27.94" x2="83.82" y2="27.94" width="0.1524" layer="91"/>
 <junction x="71.12" y="27.94"/>
 </segment>
@@ -23735,7 +23731,6 @@ Robotarna</text>
 <pinref part="JP44" gate="A" pin="2"/>
 <wire x1="58.42" y1="33.02" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
 <junction x="58.42" y="33.02"/>
-<pinref part="JP43" gate="A" pin="2"/>
 <wire x1="71.12" y1="33.02" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
 <junction x="71.12" y="33.02"/>
 </segment>
@@ -23757,7 +23752,6 @@ Robotarna</text>
 <pinref part="JP44" gate="A" pin="1"/>
 <wire x1="58.42" y1="35.56" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
 <junction x="58.42" y="35.56"/>
-<pinref part="JP43" gate="A" pin="1"/>
 <wire x1="71.12" y1="35.56" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
 <junction x="71.12" y="35.56"/>
 </segment>
