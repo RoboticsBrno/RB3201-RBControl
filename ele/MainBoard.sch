@@ -20430,6 +20430,9 @@ DIN A3, landscape with location and doc. field</description>
 <part name="GND53" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R20" library="rcl_upravena" deviceset="R-EU_" device="0204/2V" value="10k"/>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="C5" library="rcl_upravena" deviceset="C-EU" device="C1206" value="100n"/>
+<part name="C6" library="rcl_upravena" deviceset="C-EU" device="C1206" value="100n"/>
+<part name="C7" library="rcl_upravena" deviceset="C-EU" device="C1206" value="100n"/>
 </parts>
 <sheets>
 <sheet>
@@ -22076,6 +22079,9 @@ Robotarna</text>
 <attribute name="NAME" x="174.244" y="185.42" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="174.244" y="182.88" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="C5" gate="G$1" x="294.64" y="127" rot="MR90"/>
+<instance part="C6" gate="G$1" x="309.88" y="127" rot="MR90"/>
+<instance part="C7" gate="G$1" x="327.66" y="127" rot="MR90"/>
 </instances>
 <busses>
 </busses>
@@ -22398,6 +22404,10 @@ Robotarna</text>
 <pinref part="SW1" gate="1" pin="S1"/>
 <junction x="299.72" y="111.76"/>
 <wire x1="299.72" y1="111.76" x2="299.72" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="297.18" y1="127" x2="299.72" y2="127" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="127" x2="299.72" y2="114.3" width="0.1524" layer="91"/>
+<junction x="299.72" y="114.3"/>
 </segment>
 <segment>
 <pinref part="SW2" gate="1" pin="S"/>
@@ -22406,6 +22416,10 @@ Robotarna</text>
 <pinref part="SW2" gate="1" pin="S1"/>
 <junction x="314.96" y="111.76"/>
 <wire x1="314.96" y1="111.76" x2="314.96" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="312.42" y1="127" x2="314.96" y2="127" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="127" x2="314.96" y2="114.3" width="0.1524" layer="91"/>
+<junction x="314.96" y="114.3"/>
 </segment>
 <segment>
 <pinref part="SW3" gate="1" pin="S"/>
@@ -22414,6 +22428,10 @@ Robotarna</text>
 <pinref part="SW3" gate="1" pin="S1"/>
 <wire x1="332.74" y1="111.76" x2="332.74" y2="109.22" width="0.1524" layer="91"/>
 <junction x="332.74" y="111.76"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="330.2" y1="127" x2="332.74" y2="127" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="127" x2="332.74" y2="114.3" width="0.1524" layer="91"/>
+<junction x="332.74" y="114.3"/>
 </segment>
 <segment>
 <pinref part="GND36" gate="1" pin="GND"/>
@@ -23455,6 +23473,9 @@ Robotarna</text>
 <wire x1="289.56" y1="111.76" x2="289.56" y2="114.3" width="0.1524" layer="91"/>
 <label x="276.86" y="104.14" size="1.778" layer="95"/>
 <pinref part="RN2" gate="A" pin="2"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="289.56" y1="127" x2="289.56" y2="114.3" width="0.1524" layer="91"/>
+<junction x="289.56" y="114.3"/>
 </segment>
 <segment>
 <pinref part="JP17" gate="A" pin="1"/>
@@ -23475,6 +23496,9 @@ Robotarna</text>
 <junction x="304.8" y="111.76"/>
 <label x="276.86" y="101.6" size="1.778" layer="95"/>
 <pinref part="RN2" gate="B" pin="2"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="304.8" y1="127" x2="304.8" y2="114.3" width="0.1524" layer="91"/>
+<junction x="304.8" y="114.3"/>
 </segment>
 <segment>
 <pinref part="JP17" gate="A" pin="3"/>
@@ -23495,6 +23519,9 @@ Robotarna</text>
 <pinref part="RN2" gate="C" pin="2"/>
 <pinref part="SW3" gate="1" pin="P1"/>
 <junction x="322.58" y="111.76"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="322.58" y1="127" x2="322.58" y2="114.3" width="0.1524" layer="91"/>
+<junction x="322.58" y="114.3"/>
 </segment>
 <segment>
 <pinref part="JP17" gate="A" pin="5"/>
