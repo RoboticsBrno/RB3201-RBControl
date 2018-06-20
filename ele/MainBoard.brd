@@ -8,7 +8,7 @@
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -207,32 +207,32 @@
 <text x="103.014" y="9.779" size="1.5" layer="51" font="vector" ratio="20" rot="R270">3V3</text>
 <text x="115.714" y="9.779" size="1.5" layer="51" font="vector" ratio="20" rot="R270">-</text>
 <text x="113.174" y="9.779" size="1.5" layer="51" font="vector" ratio="20" rot="R270">5V</text>
-<text x="118.508" y="26.035" size="1" layer="51" font="vector" ratio="20">A0</text>
-<text x="121.048" y="28.575" size="1" layer="51" font="vector" ratio="20">A1</text>
-<text x="121.048" y="31.115" size="1" layer="51" font="vector" ratio="20">A2</text>
-<text x="121.048" y="33.655" size="1" layer="51" font="vector" ratio="20">A3</text>
-<text x="121.048" y="36.195" size="1" layer="51" font="vector" ratio="20">A4</text>
-<text x="121.048" y="38.735" size="1" layer="51" font="vector" ratio="20">A5</text>
-<text x="121.048" y="41.275" size="1" layer="51" font="vector" ratio="20">A6</text>
-<text x="121.048" y="43.815" size="1" layer="51" font="vector" ratio="20">A7</text>
-<text x="118.508" y="48.895" size="1" layer="51" font="vector" ratio="20">INT1</text>
-<text x="122.047" y="45.356" size="1" layer="51" font="vector" ratio="20" rot="R90">INT0</text>
-<text x="118.508" y="50.927" size="1" layer="51" font="vector" ratio="20">EN1A</text>
-<text x="118.508" y="53.467" size="1" layer="51" font="vector" ratio="20">EN1B</text>
-<text x="118.508" y="56.007" size="1" layer="51" font="vector" ratio="20">EN2A</text>
-<text x="118.508" y="58.547" size="1" layer="51" font="vector" ratio="20">EN2B</text>
-<text x="118.508" y="61.087" size="1" layer="51" font="vector" ratio="20">EN3A</text>
-<text x="118.508" y="63.627" size="1" layer="51" font="vector" ratio="20">EN3B</text>
-<text x="118.508" y="66.167" size="1" layer="51" font="vector" ratio="20">EN4A</text>
-<text x="118.508" y="68.707" size="1" layer="51" font="vector" ratio="20">EN4B</text>
-<text x="118.508" y="71.247" size="1" layer="51" font="vector" ratio="20">EN5A</text>
-<text x="118.508" y="73.787" size="1" layer="51" font="vector" ratio="20">EN5B</text>
-<text x="118.508" y="76.327" size="1" layer="51" font="vector" ratio="20">EN6A</text>
-<text x="118.508" y="78.867" size="1" layer="51" font="vector" ratio="20">EN6B</text>
-<text x="118.508" y="81.407" size="1" layer="51" font="vector" ratio="20">EN7A</text>
-<text x="118.508" y="83.947" size="1" layer="51" font="vector" ratio="20">EN7B</text>
-<text x="118.508" y="86.487" size="1" layer="51" font="vector" ratio="20">EN8A</text>
-<text x="118.508" y="89.027" size="1" layer="51" font="vector" ratio="20">EN8B</text>
+<text x="118.508" y="26.035" size="1" layer="51" font="vector" ratio="20">EA0</text>
+<text x="120.794" y="28.575" size="1" layer="51" font="vector" ratio="20">EA1</text>
+<text x="120.794" y="31.115" size="1" layer="51" font="vector" ratio="20">EA2</text>
+<text x="120.794" y="33.655" size="1" layer="51" font="vector" ratio="20">EA3</text>
+<text x="120.794" y="36.195" size="1" layer="51" font="vector" ratio="20">EA4</text>
+<text x="120.794" y="38.735" size="1" layer="51" font="vector" ratio="20">EA5</text>
+<text x="120.794" y="41.275" size="1" layer="51" font="vector" ratio="20">EA6</text>
+<text x="120.794" y="43.815" size="1" layer="51" font="vector" ratio="20">EA7</text>
+<text x="118.508" y="49.53" size="1" layer="51" font="vector" ratio="20">EINT1</text>
+<text x="122.047" y="45.356" size="1" layer="51" font="vector" ratio="20" rot="R90">EINT0</text>
+<text x="118.508" y="50.927" size="1" layer="51" font="vector" ratio="20">ENC1A</text>
+<text x="118.508" y="53.467" size="1" layer="51" font="vector" ratio="20">ENC1B</text>
+<text x="118.508" y="56.007" size="1" layer="51" font="vector" ratio="20">ENC2A</text>
+<text x="118.508" y="58.547" size="1" layer="51" font="vector" ratio="20">ENC2B</text>
+<text x="118.508" y="61.087" size="1" layer="51" font="vector" ratio="20">ENC3A</text>
+<text x="118.508" y="63.627" size="1" layer="51" font="vector" ratio="20">ENC3B</text>
+<text x="118.508" y="66.167" size="1" layer="51" font="vector" ratio="20">ENC4A</text>
+<text x="118.508" y="68.707" size="1" layer="51" font="vector" ratio="20">ENC4B</text>
+<text x="118.508" y="71.247" size="1" layer="51" font="vector" ratio="20">ENC5A</text>
+<text x="118.508" y="73.787" size="1" layer="51" font="vector" ratio="20">ENC5B</text>
+<text x="118.508" y="76.327" size="1" layer="51" font="vector" ratio="20">ENC6A</text>
+<text x="118.508" y="78.867" size="1" layer="51" font="vector" ratio="20">ENC6B</text>
+<text x="118.508" y="81.407" size="1" layer="51" font="vector" ratio="20">ENC7A</text>
+<text x="118.508" y="83.947" size="1" layer="51" font="vector" ratio="20">ENC7B</text>
+<text x="118.508" y="86.487" size="1" layer="51" font="vector" ratio="20">ENC8A</text>
+<text x="118.508" y="89.027" size="1" layer="51" font="vector" ratio="20">ENC8B</text>
 <text x="118.508" y="52.197" size="1" layer="51" font="vector" ratio="20">IO21</text>
 <text x="118.508" y="54.737" size="1" layer="51" font="vector" ratio="20">IO19</text>
 <text x="118.508" y="57.277" size="1" layer="51" font="vector" ratio="20">IO18</text>
@@ -294,14 +294,14 @@
 <text x="47.261" y="26.797" size="1" layer="51" font="vector" ratio="20" align="bottom-right">S3</text>
 <text x="47.261" y="29.337" size="1" layer="51" font="vector" ratio="20" align="bottom-right">S2</text>
 <text x="47.261" y="31.877" size="1" layer="51" font="vector" ratio="20" align="bottom-right">S1</text>
-<text x="47.261" y="15.367" size="1" layer="51" font="vector" ratio="20" align="bottom-right">B7</text>
-<text x="47.261" y="17.907" size="1" layer="51" font="vector" ratio="20" align="bottom-right">B6</text>
-<text x="47.261" y="20.447" size="1" layer="51" font="vector" ratio="20" align="bottom-right">B5</text>
-<text x="47.261" y="22.987" size="1" layer="51" font="vector" ratio="20" align="bottom-right">B4</text>
-<text x="47.261" y="25.527" size="1" layer="51" font="vector" ratio="20" align="bottom-right">B3</text>
-<text x="47.261" y="28.067" size="1" layer="51" font="vector" ratio="20" align="bottom-right">B2</text>
-<text x="47.261" y="30.607" size="1" layer="51" font="vector" ratio="20" align="bottom-right">B1</text>
-<text x="47.261" y="33.147" size="1" layer="51" font="vector" ratio="20" align="bottom-right">B0</text>
+<text x="47.261" y="15.367" size="1" layer="51" font="vector" ratio="20" align="bottom-right">EB7</text>
+<text x="47.261" y="17.907" size="1" layer="51" font="vector" ratio="20" align="bottom-right">EB6</text>
+<text x="47.261" y="20.447" size="1" layer="51" font="vector" ratio="20" align="bottom-right">EB5</text>
+<text x="47.261" y="22.987" size="1" layer="51" font="vector" ratio="20" align="bottom-right">EB4</text>
+<text x="47.261" y="25.527" size="1" layer="51" font="vector" ratio="20" align="bottom-right">EB3</text>
+<text x="47.261" y="28.067" size="1" layer="51" font="vector" ratio="20" align="bottom-right">EB2</text>
+<text x="47.261" y="30.607" size="1" layer="51" font="vector" ratio="20" align="bottom-right">EB1</text>
+<text x="47.261" y="33.147" size="1" layer="51" font="vector" ratio="20" align="bottom-right">EB0</text>
 <text x="48.263" y="36.576" size="1.5" layer="51" font="vector" ratio="20" rot="R270" align="bottom-right">5V</text>
 <text x="50.803" y="34.671" size="1.5" layer="51" font="vector" ratio="20" rot="R270" align="bottom-right">-</text>
 <text x="53.721" y="36.576" size="1.5" layer="51" font="vector" ratio="20">SIG</text>
