@@ -26,7 +26,7 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
@@ -175,20 +175,20 @@
 <circle x="118" y="95" radius="3" width="0.1524" layer="51"/>
 <circle x="6" y="95" radius="3" width="0.1524" layer="51"/>
 <circle x="6" y="5" radius="3.2367875" width="0.1524" layer="51"/>
-<text x="15.751" y="31.242" size="1.5" layer="51" font="vector" ratio="20" rot="R270">M4</text>
-<text x="13.211" y="31.242" size="1.5" layer="51" font="vector" ratio="20" rot="R270">M3</text>
-<text x="15.751" y="10.922" size="1.5" layer="51" font="vector" ratio="20" rot="R270">M2</text>
-<text x="13.084" y="10.922" size="1.5" layer="51" font="vector" ratio="20" rot="R270">M1</text>
-<text x="15.751" y="71.882" size="1.5" layer="51" font="vector" ratio="20" rot="R270">M8</text>
-<text x="13.211" y="71.882" size="1.5" layer="51" font="vector" ratio="20" rot="R270">M7</text>
-<text x="15.751" y="51.562" size="1.5" layer="51" font="vector" ratio="20" rot="R270">M6</text>
-<text x="13.084" y="51.562" size="1.5" layer="51" font="vector" ratio="20" rot="R270">M5</text>
+<text x="13.211" y="31.242" size="1.5" layer="51" font="vector" ratio="20" rot="R270">M4</text>
+<text x="15.751" y="31.242" size="1.5" layer="51" font="vector" ratio="20" rot="R270">M3</text>
+<text x="13.211" y="10.922" size="1.5" layer="51" font="vector" ratio="20" rot="R270">M2</text>
+<text x="15.624" y="10.922" size="1.5" layer="51" font="vector" ratio="20" rot="R270">M1</text>
+<text x="13.211" y="71.882" size="1.5" layer="51" font="vector" ratio="20" rot="R270">M8</text>
+<text x="15.751" y="71.882" size="1.5" layer="51" font="vector" ratio="20" rot="R270">M7</text>
+<text x="13.211" y="51.562" size="1.5" layer="51" font="vector" ratio="20" rot="R270">M6</text>
+<text x="15.624" y="51.562" size="1.5" layer="51" font="vector" ratio="20" rot="R270">M5</text>
 <text x="26.038" y="7.874" size="2.54" layer="51" font="vector" ratio="20">IN</text>
 <text x="12.319" y="95.885" size="1" layer="51" font="vector" ratio="20" rot="R270">SCL</text>
-<text x="2.156" y="23.114" size="1.5" layer="51" font="vector" ratio="20" rot="R90">M1</text>
-<text x="2.156" y="13.208" size="1.5" layer="51" font="vector" ratio="20" rot="R90">M2</text>
-<text x="2.156" y="43.752" size="1.5" layer="51" font="vector" ratio="20" rot="R90">M3</text>
-<text x="2.283" y="33.274" size="1.5" layer="51" font="vector" ratio="20" rot="R90">M4</text>
+<text x="2.156" y="12.954" size="1.5" layer="51" font="vector" ratio="20" rot="R90">M1</text>
+<text x="2.156" y="23.368" size="1.5" layer="51" font="vector" ratio="20" rot="R90">M2</text>
+<text x="2.156" y="33.592" size="1.5" layer="51" font="vector" ratio="20" rot="R90">M3</text>
+<text x="2.283" y="43.434" size="1.5" layer="51" font="vector" ratio="20" rot="R90">M4</text>
 <text x="118.508" y="12.827" size="1" layer="51" font="vector" ratio="20">TXD0</text>
 <text x="118.508" y="10.287" size="1" layer="51" font="vector" ratio="20">RXD0</text>
 <text x="118.508" y="15.367" size="1" layer="51" font="vector" ratio="20">SDA</text>
@@ -279,10 +279,10 @@
 <text x="18.415" y="84.452" size="1.5" layer="51" font="vector" ratio="20" rot="R180" align="bottom-right">5V</text>
 <text x="18.415" y="79.372" size="1.5" layer="51" font="vector" ratio="20" rot="R180" align="bottom-right">B</text>
 <text x="18.415" y="81.912" size="1.5" layer="51" font="vector" ratio="20" rot="R180" align="bottom-right">A</text>
-<text x="2.156" y="53.277" size="1.5" layer="51" font="vector" ratio="20" rot="R90">M6</text>
-<text x="2.156" y="63.437" size="1.5" layer="51" font="vector" ratio="20" rot="R90">M5</text>
-<text x="2.156" y="73.597" size="1.5" layer="51" font="vector" ratio="20" rot="R90">M8</text>
-<text x="2.156" y="83.757" size="1.5" layer="51" font="vector" ratio="20" rot="R90">M7</text>
+<text x="2.156" y="63.437" size="1.5" layer="51" font="vector" ratio="20" rot="R90">M6</text>
+<text x="2.156" y="53.277" size="1.5" layer="51" font="vector" ratio="20" rot="R90">M5</text>
+<text x="2.156" y="83.757" size="1.5" layer="51" font="vector" ratio="20" rot="R90">M8</text>
+<text x="2.156" y="73.597" size="1.5" layer="51" font="vector" ratio="20" rot="R90">M7</text>
 <text x="58.544" y="47.498" size="1.5" layer="51" font="vector" ratio="20" rot="R90">POWER</text>
 <text x="54.734" y="39.243" size="1.5" layer="51" font="vector" ratio="20" rot="R90">5V_EN</text>
 <text x="60.198" y="12.463" size="1" layer="51" font="vector" ratio="20" rot="R90">ESP
@@ -4446,28 +4446,28 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <element name="JP30" library="pinhead" package="1X01" value="IM10_ULT" x="23.99" y="71.12" smashed="yes" rot="R90">
 <attribute name="VALUE" x="27.165" y="69.85" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="JP31" library="pinhead" package="1X06" value="ENC1" x="14.1" y="19.05" smashed="yes" rot="R270">
+<element name="JP31" library="pinhead" package="1X06" value="M2" x="14.1" y="19.05" smashed="yes" rot="R270">
 <attribute name="VALUE" x="10.925" y="26.67" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="JP32" library="pinhead" package="1X06" value="ENC3" x="14.1" y="39.37" smashed="yes" rot="R270">
+<element name="JP32" library="pinhead" package="1X06" value="M4" x="14.1" y="39.37" smashed="yes" rot="R270">
 <attribute name="VALUE" x="10.925" y="46.99" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="JP33" library="pinhead" package="1X06" value="ENC5" x="14.1" y="59.69" smashed="yes" rot="R270">
+<element name="JP33" library="pinhead" package="1X06" value="M6" x="14.1" y="59.69" smashed="yes" rot="R270">
 <attribute name="VALUE" x="10.925" y="67.31" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="JP34" library="pinhead" package="1X06" value="ENC7" x="14.1" y="80.01" smashed="yes" rot="R270">
+<element name="JP34" library="pinhead" package="1X06" value="M8" x="14.1" y="80.01" smashed="yes" rot="R270">
 <attribute name="VALUE" x="10.925" y="87.63" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="JP35" library="pinhead" package="1X06" value="ENC2" x="16.64" y="19.05" smashed="yes" rot="R270">
+<element name="JP35" library="pinhead" package="1X06" value="M1" x="16.64" y="19.05" smashed="yes" rot="R270">
 <attribute name="VALUE" x="13.465" y="26.67" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="JP36" library="pinhead" package="1X06" value="ENC4" x="16.64" y="39.37" smashed="yes" rot="R270">
+<element name="JP36" library="pinhead" package="1X06" value="M3" x="16.64" y="39.37" smashed="yes" rot="R270">
 <attribute name="VALUE" x="13.465" y="46.99" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="JP37" library="pinhead" package="1X06" value="ENC6" x="16.64" y="59.69" smashed="yes" rot="R270">
+<element name="JP37" library="pinhead" package="1X06" value="M5" x="16.64" y="59.69" smashed="yes" rot="R270">
 <attribute name="VALUE" x="13.465" y="67.31" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="JP38" library="pinhead" package="1X06" value="ENC8" x="16.64" y="80.01" smashed="yes" rot="R270">
+<element name="JP38" library="pinhead" package="1X06" value="M7" x="16.64" y="80.01" smashed="yes" rot="R270">
 <attribute name="VALUE" x="13.465" y="87.63" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="JP4" library="pinhead" package="1X01" value="IM4_EN" x="124.46" y="63.5" smashed="yes">
@@ -4597,7 +4597,7 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <attribute name="OC_NEWARK" value="unknown" x="39.37" y="6.096" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="35.56" y="-0.889" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="X10" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-132" package3d_urn="urn:adsk.eagle:package:10734/1" value="" x="7.62" y="74.93" smashed="yes" rot="R270">
+<element name="X10" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-132" package3d_urn="urn:adsk.eagle:package:10734/1" value="M7" x="7.62" y="74.93" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="7.62" y="74.93" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="7.62" y="74.93" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="7.62" y="74.93" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4611,49 +4611,49 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <attribute name="OC_NEWARK" value="unknown" x="39.37" y="92.964" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="43.18" y="99.949" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="X3" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-132" package3d_urn="urn:adsk.eagle:package:10734/1" value="" x="7.62" y="24.13" smashed="yes" rot="R270">
+<element name="X3" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-132" package3d_urn="urn:adsk.eagle:package:10734/1" value="M2" x="7.62" y="24.13" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="7.62" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="7.62" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="7.62" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="7.62" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="0.635" y="27.94" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="X4" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-132" package3d_urn="urn:adsk.eagle:package:10734/1" value="" x="7.62" y="44.45" smashed="yes" rot="R270">
+<element name="X4" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-132" package3d_urn="urn:adsk.eagle:package:10734/1" value="M4" x="7.62" y="44.45" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="7.62" y="44.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="7.62" y="44.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="7.62" y="44.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="7.62" y="44.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="0.635" y="48.26" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="X5" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-132" package3d_urn="urn:adsk.eagle:package:10734/1" value="" x="7.62" y="64.77" smashed="yes" rot="R270">
+<element name="X5" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-132" package3d_urn="urn:adsk.eagle:package:10734/1" value="M6" x="7.62" y="64.77" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="7.62" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="7.62" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="7.62" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="7.62" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="0.635" y="68.58" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="X6" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-132" package3d_urn="urn:adsk.eagle:package:10734/1" value="" x="7.62" y="85.09" smashed="yes" rot="R270">
+<element name="X6" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-132" package3d_urn="urn:adsk.eagle:package:10734/1" value="M8" x="7.62" y="85.09" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="7.62" y="85.09" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="7.62" y="85.09" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="7.62" y="85.09" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="7.62" y="85.09" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="0.635" y="88.9" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="X7" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-132" package3d_urn="urn:adsk.eagle:package:10734/1" value="" x="7.62" y="13.97" smashed="yes" rot="R270">
+<element name="X7" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-132" package3d_urn="urn:adsk.eagle:package:10734/1" value="M1" x="7.62" y="13.97" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="7.62" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="7.62" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="7.62" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="7.62" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="0.635" y="17.78" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="X8" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-132" package3d_urn="urn:adsk.eagle:package:10734/1" value="" x="7.62" y="34.29" smashed="yes" rot="R270">
+<element name="X8" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-132" package3d_urn="urn:adsk.eagle:package:10734/1" value="M3" x="7.62" y="34.29" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="7.62" y="34.29" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="7.62" y="34.29" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="7.62" y="34.29" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="7.62" y="34.29" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="0.635" y="38.1" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="X9" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-132" package3d_urn="urn:adsk.eagle:package:10734/1" value="" x="7.62" y="54.61" smashed="yes" rot="R270">
+<element name="X9" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-132" package3d_urn="urn:adsk.eagle:package:10734/1" value="M5" x="7.62" y="54.61" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="7.62" y="54.61" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="7.62" y="54.61" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="7.62" y="54.61" size="1.778" layer="27" rot="R270" display="off"/>
@@ -5874,13 +5874,10 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="7.115" y1="26.67" x2="6.985" y2="26.67" width="1.8" layer="16"/>
 </signal>
 <signal name="ENC1A">
-<contactref element="JP31" pad="3"/>
 <contactref element="JP15" pad="1"/>
 <contactref element="JP15" pad="2"/>
 <contactref element="RN4" pad="10"/>
-<wire x1="14.1" y1="20.32" x2="15.37" y2="21.59" width="0.2" layer="1"/>
-<wire x1="15.37" y1="21.59" x2="17.91" y2="21.59" width="0.2" layer="1"/>
-<wire x1="17.91" y1="21.59" x2="18.926" y2="22.606" width="0.2" layer="1"/>
+<wire x1="18.926" y1="22.606" x2="17.91" y2="21.59" width="0.2" layer="1"/>
 <wire x1="18.926" y1="22.606" x2="20.704" y2="22.606" width="0.2" layer="1"/>
 <via x="20.704" y="22.606" extent="1-16" drill="0.35"/>
 <wire x1="30.0486875" y1="48.2648" x2="26.7616" y2="44.9777125" width="0.2032" layer="16"/>
@@ -5938,7 +5935,6 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="100.076" y1="55.626" x2="99.18268125" y2="55.626" width="0.2" layer="1"/>
 <wire x1="97.7265" y1="57.08218125" x2="97.7265" y2="57.12696875" width="0.2" layer="1"/>
 <wire x1="99.18268125" y1="55.626" x2="97.7265" y2="57.08218125" width="0.2" layer="1"/>
-<wire x1="21.1884" y1="25.0679625" x2="21.19" y2="25.0663625" width="0.2" layer="16"/>
 <wire x1="21.19" y1="25.0663625" x2="21.19" y2="23.73" width="0.2" layer="16"/>
 <wire x1="25.1552" y1="29.7894125" x2="25.1552" y2="30.48" width="0.2032" layer="16"/>
 <wire x1="25.1552" y1="29.7894125" x2="21.1852" y2="25.8194125" width="0.2032" layer="16"/>
@@ -5949,16 +5945,16 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="25.4556" y1="30.7804" x2="25.4556" y2="31.137675" width="0.2032" layer="16"/>
 <wire x1="25.4556" y1="31.137675" x2="25.4636" y2="31.145675" width="0.2032" layer="16"/>
 <wire x1="25.4636" y1="31.145675" x2="25.4636" y2="32.893" width="0.2032" layer="16"/>
-<wire x1="21.1884" y1="25.0679625" x2="21.1852" y2="25.0711625" width="0.2" layer="16"/>
+<wire x1="21.19" y1="25.0663625" x2="21.1852" y2="25.0711625" width="0.2" layer="16"/>
 <wire x1="21.1852" y1="25.0711625" x2="21.1852" y2="25.146" width="0.2" layer="16"/>
+<contactref element="JP35" pad="3"/>
+<wire x1="17.91" y1="21.59" x2="16.64" y2="20.32" width="0.2032" layer="1"/>
 </signal>
 <signal name="ENC1B">
-<contactref element="JP31" pad="4"/>
 <contactref element="JP15" pad="3"/>
 <contactref element="JP15" pad="4"/>
 <contactref element="RN4" pad="12"/>
-<wire x1="14.1" y1="17.78" x2="15.37" y2="16.51" width="0.2" layer="16"/>
-<wire x1="15.37" y1="16.51" x2="25.4" y2="16.51" width="0.2" layer="16"/>
+<wire x1="25.4" y1="16.51" x2="17.91" y2="16.51" width="0.2" layer="16"/>
 <wire x1="27.968" y1="38.1" x2="27.968" y2="44.478" width="0.2032" layer="16"/>
 <via x="100.33" y="53.086" extent="1-16" drill="0.35"/>
 <wire x1="26.67" y1="36.802" x2="27.968" y2="38.1" width="0.2" layer="16"/>
@@ -6009,15 +6005,13 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="27.07" y1="31.63070625" x2="27.5606" y2="32.12130625" width="0.2032" layer="16"/>
 <wire x1="27.07" y1="28.0367875" x2="27.07" y2="31.63070625" width="0.2032" layer="16"/>
 <wire x1="25.6095" y1="26.5762875" x2="27.07" y2="28.0367875" width="0.2032" layer="16"/>
+<contactref element="JP35" pad="4"/>
+<wire x1="17.91" y1="16.51" x2="16.64" y2="17.78" width="0.2032" layer="16"/>
 </signal>
 <signal name="ENC2A">
 <contactref element="JP15" pad="5"/>
 <contactref element="JP15" pad="6"/>
-<contactref element="JP35" pad="3"/>
 <contactref element="RN4" pad="14"/>
-<wire x1="16.64" y1="20.32" x2="17.91" y2="20.32" width="0.2" layer="1"/>
-<wire x1="17.91" y1="20.32" x2="19.18" y2="21.59" width="0.2" layer="1"/>
-<wire x1="19.18" y1="21.59" x2="21.59" y2="21.59" width="0.2" layer="1"/>
 <via x="21.59" y="21.59" extent="1-16" drill="0.35"/>
 <wire x1="25.8668" y1="33.02" x2="25.8668" y2="37.1347" width="0.2032" layer="16"/>
 <wire x1="25.8668" y1="37.1347" x2="27.1648" y2="38.4327" width="0.2032" layer="16"/>
@@ -6075,14 +6069,18 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="25.862" y1="30.976125" x2="25.8652" y2="30.979325" width="0.2" layer="16"/>
 <wire x1="25.74989375" y1="28.86010625" x2="25.8604" y2="28.9706125" width="0.2" layer="16"/>
 <wire x1="25.8604" y1="28.9706125" x2="25.8604" y2="29.9244" width="0.2" layer="16"/>
+<contactref element="JP31" pad="3"/>
+<wire x1="21.59" y1="21.59" x2="20.9566" y2="20.9566" width="0.2032" layer="1"/>
+<wire x1="20.9566" y1="20.9566" x2="20.44030625" y2="20.9566" width="0.2032" layer="1"/>
+<wire x1="18.53370625" y1="19.05" x2="15.367" y2="19.05" width="0.2032" layer="1"/>
+<wire x1="20.44030625" y1="20.9566" x2="18.53370625" y2="19.05" width="0.2032" layer="1"/>
+<wire x1="15.367" y1="19.05" x2="14.1" y2="20.317" width="0.2032" layer="1"/>
+<wire x1="14.1" y1="20.317" x2="14.1" y2="20.32" width="0.2032" layer="1"/>
 </signal>
 <signal name="ENC2B">
 <contactref element="JP15" pad="7"/>
 <contactref element="JP15" pad="8"/>
-<contactref element="JP35" pad="4"/>
 <contactref element="RN3" pad="2"/>
-<wire x1="16.64" y1="17.78" x2="19.18" y2="20.32" width="0.2" layer="1"/>
-<wire x1="19.18" y1="20.32" x2="20.704" y2="20.32" width="0.2" layer="1"/>
 <via x="20.704" y="20.32" extent="1-16" drill="0.35"/>
 <wire x1="27.5664" y1="38.26635" x2="26.2684" y2="36.96835" width="0.2" layer="16"/>
 <wire x1="27.5664" y1="44.64435" x2="27.5664" y2="38.26635" width="0.2" layer="16"/>
@@ -6145,21 +6143,22 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="60.8965" y1="52.70018125" x2="60.474384375" y2="53.122296875" width="0.2" layer="16"/>
 <via x="60.8965" y="52.70018125" extent="1-16" drill="0.35"/>
 <wire x1="26.2652" y1="32.85045" x2="26.2652" y2="30.8136375" width="0.2" layer="16"/>
-<wire x1="26.262" y1="30.54073125" x2="26.262" y2="30.8104375" width="0.2" layer="16"/>
 <wire x1="26.2652" y1="30.8136375" x2="26.262" y2="30.8104375" width="0.2" layer="16"/>
 <wire x1="21.99" y1="25.4" x2="23.695" y2="27.105" width="0.2032" layer="16"/>
 <wire x1="23.695" y1="27.105" x2="24.565" y2="27.105" width="0.2032" layer="16"/>
 <wire x1="24.565" y1="27.105" x2="26.262" y2="28.802" width="0.2032" layer="16"/>
-<wire x1="26.262" y1="28.802" x2="26.262" y2="30.54073125" width="0.2" layer="16"/>
+<wire x1="26.262" y1="28.802" x2="26.262" y2="30.8104375" width="0.2" layer="16"/>
+<contactref element="JP31" pad="4"/>
+<wire x1="20.704" y1="20.32" x2="19.05" y2="18.666" width="0.2032" layer="1"/>
+<wire x1="19.05" y1="18.666" x2="19.05" y2="17.78" width="0.2032" layer="1"/>
+<wire x1="17.78" y1="16.51" x2="19.05" y2="17.78" width="0.2032" layer="1"/>
+<wire x1="14.1" y1="17.78" x2="15.37" y2="16.51" width="0.2032" layer="1"/>
+<wire x1="15.37" y1="16.51" x2="17.78" y2="16.51" width="0.2032" layer="1"/>
 </signal>
 <signal name="ENC4A">
-<contactref element="JP36" pad="3"/>
 <contactref element="JP15" pad="13"/>
 <contactref element="JP15" pad="14"/>
 <contactref element="RN3" pad="12"/>
-<wire x1="16.64" y1="40.64" x2="17.91" y2="40.64" width="0.2" layer="1"/>
-<wire x1="17.91" y1="40.64" x2="19.18" y2="41.91" width="0.2" layer="1"/>
-<wire x1="19.18" y1="41.91" x2="21.59" y2="41.91" width="0.2" layer="1"/>
 <via x="21.59" y="41.91" extent="1-16" drill="0.35"/>
 <wire x1="25.5568" y1="45.07100625" x2="25.5568" y2="45.4767625" width="0.2" layer="16"/>
 <wire x1="21.59" y1="41.91" x2="24.36558125" y2="41.91" width="0.2" layer="16"/>
@@ -6196,14 +6195,17 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="61.93368125" y1="55.715" x2="51.8379375" y2="55.715" width="0.2" layer="16"/>
 <wire x1="51.8379375" y1="55.715" x2="46.170525" y2="50.0475875" width="0.2" layer="16"/>
 <wire x1="64.072925" y1="55.75591875" x2="61.9746" y2="55.75591875" width="0.2" layer="16"/>
+<contactref element="JP32" pad="3"/>
+<wire x1="21.59" y1="41.91" x2="20.32" y2="41.91" width="0.2032" layer="1"/>
+<wire x1="20.32" y1="41.91" x2="17.78" y2="39.37" width="0.2032" layer="1"/>
+<wire x1="17.78" y1="39.37" x2="15.367" y2="39.37" width="0.2032" layer="1"/>
+<wire x1="15.367" y1="39.37" x2="14.1" y2="40.637" width="0.2032" layer="1"/>
+<wire x1="14.1" y1="40.637" x2="14.1" y2="40.64" width="0.2032" layer="1"/>
 </signal>
 <signal name="ENC4B">
-<contactref element="JP36" pad="4"/>
 <contactref element="JP15" pad="15"/>
 <contactref element="JP15" pad="16"/>
 <contactref element="RN5" pad="13"/>
-<wire x1="16.64" y1="38.1" x2="19.18" y2="40.64" width="0.2" layer="1"/>
-<wire x1="19.18" y1="40.64" x2="20.704" y2="40.64" width="0.2" layer="1"/>
 <via x="20.704" y="40.64" extent="1-16" drill="0.35"/>
 <wire x1="21.974" y1="39.37" x2="20.704" y2="40.64" width="0.2" layer="16"/>
 <wire x1="25.9568" y1="45.311075" x2="25.9568" y2="44.90531875" width="0.2" layer="16"/>
@@ -6252,16 +6254,18 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="88.07059375" y1="58.09" x2="74.3640625" y2="58.09" width="0.2" layer="16"/>
 <wire x1="90.84996875" y1="57.82996875" x2="91.44" y2="58.42" width="0.2" layer="16"/>
 <wire x1="88.330625" y1="57.82996875" x2="90.84996875" y2="57.82996875" width="0.2" layer="16"/>
+<contactref element="JP32" pad="4"/>
+<wire x1="20.704" y1="40.64" x2="19.05" y2="38.986" width="0.2032" layer="1"/>
+<wire x1="19.05" y1="38.986" x2="19.05" y2="38.1" width="0.2032" layer="1"/>
+<wire x1="19.05" y1="38.1" x2="17.78" y2="36.83" width="0.2032" layer="1"/>
+<wire x1="17.78" y1="36.83" x2="15.367" y2="36.83" width="0.2032" layer="1"/>
+<wire x1="15.367" y1="36.83" x2="14.1" y2="38.097" width="0.2032" layer="1"/>
+<wire x1="14.1" y1="38.097" x2="14.1" y2="38.1" width="0.2032" layer="1"/>
 </signal>
 <signal name="ENC3A">
-<contactref element="JP32" pad="3"/>
 <contactref element="JP15" pad="9"/>
 <contactref element="JP15" pad="10"/>
 <contactref element="RN3" pad="4"/>
-<wire x1="14.1" y1="40.64" x2="15.37" y2="41.91" width="0.2" layer="1"/>
-<wire x1="15.37" y1="41.91" x2="17.91" y2="41.91" width="0.2" layer="1"/>
-<wire x1="17.91" y1="41.91" x2="18.926" y2="42.926" width="0.2" layer="1"/>
-<wire x1="18.926" y1="42.926" x2="20.704" y2="42.926" width="0.2" layer="1"/>
 <via x="20.704" y="42.926" extent="1-16" drill="0.35"/>
 <wire x1="22.228" y1="44.45" x2="20.704" y2="42.926" width="0.2" layer="16"/>
 <wire x1="25.1552" y1="45.6431125" x2="25.1552" y2="45.23735625" width="0.2032" layer="16"/>
@@ -6297,8 +6301,7 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="94.85495" y1="58.69911875" x2="100.60911875" y2="58.69911875" width="0.2" layer="16"/>
 <wire x1="100.60911875" y1="58.69911875" x2="102.9764" y2="61.0664" width="0.2" layer="16"/>
 <wire x1="67.02523125" y1="70.84088125" x2="65.6295625" y2="70.84088125" width="0.2" layer="1"/>
-<wire x1="67.43088125" y1="72.71259375" x2="67.8492375" y2="72.2942375" width="0.2" layer="1"/>
-<wire x1="67.90088125" y1="72.24259375" x2="67.8492375" y2="72.2942375" width="0.2" layer="1"/>
+<wire x1="67.43088125" y1="72.71259375" x2="67.90088125" y2="72.24259375" width="0.2" layer="1"/>
 <wire x1="67.90088125" y1="71.71653125" x2="67.90088125" y2="72.24259375" width="0.2" layer="1"/>
 <wire x1="67.90088125" y1="71.71653125" x2="67.02523125" y2="70.84088125" width="0.2" layer="1"/>
 <wire x1="61.8089125" y1="56.15591875" x2="62.2284" y2="56.15591875" width="0.2" layer="16"/>
@@ -6316,15 +6319,15 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="89.63303125" y1="59.125" x2="93.313" y2="59.125" width="0.2" layer="16"/>
 <wire x1="93.313" y1="59.125" x2="93.3195" y2="59.1185" width="0.2" layer="16"/>
 <wire x1="93.3195" y1="59.1185" x2="94.43556875" y2="59.1185" width="0.2" layer="16"/>
-<wire x1="67.8492375" y1="72.2942375" x2="67.8492375" y2="72.2942375" width="0.2" layer="1"/>
+<contactref element="JP36" pad="3"/>
+<wire x1="16.764" y1="40.64" x2="16.64" y2="40.64" width="0.2032" layer="1"/>
+<wire x1="20.704" y1="42.926" x2="18.418" y2="40.64" width="0.2032" layer="1"/>
+<wire x1="18.418" y1="40.64" x2="16.64" y2="40.64" width="0.2032" layer="1"/>
 </signal>
 <signal name="ENC3B">
-<contactref element="JP32" pad="4"/>
 <contactref element="JP15" pad="11"/>
 <contactref element="JP15" pad="12"/>
 <contactref element="RN3" pad="6"/>
-<wire x1="15.37" y1="36.83" x2="14.1" y2="38.1" width="0.2" layer="16"/>
-<wire x1="24.419325" y1="36.83" x2="15.37" y2="36.83" width="0.2032" layer="16"/>
 <wire x1="29.3418375" y1="48.1281625" x2="26.3584" y2="45.144725" width="0.2032" layer="16"/>
 <wire x1="26.3584" y1="45.144725" x2="26.3584" y2="38.769075" width="0.2032" layer="16"/>
 <wire x1="26.3584" y1="38.769075" x2="24.419325" y2="36.83" width="0.2032" layer="16"/>
@@ -6359,17 +6362,17 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="60.579" y1="54.92600625" x2="61.23911875" y2="55.586125" width="0.2" layer="1"/>
 <wire x1="60.579" y1="54.68" x2="60.344" y2="54.915" width="0.2" layer="16"/>
 <wire x1="60.344" y1="54.915" x2="52.16931875" y2="54.915" width="0.2" layer="16"/>
+<contactref element="JP36" pad="4"/>
+<wire x1="24.419325" y1="36.83" x2="24.350925" y2="36.8984" width="0.2032" layer="16"/>
+<wire x1="24.350925" y1="36.8984" x2="19.952275" y2="36.8984" width="0.2032" layer="16"/>
+<wire x1="18.750675" y1="38.1" x2="16.64" y2="38.1" width="0.2032" layer="16"/>
+<wire x1="19.952275" y1="36.8984" x2="18.750675" y2="38.1" width="0.2032" layer="16"/>
 </signal>
 <signal name="ENC5A">
-<contactref element="JP33" pad="3"/>
 <contactref element="JP15" pad="17"/>
 <contactref element="JP15" pad="18"/>
 <contactref element="IM11" pad="5"/>
 <contactref element="RN5" pad="11"/>
-<wire x1="14.1" y1="60.96" x2="15.37" y2="62.23" width="0.2" layer="1"/>
-<wire x1="15.37" y1="62.23" x2="17.91" y2="62.23" width="0.2" layer="1"/>
-<wire x1="17.91" y1="62.23" x2="18.926" y2="63.246" width="0.2" layer="1"/>
-<wire x1="18.926" y1="63.246" x2="20.704" y2="63.246" width="0.2" layer="1"/>
 <via x="20.704" y="63.246" extent="1-16" drill="0.35"/>
 <wire x1="20.704" y1="63.246" x2="22.228" y2="64.77" width="0.2" layer="16"/>
 <wire x1="26.398" y1="56.8774375" x2="26.398" y2="54.882" width="0.2032" layer="16"/>
@@ -6425,16 +6428,16 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="88.9" y1="58.36545" x2="88.9" y2="59.29" width="0.2" layer="1"/>
 <wire x1="89.8525" y1="57.41295" x2="88.9" y2="58.36545" width="0.2" layer="1"/>
 <wire x1="94.9325" y1="43.815" x2="89.8525" y2="48.895" width="0.2" layer="1"/>
+<contactref element="JP37" pad="3"/>
+<wire x1="20.704" y1="63.246" x2="18.418" y2="60.96" width="0.2032" layer="1"/>
+<wire x1="18.418" y1="60.96" x2="16.64" y2="60.96" width="0.2032" layer="1"/>
 </signal>
 <signal name="ENC5B">
-<contactref element="JP33" pad="4"/>
 <contactref element="JP15" pad="19"/>
 <contactref element="JP15" pad="20"/>
 <contactref element="IM11" pad="6"/>
 <contactref element="RN5" pad="9"/>
-<wire x1="15.37" y1="57.15" x2="14.1" y2="58.42" width="0.2" layer="16"/>
-<wire x1="25.1916" y1="56.377725" x2="24.419325" y2="57.15" width="0.2032" layer="16"/>
-<wire x1="24.419325" y1="57.15" x2="15.37" y2="57.15" width="0.2032" layer="16"/>
+<wire x1="24.419325" y1="57.15" x2="25.1916" y2="56.377725" width="0.2032" layer="16"/>
 <wire x1="25.1916" y1="54.3822875" x2="25.1916" y2="56.377725" width="0.2032" layer="16"/>
 <wire x1="60.132340625" y1="57.397215625" x2="60.132340625" y2="58.249721875" width="0.2" layer="1"/>
 <wire x1="28.7231" y1="50.8507875" x2="25.1916" y2="54.3822875" width="0.2" layer="16"/>
@@ -6480,15 +6483,14 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="90.2525" y1="50.8" x2="90.2525" y2="58.0835" width="0.2" layer="1"/>
 <wire x1="89.87103125" y1="58.46496875" x2="90.0993625" y2="58.6933" width="0.2" layer="1"/>
 <wire x1="90.0993625" y1="58.6933" x2="90.0993625" y2="74.93" width="0.2" layer="1"/>
+<contactref element="JP37" pad="4"/>
+<wire x1="16.64" y1="58.42" x2="17.91" y2="57.15" width="0.2032" layer="16"/>
+<wire x1="17.91" y1="57.15" x2="24.419325" y2="57.15" width="0.2032" layer="16"/>
 </signal>
 <signal name="ENC6A">
-<contactref element="JP37" pad="3"/>
 <contactref element="JP15" pad="21"/>
 <contactref element="JP15" pad="22"/>
 <contactref element="RN5" pad="7"/>
-<wire x1="16.64" y1="60.96" x2="17.91" y2="60.96" width="0.2" layer="1"/>
-<wire x1="17.91" y1="60.96" x2="19.18" y2="62.23" width="0.2" layer="1"/>
-<wire x1="19.18" y1="62.23" x2="21.59" y2="62.23" width="0.2" layer="1"/>
 <via x="21.59" y="62.23" extent="1-16" drill="0.35"/>
 <wire x1="25.9948" y1="56.710425" x2="25.9948" y2="54.7149875" width="0.2032" layer="16"/>
 <wire x1="25.1552" y1="59.5198125" x2="25.5916" y2="59.0834125" width="0.2032" layer="16"/>
@@ -6544,14 +6546,18 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="45.506446875" y1="51.650790625" x2="51.1915125" y2="57.33585625" width="0.2" layer="16"/>
 <wire x1="58.60585625" y1="57.33585625" x2="59.4973375" y2="58.2273375" width="0.2" layer="16"/>
 <wire x1="51.1915125" y1="57.33585625" x2="58.60585625" y2="57.33585625" width="0.2" layer="16"/>
+<contactref element="JP33" pad="3"/>
+<wire x1="21.59" y1="62.23" x2="20.9566" y2="61.5966" width="0.2032" layer="1"/>
+<wire x1="20.9566" y1="61.5966" x2="20.44030625" y2="61.5966" width="0.2032" layer="1"/>
+<wire x1="18.53370625" y1="59.69" x2="15.367" y2="59.69" width="0.2032" layer="1"/>
+<wire x1="20.44030625" y1="61.5966" x2="18.53370625" y2="59.69" width="0.2032" layer="1"/>
+<wire x1="15.367" y1="59.69" x2="14.1" y2="60.957" width="0.2032" layer="1"/>
+<wire x1="14.1" y1="60.957" x2="14.1" y2="60.96" width="0.2032" layer="1"/>
 </signal>
 <signal name="ENC6B">
-<contactref element="JP37" pad="4"/>
 <contactref element="JP15" pad="23"/>
 <contactref element="JP15" pad="24"/>
 <contactref element="RN5" pad="5"/>
-<wire x1="16.64" y1="58.42" x2="19.18" y2="60.96" width="0.2" layer="1"/>
-<wire x1="19.18" y1="60.96" x2="20.704" y2="60.96" width="0.2" layer="1"/>
 <via x="20.704" y="60.96" extent="1-16" drill="0.35"/>
 <wire x1="20.704" y1="60.96" x2="21.974" y2="59.69" width="0.2" layer="16"/>
 <wire x1="21.974" y1="59.69" x2="24.4170625" y2="59.69" width="0.2" layer="16"/>
@@ -6589,18 +6595,19 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="59.71650625" y1="56.93585625" x2="60.84476875" y2="58.06411875" width="0.2" layer="16"/>
 <wire x1="45.67213125" y1="51.2507875" x2="51.3572" y2="56.93585625" width="0.2" layer="16"/>
 <wire x1="51.3572" y1="56.93585625" x2="59.71650625" y2="56.93585625" width="0.2" layer="16"/>
+<contactref element="JP33" pad="4"/>
+<wire x1="14.1" y1="58.42" x2="15.2652" y2="57.2548" width="0.2032" layer="1"/>
+<wire x1="15.2652" y1="57.2548" x2="17.12264375" y2="57.2548" width="0.2032" layer="1"/>
+<wire x1="20.704" y1="60.83615625" x2="20.704" y2="60.96" width="0.2032" layer="1"/>
+<wire x1="17.12264375" y1="57.2548" x2="20.704" y2="60.83615625" width="0.2032" layer="1"/>
 </signal>
 <signal name="ENC7A">
-<contactref element="JP34" pad="3"/>
 <contactref element="JP15" pad="25"/>
 <contactref element="JP15" pad="26"/>
 <contactref element="RN5" pad="3"/>
-<wire x1="14.1" y1="81.28" x2="15.37" y2="82.55" width="0.2" layer="1"/>
 <via x="20.958" y="83.82" extent="1-16" drill="0.35"/>
 <wire x1="20.958" y1="86.998" x2="20.958" y2="83.82" width="0.2" layer="16"/>
-<wire x1="15.37" y1="82.55" x2="17.78" y2="82.55" width="0.2" layer="1"/>
-<wire x1="17.78" y1="82.55" x2="19.304" y2="84.074" width="0.2" layer="1"/>
-<wire x1="19.304" y1="84.074" x2="20.704" y2="84.074" width="0.2" layer="1"/>
+<wire x1="20.704" y1="84.074" x2="19.304" y2="84.074" width="0.2" layer="1"/>
 <wire x1="20.704" y1="84.074" x2="20.958" y2="83.82" width="0.2" layer="1"/>
 <wire x1="63.22088125" y1="81.00088125" x2="62.23" y2="80.01" width="0.2" layer="1"/>
 <wire x1="63.22088125" y1="86.995" x2="63.22088125" y2="83.82" width="0.2" layer="1"/>
@@ -6639,19 +6646,16 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="63.22088125" y1="83.82" x2="63.34788125" y2="83.693" width="0.2" layer="1"/>
 <wire x1="63.34788125" y1="83.693" x2="70.09293125" y2="83.693" width="0.2" layer="1"/>
 <wire x1="82.423" y1="65.03303125" x2="82.423" y2="63.881" width="0.2" layer="1"/>
+<contactref element="JP38" pad="3"/>
+<wire x1="19.304" y1="84.074" x2="16.64" y2="81.41" width="0.2" layer="1"/>
+<wire x1="16.64" y1="81.41" x2="16.64" y2="81.28" width="0.2" layer="1"/>
 </signal>
 <signal name="ENC7B">
-<contactref element="JP34" pad="4"/>
 <contactref element="JP15" pad="27"/>
 <contactref element="JP15" pad="28"/>
 <contactref element="RN5" pad="1"/>
 <wire x1="62.23" y1="85.09" x2="62.23" y2="86.36" width="0.2" layer="16"/>
-<wire x1="14.1" y1="78.74" x2="15.37" y2="77.47" width="0.2" layer="1"/>
-<wire x1="15.37" y1="77.47" x2="17.78" y2="77.47" width="0.2" layer="1"/>
-<wire x1="17.78" y1="77.47" x2="19.05" y2="78.74" width="0.2" layer="1"/>
-<wire x1="19.05" y1="78.74" x2="19.05" y2="79.5699375" width="0.2" layer="1"/>
 <via x="21.816175" y="82.3361125" extent="1-16" drill="0.35"/>
-<wire x1="19.05" y1="79.5699375" x2="21.816175" y2="82.3361125" width="0.2" layer="1"/>
 <wire x1="22.352" y1="82.8719375" x2="21.816175" y2="82.3361125" width="0.2" layer="16"/>
 <wire x1="22.352" y1="87.122" x2="22.352" y2="82.8719375" width="0.2" layer="16"/>
 <wire x1="109.22" y1="85.09" x2="111.76" y2="85.09" width="0.2" layer="16"/>
@@ -6687,18 +6691,20 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="53.5610625" y1="88.57" x2="53.0530625" y2="89.078" width="0.2" layer="16"/>
 <wire x1="53.0530625" y1="89.078" x2="26.2823125" y2="89.078" width="0.2" layer="16"/>
 <wire x1="60.02" y1="88.57" x2="53.5610625" y2="88.57" width="0.2" layer="16"/>
+<contactref element="JP38" pad="4"/>
+<wire x1="21.816175" y1="82.3361125" x2="19.05" y2="79.5699375" width="0.2" layer="1"/>
+<wire x1="19.05" y1="79.5699375" x2="19.05" y2="77.47" width="0.2" layer="1"/>
+<via x="19.05" y="77.47" extent="1-16" drill="0.35"/>
+<wire x1="19.05" y1="77.47" x2="17.91" y2="77.47" width="0.2" layer="16"/>
+<wire x1="17.91" y1="77.47" x2="16.64" y2="78.74" width="0.2" layer="16"/>
 </signal>
 <signal name="ENC8A">
-<contactref element="JP38" pad="3"/>
 <contactref element="JP15" pad="29"/>
 <contactref element="JP15" pad="30"/>
 <contactref element="RN3" pad="9"/>
 <contactref element="JP24" pad="2"/>
-<wire x1="16.64" y1="81.28" x2="17.272" y2="81.28" width="0.2" layer="1"/>
 <via x="20.615" y="82.931" extent="1-16" drill="0.35"/>
 <wire x1="20.577" y1="82.969" x2="20.615" y2="82.931" width="0.2" layer="16"/>
-<wire x1="18.923" y1="82.931" x2="20.615" y2="82.931" width="0.2" layer="1"/>
-<wire x1="17.272" y1="81.28" x2="18.923" y2="82.931" width="0.2" layer="1"/>
 <wire x1="21.60409375" y1="81.226" x2="21.07803125" y2="81.226" width="0.2" layer="16"/>
 <wire x1="21.07803125" y1="81.226" x2="20.615" y2="81.68903125" width="0.2" layer="16"/>
 <wire x1="20.615" y1="81.68903125" x2="20.615" y2="82.931" width="0.2" layer="16"/>
@@ -6752,16 +6758,16 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="59.69" y1="94.615" x2="60.96" y2="93.345" width="0.2" layer="1"/>
 <wire x1="60.96" y1="90.9425" x2="60.1875" y2="90.17" width="0.2" layer="1"/>
 <wire x1="60.96" y1="93.345" x2="60.96" y2="90.9425" width="0.2" layer="1"/>
+<contactref element="JP34" pad="3"/>
+<wire x1="20.615" y1="82.931" x2="17.694" y2="80.01" width="0.2" layer="1"/>
+<wire x1="15.367" y1="80.01" x2="14.1" y2="81.277" width="0.2" layer="1"/>
+<wire x1="14.1" y1="81.277" x2="14.1" y2="81.28" width="0.2" layer="1"/>
+<wire x1="17.694" y1="80.01" x2="15.367" y2="80.01" width="0.2" layer="1"/>
 </signal>
 <signal name="ENC8B">
-<contactref element="JP38" pad="4"/>
 <contactref element="JP15" pad="31"/>
 <contactref element="JP15" pad="32"/>
 <contactref element="IM6" pad="6"/>
-<wire x1="16.64" y1="78.74" x2="17.845" y2="79.945" width="0.2" layer="1"/>
-<wire x1="17.845" y1="80.329" x2="17.845" y2="79.945" width="0.2" layer="1"/>
-<wire x1="19.812" y1="82.296" x2="20.87803125" y2="82.296" width="0.2" layer="1"/>
-<wire x1="19.812" y1="82.296" x2="17.845" y2="80.329" width="0.2" layer="1"/>
 <wire x1="21.574484375" y1="82.992453125" x2="21.574484375" y2="83.206115625" width="0.2" layer="1"/>
 <via x="21.574484375" y="83.206115625" extent="1-16" drill="0.35"/>
 <wire x1="21.574484375" y1="83.538453125" x2="21.574484375" y2="83.206115625" width="0.2" layer="16"/>
@@ -6769,7 +6775,6 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="21.593" y1="84.08303125" x2="21.593" y2="83.55696875" width="0.2" layer="16"/>
 <wire x1="21.574484375" y1="84.101546875" x2="21.593" y2="84.08303125" width="0.2" layer="16"/>
 <wire x1="21.574484375" y1="87.048796875" x2="21.574484375" y2="84.101546875" width="0.2" layer="16"/>
-<wire x1="20.87803125" y1="82.296" x2="21.574484375" y2="82.992453125" width="0.2" layer="1"/>
 <wire x1="109.22" y1="90.17" x2="111.76" y2="90.17" width="0.2" layer="16"/>
 <wire x1="68.45911875" y1="86.48088125" x2="69.85" y2="85.09" width="0.2" layer="16"/>
 <wire x1="100.61656875" y1="88.62088125" x2="103.3292875" y2="91.3336" width="0.2" layer="16"/>
@@ -6792,6 +6797,14 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <wire x1="53.72675" y1="88.97" x2="53.21875" y2="89.478" width="0.2" layer="16"/>
 <wire x1="53.21875" y1="89.478" x2="26.116625" y2="89.478" width="0.2" layer="16"/>
 <wire x1="60.24596875" y1="88.97" x2="53.72675" y2="88.97" width="0.2" layer="16"/>
+<contactref element="JP34" pad="4"/>
+<wire x1="21.574484375" y1="83.206115625" x2="21.25" y2="82.88163125" width="0.2" layer="1"/>
+<wire x1="21.25" y1="82.66796875" x2="21.25" y2="82.88163125" width="0.2" layer="1"/>
+<wire x1="14.1" y1="78.74" x2="15.37" y2="77.47" width="0.2" layer="1"/>
+<wire x1="17.01558125" y1="77.47" x2="18.65" y2="79.10441875" width="0.2" layer="1"/>
+<wire x1="18.65" y1="79.10441875" x2="18.65" y2="80.06796875" width="0.2" layer="1"/>
+<wire x1="15.37" y1="77.47" x2="17.01558125" y2="77.47" width="0.2" layer="1"/>
+<wire x1="18.65" y1="80.06796875" x2="21.25" y2="82.66796875" width="0.2" layer="1"/>
 </signal>
 <signal name="EA6">
 <contactref element="JP16" pad="25"/>

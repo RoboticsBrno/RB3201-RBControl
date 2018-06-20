@@ -20200,9 +20200,9 @@ DIN A3, landscape with location and doc. field</description>
 <part name="IM6" library="esp32" deviceset="DEVKITC" device=""/>
 <part name="IC2" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" deviceset="74*595" device="D" package3d_urn="urn:adsk.eagle:package:2010/1" technology="HC"/>
 <part name="IC3" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" deviceset="74*595" device="D" package3d_urn="urn:adsk.eagle:package:2010/1" technology="HC"/>
-<part name="X5" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1"/>
-<part name="X9" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1"/>
-<part name="X10" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1"/>
+<part name="X5" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1" value="M6"/>
+<part name="X9" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1" value="M5"/>
+<part name="X10" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1" value="M7"/>
 <part name="X2" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1" value="POWER_OUT"/>
 <part name="IM7" library="DRV8833board" deviceset="DRV8833_BOARD" device=""/>
 <part name="IM8" library="DRV8833board" deviceset="DRV8833_BOARD" device=""/>
@@ -20218,12 +20218,12 @@ DIN A3, landscape with location and doc. field</description>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="X4" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1"/>
-<part name="X8" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1"/>
-<part name="X6" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1"/>
+<part name="X4" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1" value="M4"/>
+<part name="X8" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1" value="M3"/>
+<part name="X6" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1" value="M8"/>
 <part name="X1" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1" value="POWER_IN"/>
-<part name="X7" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1"/>
-<part name="X3" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1"/>
+<part name="X7" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1" value="M1"/>
+<part name="X3" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1" value="M2"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP26" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X8" device="" package3d_urn="urn:adsk.eagle:package:22409/2" value="EXPANDER_IN"/>
 <part name="JP25" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X8" device="" package3d_urn="urn:adsk.eagle:package:22409/2" value="EXPANDER_OUT"/>
@@ -20275,10 +20275,10 @@ DIN A3, landscape with location and doc. field</description>
 <part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:25948/1" value="3k3"/>
 <part name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:25948/1" value="3k3"/>
 <part name="+3V35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="JP31" library="pinhead" deviceset="PINHD-1X6" device="" value="ENC1"/>
+<part name="JP31" library="pinhead" deviceset="PINHD-1X6" device="" value="M2"/>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="JP35" library="pinhead" deviceset="PINHD-1X6" device="" value="ENC2"/>
+<part name="JP35" library="pinhead" deviceset="PINHD-1X6" device="" value="M1"/>
 <part name="IC1" library="microchip" library_urn="urn:adsk.eagle:library:294" deviceset="MCP23017" device="SP" package3d_urn="urn:adsk.eagle:package:20799/2"/>
 <part name="+3V38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -20286,12 +20286,12 @@ DIN A3, landscape with location and doc. field</description>
 <part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:25948/1"/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="JP32" library="pinhead" deviceset="PINHD-1X6" device="" value="ENC3"/>
-<part name="JP36" library="pinhead" deviceset="PINHD-1X6" device="" value="ENC4"/>
-<part name="JP33" library="pinhead" deviceset="PINHD-1X6" device="" value="ENC5"/>
-<part name="JP37" library="pinhead" deviceset="PINHD-1X6" device="" value="ENC6"/>
-<part name="JP34" library="pinhead" deviceset="PINHD-1X6" device="" value="ENC7"/>
-<part name="JP38" library="pinhead" deviceset="PINHD-1X6" device="" value="ENC8"/>
+<part name="JP32" library="pinhead" deviceset="PINHD-1X6" device="" value="M4"/>
+<part name="JP36" library="pinhead" deviceset="PINHD-1X6" device="" value="M3"/>
+<part name="JP33" library="pinhead" deviceset="PINHD-1X6" device="" value="M6"/>
+<part name="JP37" library="pinhead" deviceset="PINHD-1X6" device="" value="M5"/>
+<part name="JP34" library="pinhead" deviceset="PINHD-1X6" device="" value="M8"/>
+<part name="JP38" library="pinhead" deviceset="PINHD-1X6" device="" value="M7"/>
 <part name="JP16" library="pinhead" deviceset="PINHD-2X16" device="" value="SIG2"/>
 <part name="JP15" library="pinhead" deviceset="PINHD-2X16" device="" value="SIG1"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -25567,7 +25567,7 @@ Robotarna</text>
 <instance part="+3V314" gate="G$1" x="170.18" y="60.96" rot="MR0"/>
 <instance part="+3V311" gate="G$1" x="147.32" y="152.4" rot="MR0"/>
 <instance part="+3V312" gate="G$1" x="147.32" y="106.68" rot="MR0"/>
-<instance part="P+16" gate="1" x="312.42" y="193.04" rot="MR180"/>
+<instance part="P+16" gate="1" x="312.42" y="190.5" rot="MR180"/>
 <instance part="P+21" gate="1" x="355.6" y="157.48" rot="MR180"/>
 <instance part="P+22" gate="1" x="355.6" y="124.46" rot="MR180"/>
 <instance part="P+23" gate="1" x="355.6" y="91.44" rot="MR180"/>
@@ -25594,10 +25594,10 @@ Robotarna</text>
 <instance part="JP28" gate="G$1" x="276.86" y="144.78"/>
 <instance part="JP29" gate="G$1" x="276.86" y="111.76"/>
 <instance part="JP30" gate="G$1" x="276.86" y="78.74"/>
-<instance part="JP31" gate="A" x="317.5" y="213.36" rot="R90"/>
+<instance part="JP31" gate="A" x="317.5" y="210.82" rot="R90"/>
 <instance part="GND29" gate="1" x="365.76" y="193.04" rot="R90"/>
-<instance part="P+20" gate="1" x="355.6" y="193.04" rot="MR180"/>
-<instance part="JP35" gate="A" x="360.68" y="213.36" rot="R90"/>
+<instance part="P+20" gate="1" x="355.6" y="190.5" rot="MR180"/>
+<instance part="JP35" gate="A" x="360.68" y="210.82" rot="R90"/>
 <instance part="R2" gate="G$1" x="256.54" y="45.72" rot="R90"/>
 <instance part="R3" gate="G$1" x="256.54" y="30.48" rot="R90"/>
 <instance part="P+8" gate="VCC" x="256.54" y="58.42"/>
@@ -25870,7 +25870,7 @@ Robotarna</text>
 </segment>
 <segment>
 <pinref part="GND25" gate="1" pin="GND"/>
-<wire x1="320.04" y1="193.04" x2="320.04" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="193.04" x2="320.04" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="JP31" gate="A" pin="5"/>
 </segment>
 <segment>
@@ -25885,7 +25885,7 @@ Robotarna</text>
 </segment>
 <segment>
 <pinref part="GND29" gate="1" pin="GND"/>
-<wire x1="363.22" y1="193.04" x2="363.22" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="193.04" x2="363.22" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="JP35" gate="A" pin="5"/>
 </segment>
 <segment>
@@ -26227,176 +26227,178 @@ Robotarna</text>
 <net name="IM7_O4" class="0">
 <segment>
 <pinref part="IM7" gate="G$1" pin="OUT4"/>
-<wire x1="373.38" y1="182.88" x2="373.38" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="182.88" x2="373.38" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="182.88" x2="373.38" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="JP35" gate="A" pin="6"/>
-<wire x1="365.76" y1="210.82" x2="365.76" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="200.66" x2="373.38" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="208.28" x2="365.76" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="198.12" x2="373.38" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="X7" gate="-2" pin="KL"/>
-<wire x1="373.38" y1="200.66" x2="373.38" y2="203.2" width="0.1524" layer="91"/>
-<junction x="373.38" y="200.66"/>
+<wire x1="373.38" y1="198.12" x2="373.38" y2="203.2" width="0.1524" layer="91"/>
+<junction x="373.38" y="198.12"/>
 </segment>
 </net>
 <net name="IM7_O3" class="0">
 <segment>
 <pinref part="IM7" gate="G$1" pin="OUT3"/>
-<wire x1="345.44" y1="185.42" x2="345.44" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="345.44" y1="185.42" x2="345.44" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="185.42" x2="345.44" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="JP35" gate="A" pin="1"/>
-<wire x1="353.06" y1="210.82" x2="353.06" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="353.06" y1="200.66" x2="345.44" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="208.28" x2="353.06" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="198.12" x2="345.44" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="X7" gate="-1" pin="KL"/>
-<wire x1="345.44" y1="200.66" x2="345.44" y2="203.2" width="0.1524" layer="91"/>
-<junction x="345.44" y="200.66"/>
+<wire x1="345.44" y1="198.12" x2="345.44" y2="203.2" width="0.1524" layer="91"/>
+<junction x="345.44" y="198.12"/>
 </segment>
 </net>
 <net name="IM7_O2" class="0">
 <segment>
 <pinref part="IM7" gate="G$1" pin="OUT2"/>
-<wire x1="330.2" y1="187.96" x2="330.2" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="187.96" x2="330.2" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="JP31" gate="A" pin="6"/>
-<wire x1="322.58" y1="210.82" x2="322.58" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="200.66" x2="330.2" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="208.28" x2="322.58" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="198.12" x2="330.2" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="187.96" x2="330.2" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="X3" gate="-2" pin="KL"/>
-<wire x1="330.2" y1="200.66" x2="330.2" y2="203.2" width="0.1524" layer="91"/>
-<junction x="330.2" y="200.66"/>
+<wire x1="330.2" y1="198.12" x2="330.2" y2="203.2" width="0.1524" layer="91"/>
+<junction x="330.2" y="198.12"/>
 </segment>
 </net>
 <net name="IM7_O1" class="0">
 <segment>
 <pinref part="IM7" gate="G$1" pin="OUT1"/>
-<wire x1="302.26" y1="190.5" x2="302.26" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="190.5" x2="302.26" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="JP31" gate="A" pin="1"/>
-<wire x1="309.88" y1="210.82" x2="309.88" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="309.88" y1="200.66" x2="302.26" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="208.28" x2="309.88" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="198.12" x2="302.26" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="190.5" x2="302.26" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="X3" gate="-1" pin="KL"/>
-<wire x1="302.26" y1="200.66" x2="302.26" y2="203.2" width="0.1524" layer="91"/>
-<junction x="302.26" y="200.66"/>
+<wire x1="302.26" y1="198.12" x2="302.26" y2="203.2" width="0.1524" layer="91"/>
+<junction x="302.26" y="198.12"/>
 </segment>
 </net>
 <net name="ENC1A" class="0">
 <segment>
-<label x="314.96" y="200.66" size="1.27" layer="95" rot="R270" xref="yes"/>
-<wire x1="314.96" y1="210.82" x2="314.96" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="JP31" gate="A" pin="3"/>
+<label x="358.14" y="200.66" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP35" gate="A" pin="3"/>
+<wire x1="358.14" y1="200.66" x2="358.14" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC1B" class="0">
 <segment>
-<label x="317.5" y="200.66" size="1.27" layer="95" rot="R270" xref="yes"/>
-<wire x1="317.5" y1="210.82" x2="317.5" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="JP31" gate="A" pin="4"/>
+<label x="360.68" y="200.66" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP35" gate="A" pin="4"/>
+<wire x1="360.68" y1="208.28" x2="360.68" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC2A" class="0">
 <segment>
-<label x="358.14" y="200.66" size="1.27" layer="95" rot="R270" xref="yes"/>
-<wire x1="358.14" y1="210.82" x2="358.14" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="JP35" gate="A" pin="3"/>
+<label x="314.96" y="200.66" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP31" gate="A" pin="3"/>
+<wire x1="314.96" y1="200.66" x2="314.96" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC2B" class="0">
 <segment>
-<label x="360.68" y="200.66" size="1.27" layer="95" rot="R270" xref="yes"/>
-<wire x1="360.68" y1="210.82" x2="360.68" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="JP35" gate="A" pin="4"/>
+<label x="317.5" y="200.66" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP31" gate="A" pin="4"/>
+<wire x1="317.5" y1="200.66" x2="317.5" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC4A" class="0">
 <segment>
-<wire x1="358.14" y1="177.8" x2="358.14" y2="167.64" width="0.1524" layer="91"/>
-<label x="358.14" y="167.64" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="JP36" gate="A" pin="3"/>
+<label x="314.96" y="167.64" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP32" gate="A" pin="3"/>
+<wire x1="314.96" y1="167.64" x2="314.96" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC4B" class="0">
 <segment>
-<wire x1="360.68" y1="177.8" x2="360.68" y2="167.64" width="0.1524" layer="91"/>
-<label x="360.68" y="167.64" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="JP36" gate="A" pin="4"/>
+<label x="317.5" y="167.64" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP32" gate="A" pin="4"/>
+<wire x1="317.5" y1="177.8" x2="317.5" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC3A" class="0">
 <segment>
-<wire x1="314.96" y1="177.8" x2="314.96" y2="167.64" width="0.1524" layer="91"/>
-<label x="314.96" y="167.64" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="JP32" gate="A" pin="3"/>
+<label x="358.14" y="165.1" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP36" gate="A" pin="3"/>
+<wire x1="358.14" y1="165.1" x2="358.14" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC3B" class="0">
 <segment>
-<wire x1="317.5" y1="177.8" x2="317.5" y2="167.64" width="0.1524" layer="91"/>
-<label x="317.5" y="167.64" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="JP32" gate="A" pin="4"/>
+<label x="360.68" y="165.1" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP36" gate="A" pin="4"/>
+<wire x1="360.68" y1="177.8" x2="360.68" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC5A" class="0">
 <segment>
-<wire x1="314.96" y1="144.78" x2="314.96" y2="134.62" width="0.1524" layer="91"/>
-<label x="314.96" y="134.62" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="JP33" gate="A" pin="3"/>
+<label x="358.14" y="134.62" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP37" gate="A" pin="3"/>
+<wire x1="358.14" y1="134.62" x2="358.14" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC5B" class="0">
 <segment>
-<wire x1="317.5" y1="144.78" x2="317.5" y2="134.62" width="0.1524" layer="91"/>
-<label x="317.5" y="134.62" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="JP33" gate="A" pin="4"/>
+<label x="360.68" y="134.62" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="360.68" y1="137.16" x2="360.68" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="JP37" gate="A" pin="4"/>
+<wire x1="360.68" y1="144.78" x2="360.68" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC6A" class="0">
 <segment>
-<wire x1="358.14" y1="144.78" x2="358.14" y2="134.62" width="0.1524" layer="91"/>
-<label x="358.14" y="134.62" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="JP37" gate="A" pin="3"/>
+<label x="314.96" y="134.62" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP33" gate="A" pin="3"/>
+<wire x1="314.96" y1="134.62" x2="314.96" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC6B" class="0">
 <segment>
-<wire x1="360.68" y1="144.78" x2="360.68" y2="134.62" width="0.1524" layer="91"/>
-<label x="360.68" y="134.62" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="JP37" gate="A" pin="4"/>
+<label x="317.5" y="134.62" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP33" gate="A" pin="4"/>
+<wire x1="317.5" y1="134.62" x2="317.5" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC7A" class="0">
 <segment>
-<wire x1="314.96" y1="111.76" x2="314.96" y2="101.6" width="0.1524" layer="91"/>
-<label x="314.96" y="101.6" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="JP34" gate="A" pin="3"/>
+<label x="358.14" y="101.6" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP38" gate="A" pin="3"/>
+<wire x1="358.14" y1="111.76" x2="358.14" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC7B" class="0">
 <segment>
-<wire x1="317.5" y1="111.76" x2="317.5" y2="101.6" width="0.1524" layer="91"/>
-<label x="317.5" y="101.6" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="JP34" gate="A" pin="4"/>
+<label x="360.68" y="101.6" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="360.68" y1="104.14" x2="360.68" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="JP38" gate="A" pin="4"/>
+<wire x1="360.68" y1="111.76" x2="360.68" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC8A" class="0">
 <segment>
-<wire x1="358.14" y1="111.76" x2="358.14" y2="101.6" width="0.1524" layer="91"/>
-<label x="358.14" y="101.6" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="JP38" gate="A" pin="3"/>
+<label x="314.96" y="101.6" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP34" gate="A" pin="3"/>
+<wire x1="314.96" y1="101.6" x2="314.96" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC8B" class="0">
 <segment>
-<wire x1="360.68" y1="111.76" x2="360.68" y2="101.6" width="0.1524" layer="91"/>
-<label x="360.68" y="101.6" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="JP38" gate="A" pin="4"/>
+<label x="317.5" y="101.6" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP34" gate="A" pin="4"/>
+<wire x1="317.5" y1="111.76" x2="317.5" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
 <segment>
 <pinref part="JP31" gate="A" pin="2"/>
-<wire x1="312.42" y1="195.58" x2="312.42" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="193.04" x2="312.42" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="P+16" gate="1" pin="+5V"/>
 </segment>
 <segment>
 <pinref part="JP35" gate="A" pin="2"/>
-<wire x1="355.6" y1="195.58" x2="355.6" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="193.04" x2="355.6" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="P+20" gate="1" pin="+5V"/>
 </segment>
 <segment>
