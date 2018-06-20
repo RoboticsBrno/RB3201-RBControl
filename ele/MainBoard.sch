@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.0">
+<eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -20282,8 +20282,8 @@ DIN A3, landscape with location and doc. field</description>
 <part name="IC1" library="microchip" library_urn="urn:adsk.eagle:library:294" deviceset="MCP23017" device="SP" package3d_urn="urn:adsk.eagle:package:20799/2"/>
 <part name="+3V38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:25948/1"/>
-<part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:25948/1"/>
+<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:25948/1" value="82k"/>
+<part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:25948/1" value="10k"/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP32" library="pinhead" deviceset="PINHD-1X6" device="" value="M4"/>
@@ -22072,9 +22072,9 @@ Robotarna</text>
 <instance part="P+27" gate="1" x="48.26" y="124.46"/>
 <instance part="PIEZO" gate="G$1" x="165.1" y="185.42" rot="MR0"/>
 <instance part="D2" gate="G$1" x="284.48" y="149.86" rot="R180"/>
-<instance part="JP43" gate="G$1" x="180.34" y="180.34" smashed="yes" rot="MR270">
-<attribute name="NAME" x="183.896" y="185.42" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="183.896" y="182.88" size="1.778" layer="96" rot="MR180"/>
+<instance part="JP43" gate="G$1" x="177.8" y="180.34" smashed="yes" rot="R270">
+<attribute name="NAME" x="174.244" y="185.42" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="174.244" y="182.88" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -22775,7 +22775,7 @@ Robotarna</text>
 <label x="205.74" y="187.96" size="1.778" layer="95" rot="R180"/>
 <pinref part="RN5" gate="B" pin="1"/>
 <wire x1="223.52" y1="187.96" x2="180.34" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="JP43" gate="G$1" pin="2"/>
+<pinref part="JP43" gate="G$1" pin="1"/>
 <wire x1="180.34" y1="187.96" x2="180.34" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -24118,7 +24118,7 @@ Robotarna</text>
 <segment>
 <pinref part="PIEZO" gate="G$1" pin="-"/>
 <wire x1="177.8" y1="187.96" x2="170.18" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="JP43" gate="G$1" pin="1"/>
+<pinref part="JP43" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="182.88" x2="177.8" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
