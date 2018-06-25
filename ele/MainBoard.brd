@@ -3,7 +3,7 @@
 <eagle version="9.0.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.0635" altunitdist="mm" altunit="mm"/>
@@ -4655,7 +4655,7 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <attribute name="OC_NEWARK" value="unknown" x="7.62" y="54.61" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="0.635" y="58.42" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C3" library="rcl_upravena" package="C1206" value="1u" x="57.15" y="88.9" smashed="yes">
+<element name="C3" library="rcl_upravena" package="C1206" value="10u" x="57.15" y="88.9" smashed="yes">
 <attribute name="NAME" x="54.61" y="88.265" size="1.016" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="55.88" y="86.36" size="1.27" layer="27"/>
 </element>
