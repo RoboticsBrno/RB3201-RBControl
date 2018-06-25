@@ -15,7 +15,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stddef.h>
-#include <string.h>
+//#include <string.h>
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
