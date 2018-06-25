@@ -10,12 +10,23 @@
      printf("pwm[%i] = %3i \n", pwmi, pwm);
  }
 
+// channels
+// M1: 12, 13
+// M2: 2, 3 
+// M3: 8, 9
+// M4: 14, 15    
+// M5: 4, 5
+// M6: 10, 11
+// M7: 1, 2
+// M8: 6, 7 
+// M: 12, 13, 2, 3, 8, 9, 14, 15, 4, 5, 10, 11, 1, 2, 6, 7
+
 void setup() {
     Serial.begin(115200);
     //////print(Serial, "\n\nESP32 serial PWM test\n\t{} {}\n\n", __DATE__, __TIME__);
     printf("\n\nESP32 serial PWM test\n\t%s %s\n\n", __DATE__, __TIME__);
     const int channels = 16;
-    SerialPCM pwm {channels, {2}, 0, 4};
+    SerialPCM pwm {channels, {2}, 0, 12};
     int pwmi = 0;
     for (int i = 0; i != channels; ++i)
         pwm[i] = i + 1;
