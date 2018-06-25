@@ -3,7 +3,7 @@
 <eagle version="9.0.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.0635" altunitdist="mm" altunit="mm"/>
@@ -108,6 +108,7 @@
 <layer number="251" name="SMDround" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyZGU3NzNk" projecturn="a.cGVyc29uYWw6dWUyYjM0Yjg0IzIwMTgwMTA1MTEwOTQ2ODUx" f3durn="urn:adsk.wipprod:dm.lineage:H4O4ojSHRVuTUkSuCWRZpg" pcbguid="760bffa5-5806-47c0-b37f-e22bbd7daec5" lastpulledtime="" lastsyncedchangeguid="2eae16d9-d247-2db3-2415-b2365fe1475d"/>
 <plain>
 <wire x1="123.27" y1="2" x2="123.27" y2="98" width="0" layer="20" curve="60"/>
 <wire x1="123.27" y1="98" x2="120.033934375" y2="100" width="0" layer="20" curve="63.434927"/>
@@ -9092,7 +9093,6 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <approved hash="19,1,88bc3f9e4df02f28"/>
 <approved hash="3,1,290aa57aa90a257a"/>
 <approved hash="3,1,210aa57aa90e2d7e"/>
-<approved hash="19,16,97f73b6118e6b648"/>
 <approved hash="3,16,e5acfb5cfb08e5f8"/>
 <approved hash="3,16,e52cfbdcf800e6f0"/>
 </errors>
@@ -9107,6 +9107,11 @@ which will not be processed correctly with this version.
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
