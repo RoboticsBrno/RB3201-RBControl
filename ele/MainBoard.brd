@@ -28,7 +28,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -10142,9 +10142,6 @@ ON</text>
 CC BY-SA 4.0
 Designed by: JM &amp; JP &amp; JS &amp; JV &amp; JM &amp; BS &amp; 
 RobotikaBrno</text>
-<text x="160.02" y="25.4" size="1.2" layer="21" font="vector" ratio="16" rot="R90">github:roboticsbrno/
-RB3200-ESP32universal
-CC BY-SA 4.0</text>
 <text x="86.36" y="62.484" size="1.778" layer="52" font="vector" ratio="20" distance="40" rot="SMR270" align="bottom-center">RB3201-RBControl v1.2</text>
 </plain>
 <libraries>
