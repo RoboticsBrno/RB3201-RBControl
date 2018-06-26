@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="65" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -29,10 +29,10 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="13" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -370,8 +370,8 @@ SHDN</text>
 <text x="37.335" y="1.651" size="1.5" layer="51" font="vector" ratio="20" rot="R180">-</text>
 <text x="42.415" y="1.651" size="1.5" layer="51" font="vector" ratio="20" rot="R180">+</text>
 <text x="123.19" y="34.293" size="1" layer="51" font="vector" ratio="20">5V_2EN</text>
-<text x="123.063" y="48.263" size="1" layer="51" font="vector" ratio="20">5V_3EN</text>
-<text x="123.19" y="60.963" size="1" layer="51" font="vector" ratio="20">5V_4EN</text>
+<text x="123.444" y="48.39" size="1" layer="51" font="vector" ratio="20">5V_3EN</text>
+<text x="123.444" y="61.09" size="1" layer="51" font="vector" ratio="20">5V_4EN</text>
 <text x="125.349" y="76.965" size="1" layer="51" font="vector" ratio="20">5V_5EN</text>
 <text x="133.601" y="35.814" size="1" layer="51" font="vector" ratio="20" rot="R90">iLEDA</text>
 <text x="132.718" y="51.562" size="1" layer="51" font="vector" ratio="20" rot="R270">iLEDB</text>
@@ -14084,15 +14084,15 @@ This DRC includes the common parameters for two-layer PCBs. Should be compatible
 <attribute name="VALUE" x="129.159" y="23.0505" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="IM3" library="StepDown" package="STEPDOWN" value="STEPDOWN" x="124.714" y="37.338" smashed="yes">
-<attribute name="NAME" x="127.8128" y="35.7378" size="1.016" layer="25" font="vector" ratio="20" rot="SR0"/>
+<attribute name="NAME" x="129.5908" y="35.7378" size="1.016" layer="25" font="vector" ratio="20" rot="SR0"/>
 <attribute name="VALUE" x="129.159" y="37.0205" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="IM4" library="StepDown" package="STEPDOWN" value="STEPDOWN" x="124.714" y="50.165" smashed="yes">
-<attribute name="NAME" x="124.6378" y="48.4378" size="1.016" layer="25" font="vector" ratio="20" rot="SR0"/>
+<attribute name="NAME" x="129.5908" y="48.4378" size="1.016" layer="25" font="vector" ratio="20" rot="SR0"/>
 <attribute name="VALUE" x="129.159" y="49.8475" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="IM5" library="StepDown" package="STEPDOWN" value="STEPDOWN" x="124.714" y="62.738" smashed="yes">
-<attribute name="NAME" x="124.6378" y="61.1378" size="1.016" layer="25" font="vector" ratio="20" rot="SR0"/>
+<attribute name="NAME" x="129.5908" y="61.1378" size="1.016" layer="25" font="vector" ratio="20" rot="SR0"/>
 <attribute name="VALUE" x="129.159" y="62.4205" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="IM6" library="esp32" package="DEVKITC" value="DEVKITC" x="82.55" y="50.8"/>
