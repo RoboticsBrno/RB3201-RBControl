@@ -21837,6 +21837,17 @@ RoboticsBrno.eu
 RobotikaBrno.cz
 Robotarna</text>
 <text x="205.994" y="176.276" size="1.778" layer="94" rot="MR0">THIS SIGNAL MUST BE HERE!</text>
+<text x="249.682" y="232.918" size="1.4224" layer="97">R8 - not neccesary because 
+ESP32 has own pull-up, but
+you can assembly when you
+have some problem with 
+programming or drivers DRV8833.</text>
+<text x="201.422" y="22.098" size="1.4224" layer="97">R4, R15, R16, R17 - not neccesary
+Assembly only if you have some
+problem with I2C or WS2812</text>
+<text x="292.862" y="75.438" size="1.4224" layer="97">JP24 - when ENC8A is connected 
+with ESP_SHUTDOWN (by jumper),
+can not use encoder on motor port M8</text>
 </plain>
 <instances>
 <instance part="IM6" gate="G$1" x="269.24" y="185.42"/>
@@ -25567,8 +25578,9 @@ RoboticsBrno.eu
 RobotikaBrno.cz
 Robotarna</text>
 <text x="121.92" y="142.24" size="0.8128" layer="97">Info:
-Assembling R19 or R20 depend on version of ESP32 chip.
-E.g. ESP-WROOM-32 need just R19, ESP32-D2WD need just R20.</text>
+Assembling of R19 or R20 depends on the version of ESP32 chip.
+E.g. ESP-WROOM-32 need only R19, ESP32-D2WD need only R20.
+More info: ESP32 Datasheet - 2.4 Strapping Pins - Table 2 - Note</text>
 </plain>
 <instances>
 <instance part="IC2" gate="A" x="195.58" y="157.48"/>
@@ -25643,8 +25655,8 @@ E.g. ESP-WROOM-32 need just R19, ESP32-D2WD need just R20.</text>
 <instance part="D1" gate="G$1" x="195.58" y="182.88" rot="R90"/>
 <instance part="R9" gate="G$1" x="187.96" y="185.42" rot="R90"/>
 <instance part="+3V39" gate="G$1" x="187.96" y="205.74" rot="MR0"/>
-<instance part="R10" gate="G$1" x="132.08" y="160.02" rot="R90"/>
-<instance part="GND18" gate="1" x="132.08" y="149.86"/>
+<instance part="R10" gate="G$1" x="129.54" y="160.02" rot="R90"/>
+<instance part="GND18" gate="1" x="129.54" y="149.86"/>
 <instance part="JP27" gate="G$1" x="276.86" y="177.8"/>
 <instance part="JP28" gate="G$1" x="276.86" y="144.78"/>
 <instance part="JP29" gate="G$1" x="276.86" y="111.76"/>
@@ -25874,12 +25886,12 @@ E.g. ESP-WROOM-32 need just R19, ESP32-D2WD need just R20.</text>
 <pinref part="IC2" gate="A" pin="SER"/>
 <wire x1="165.1" y1="170.18" x2="165.1" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="167.64" x2="182.88" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="170.18" x2="132.08" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="170.18" x2="129.54" y2="170.18" width="0.1524" layer="91"/>
 <label x="124.46" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="132.08" y1="170.18" x2="124.46" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="165.1" x2="132.08" y2="170.18" width="0.1524" layer="91"/>
-<junction x="132.08" y="170.18"/>
+<wire x1="129.54" y1="170.18" x2="124.46" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="165.1" x2="129.54" y2="170.18" width="0.1524" layer="91"/>
+<junction x="129.54" y="170.18"/>
 <pinref part="JP26" gate="A" pin="3"/>
 <wire x1="165.1" y1="198.12" x2="165.1" y2="170.18" width="0.1524" layer="91"/>
 <junction x="165.1" y="170.18"/>
@@ -25948,7 +25960,7 @@ E.g. ESP-WROOM-32 need just R19, ESP32-D2WD need just R20.</text>
 <segment>
 <pinref part="GND18" gate="1" pin="GND"/>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="152.4" x2="132.08" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="152.4" x2="129.54" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND29" gate="1" pin="GND"/>
