@@ -1,10 +1,20 @@
 #include <Arduino.h>
+#include "BluetoothSerial.h"
+
+#if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
+#error Bluetooth is not enabled! Please run `make menuconfig` to and enable it
+#endif
+
 #include <i2s_parallel.h>
 //#include <format.h>
 //using fmt::print;
 
+
 #include "hexdump.h"
 #include "serialpcm.hpp"
+
+#define ATOMS_NO_EXCEPTION
+#include "avakar.h"
 
  void printPwm(int pwmi, const SerialPCM::value_type & pwm) {
      printf("pwm[%i] = %3i \n", pwmi, pwm);
@@ -21,82 +31,75 @@
 // M8: 6, 7 
 // M: 12, 13, 2, 3, 8, 9, 14, 15, 4, 5, 10, 11, 1, 2, 6, 7
 
+int clamp(int val, int min, int max) {
+    if(val < min) {
+        return min;
+    } else if (val > max) {
+        return max;
+    }
+    return val;
+}
+
+void motorPwmSet(SerialPCM::value_type & pwm0, SerialPCM::value_type & pwm1, int power) {
+    int _power = clamp(power, 0, 255);
+    
+    if(power > 0) {
+        pwm0 = 0;
+        pwm1 = _power;
+    } else {
+        pwm0 = _power;
+        pwm1 = 0;
+    }
+}
+
+BluetoothSerial SerialBT;
+
 void setup() {
     Serial.begin(115200);
+    SerialBT.begin("Mickoflus"); //Bluetooth device name
     //////print(Serial, "\n\nESP32 serial PWM test\n\t{} {}\n\n", __DATE__, __TIME__);
     printf("\n\nESP32 serial PWM test\n\t%s %s\n\n", __DATE__, __TIME__);
     const int channels = 16;
-    SerialPCM pwm {channels, {2}, 0, 12};
-    int pwmi = 0;
-    for (int i = 0; i != channels; ++i)
-        pwm[i] = i + 1;
-    pwm.update();
+
+    // After uncomment get exception in terminal from ESP32 
+    // SerialPCM pwm {channels, {2}, 0, 12};
+    // int pwmi = 0;
+    // for (int i = 0; i != channels; ++i)
+    //     pwm[i] = 0;
+    // pwm.update();
+
+    atoms::AvakarPacket packet;
+
+    int axe[4];
+    int lmot, rmot;
+
     for (;;) {
         micros(); // update overflow
-        if (Serial.available()) {
-            char c = Serial.read();
-            switch(c) {
-            case '\r':
-                Serial.write('\n');
-                break;
-            case '0' ... '9':
-				// set pwm of selected channel:  0 = 0%, ... ,9 = 90% 
-                pwm[pwmi] = (c - '0') * pwm.resolution() / 10;
-                //print(Serial, "pwm[{}] = {:3}\n", pwmi, pwm[pwmi]);
-                //printf("pwm[%i] = %3i \n", pwmi, pwm[pwmi]);
-                printPwm(pwmi, pwm[pwmi]);
-                pwm.update();
-                break;
-            case '*':
-				// set pwm of selected channel: 100% 
-                pwm[pwmi] = pwm.resolution();
-                //print(Serial, "pwm[{}] = {:3}\n", pwmi, pwm[pwmi]);
-                printPwm(pwmi, pwm[pwmi]);
-                pwm.update();
-                break;
-            case '+':
-                // increment pwm of selected channel: +1
-                if (pwm[pwmi] < pwm.resolution())
-                    ++pwm[pwmi];
-                //print(Serial, "pwm[{}] = {:3}\n", pwmi, pwm[pwmi]);
-                printPwm(pwmi, pwm[pwmi]);
-                pwm.update();
-                break;
-            case '-':
-                // decrement pwm of selected channel: -1
-                if (pwm[pwmi] > 0)
-                    --pwm[pwmi];
-                //print(Serial, "pwm[{}] = {:3}\n", pwmi, pwm[pwmi]);
-                printPwm(pwmi, pwm[pwmi]);
-                pwm.update();
-                break;
-            case '<':
-                // decrement index of channel
-                if (pwmi > 0)
-                    --pwmi;
-                //print("channel {}\n", pwmi);
-                printf("channel %2i\n", pwmi);
-                //print(Serial, "pwm[{}] = {:3}\n", pwmi, pwm[pwmi]);
-                printPwm(pwmi, pwm[pwmi]);
-                break;
-            case '>':
-                // increment index of channel
-                if (pwmi < (channels - 1))
-                    ++pwmi;
-                //print("channel {}\n", pwmi);
-                printf("channel %2i\n", pwmi);
-                //print(Serial, "pwm[{}] = {:3}\n", pwmi, pwm[pwmi]);
-                printPwm(pwmi, pwm[pwmi]);
-                break;
-            case ' ':
-                // set all channels to 0
-                for(int i = 0; i < channels; ++i) {
-                    pwm[i] = 0;  
+        if (SerialBT.available()) {
+            char c = SerialBT.read();
+            Serial.write(c);
+            
+            if(packet.push_byte(c)) {
+                if((int)packet.get_command() == 1) { //&& (int)in.size() == 9) {
+                    for(int i = 0; i < 4; ++i) {
+                        axe[i] = (packet.get<int16_t>(i*2)) / 256;
+                    }
+
+                    lmot = axe[0]/2 + axe[1]/2;
+                    rmot = axe[0]/2 - axe[1]/2;
+
+                    // motorPwmSet(pwm[12], pwm[13], lmot);
+                    // motorPwmSet(pwm[2], pwm[3], rmot);
+                    // pwm.update();
+
+                    Serial.println("");
+                    Serial.print(lmot);
+                    Serial.print("   ");
+                    Serial.print(rmot);
+                    Serial.println("");
+
+                    packet.clear();
                 }
-                pwm.update();
-                //print(Serial, "all pwm[] = 0\n");
-                printf("all pwm[] = 0\n");
-                break;
             }
         }
     }
