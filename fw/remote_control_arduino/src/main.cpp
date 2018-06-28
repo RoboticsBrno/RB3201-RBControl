@@ -62,7 +62,7 @@ void setup() {
     const int channels = 16;
 
     // After uncomment get exception in terminal from ESP32 
-    // SerialPCM pwm {channels, {2}, 0, 12};
+    SerialPCM pwm {channels, {2}, 0, 12};
     // int pwmi = 0;
     // for (int i = 0; i != channels; ++i)
     //     pwm[i] = 0;
