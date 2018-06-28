@@ -6,8 +6,8 @@
 #endif
 
 #include <i2s_parallel.h>
-//#include <format.h>
-//using fmt::print;
+#include <format.h>
+using fmt::print;
 
 
 #include "hexdump.h"
@@ -56,9 +56,11 @@ BluetoothSerial SerialBT;
 
 void setup() {
     Serial.begin(115200);
-    SerialBT.begin("Mickoflus"); //Bluetooth device name
-    //////print(Serial, "\n\nESP32 serial PWM test\n\t{} {}\n\n", __DATE__, __TIME__);
-    printf("\n\nESP32 serial PWM test\n\t%s %s\n\n", __DATE__, __TIME__);
+    print(Serial, "\n\nMickoflus BT test\n\t{} {}\n\n", __DATE__, __TIME__);
+
+    if (!SerialBT.begin("Mickoflus")) //Bluetooth device name
+        print(Serial, "!!! Bluetooth initialization failed!\n");
+    
     const int channels = 16;
 
     // After uncomment get exception in terminal from ESP32 
@@ -77,13 +79,15 @@ void setup() {
         micros(); // update overflow
         if (SerialBT.available()) {
             char c = SerialBT.read();
-            Serial.write(c);
+            //Serial.write(c);
             
             if(packet.push_byte(c)) {
                 if((int)packet.get_command() == 1) { //&& (int)in.size() == 9) {
                     for(int i = 0; i < 4; ++i) {
-                        axe[i] = (packet.get<int16_t>(i*2)) / 256;
+                        axe[i] = (packet.get<int16_t>(i*2))>>8;
+                        //print(Serial, "{:6}", axe[i]);
                     }
+                    Serial.println();
 
                     lmot = axe[0]/2 + axe[1]/2;
                     rmot = axe[0]/2 - axe[1]/2;
@@ -92,11 +96,7 @@ void setup() {
                     // motorPwmSet(pwm[2], pwm[3], rmot);
                     // pwm.update();
 
-                    Serial.println("");
-                    Serial.print(lmot);
-                    Serial.print("   ");
-                    Serial.print(rmot);
-                    Serial.println("");
+                    print(Serial, "{:3} {:3}\n", lmot, rmot);
 
                     packet.clear();
                 }

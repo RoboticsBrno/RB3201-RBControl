@@ -72,7 +72,6 @@ static void fill_dma_desc(volatile lldesc_t *dmadesc, i2s_parallel_buffer_desc_t
     }
     //Loop last back to first
     dmadesc[n-1].qe.stqe_next=(lldesc_t*)&dmadesc[0];
-    printf("fill_dma_desc: filled %d descriptors\n", n);
 }
 
 static void gpio_setup_out(int gpio, int sig, bool inv) {
@@ -98,8 +97,6 @@ int i2snum(i2s_dev_t *dev) {
 }
 
 void i2s_parallel_setup(i2s_dev_t *dev, const i2s_parallel_config_t *cfg) {
-    //Figure out which signal numbers to use for routing
-    printf("Setting up parallel I2S bus at I2S%d\n", i2snum(dev));
     int sig_data_base, sig_wclk, sig_bclk;
     if (dev==&I2S0) {
         sig_data_base=I2S0O_DATA_OUT0_IDX;

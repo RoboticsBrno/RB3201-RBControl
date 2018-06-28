@@ -26,26 +26,16 @@ public:
           m_active_buffer(0),
           m_pwm (channels * data_pins.size(), 0)
     {
-        //print("SerialPCM constructor\n");
         const int buffer_size = c_channels * c_bytes;
-        //print("channels    : {}\n", c_channels);
-        //print("data_pins   : {}\n", data_pins.size());
-        //print("bytes       : {}\n", c_bytes);
-        //print("buffer_size : {}\n", buffer_size);
         for (int buffer = 0; buffer != sc_buffers; ++buffer) {
             m_buffer_descriptors[buffer] = static_cast<i2s_parallel_buffer_desc_t*>(heap_caps_malloc(sc_resolution * sizeof(i2s_parallel_buffer_desc_t), MALLOC_CAP_32BIT));
-            ////print("buffer {}\n", buffer);
             for (int bit = 0; bit != sc_bit_depth; ++bit) {
                 uint8_t* p_buffer = static_cast<uint8_t*>(heap_caps_malloc(buffer_size, MALLOC_CAP_DMA));
-                ////print("\tbit {}\n", bit);
                 for (int i = 0; i != (1<<bit); ++i) {
-                //for (int i = 0; i != c_channels; ++i) {
                     int j = (1<<(sc_bit_depth-bit-1));
                     j += (j<<1) * i - 1;
                     m_buffer_descriptors[buffer][j].memory = p_buffer;
                     m_buffer_descriptors[buffer][j].size = buffer_size;
-                    //p_buffer[i] = i & 1;
-                    ////print("\t\ti {}, p_buffer {:08X}, * {:02X}\n", i, reinterpret_cast<std::uintptr_t>(p_buffer), p_buffer[i]);
                 }
                 memset(p_buffer, 0, buffer_size);
                 p_buffer[0] = (1<<(data_pins.size()&7));
@@ -55,26 +45,7 @@ public:
             for (int i = 0; i != buffer_size; ++i)
                 m_buffer[buffer][0][i] |= 1<<(data_pins.size() + 1);
         }
-        for (int buffer = 0; buffer != sc_buffers; ++buffer) {
-            //print("BUFFER {}\n", buffer);
-            //print("\tdata:\n");
-            for (int bit = 0; bit != sc_bit_depth; ++bit) {
-                //print("\t\tbit {}: 0x{:08X}\n", bit, reinterpret_cast<std::uintptr_t>(m_buffer[buffer][bit]));
-                hexDump("content", m_buffer[buffer][bit], buffer_size);
-                //print("\n");
-            }
-            //print("\tdescriptors:\n\t\t   ");
-            for (int i = 0; i != 16; ++i)
-                //print("\t         {:X}", i);
-            for (int i = 0; i < (sc_resolution>>4) || i == 0; ++i) {
-                //print("\n\t\t{:02X}:", i<<4);
-                int stop = (i == (sc_resolution>>4) || i == ((sc_resolution>>4) - 1)) ? sc_resolution % 16 : 16;
-                for (int j = 0; j != stop; ++j) {
-                    //print("\t0x{:08X}", reinterpret_cast<std::uintptr_t>(m_buffer_descriptors[buffer][j | i<<4].memory));
-                }
-            }
-            //print("\n");
-        }
+
         i2s_parallel_config_t cfg;
         switch(c_bytes) {
             default: //print("!!! WRONG NUMBER OF BYTES ({}) !!! Fallback to one byte.\n", c_bytes);
@@ -82,7 +53,6 @@ public:
             case 2: cfg.bits = I2S_PARALLEL_BITS_16; break;
             case 3: cfg.bits = I2S_PARALLEL_BITS_32; break;
         }
-        //print("bits: {}\n", cfg.bits);
         
         int i = 0;
         for (int pin: data_pins)
@@ -100,18 +70,8 @@ public:
         cfg.bufa = m_buffer_descriptors[0];
         cfg.bufb = m_buffer_descriptors[1];
 
-        //print("pins: ");
-        for(i = 0; i != 24; ++i)
-            //print("{:3}", cfg.gpio_bus[i]);
-        //print("\n");
-        //print("latch pin: {}\n", latch_pin);
-        //print("clock pin: {}\n", clock_pin);
-        //print("\n");
-
         i2s_parallel_setup(m_i2s, &cfg);
-        //print("\n");
         update();
-        //print("SerialPWM set up\n");
     }
 
     ~SerialPCM() {
@@ -133,7 +93,7 @@ public:
         int i = m_pwm.size();
         for (int channel = 0; channel != m_pwm.size(); ++channel) {
             uint8_t mask = 1<<(channel / c_channels);
-            const int pos = (channel&7 | ((channel&~7)*c_bytes)) % c_channels;
+            const int pos = ((channel&7) | ((channel&~7)*c_bytes)) % c_channels;
             --i;
             for (int bit = 0; bit != sc_bit_depth; ++bit) {
                 uint8_t& value = m_buffer[m_active_buffer][bit][pos];
@@ -143,13 +103,6 @@ public:
                     value &= ~mask;
             }
         }
-        // //print("SerialPCM::update: buffer {}\n", m_active_buffer);
-        // for (int bit = 0; bit != sc_bit_depth; ++bit) {
-        //     //print("bit {}: 0x{:08X}\n", bit, reinterpret_cast<std::uintptr_t>(m_buffer[m_active_buffer][bit]));
-        //     hexDump("content", m_buffer[m_active_buffer][bit], c_channels * c_bytes);
-        //     //print("\n");
-        // }
-        // //print("\n");
         i2s_parallel_flip_to_buffer(m_i2s, m_active_buffer);
     }
 
