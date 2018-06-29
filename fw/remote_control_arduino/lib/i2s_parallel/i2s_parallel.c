@@ -141,13 +141,13 @@ void i2s_parallel_setup(i2s_dev_t *dev, const i2s_parallel_config_t *cfg) {
     dev->sample_rate_conf.rx_bits_mod=cfg->bits;
     dev->sample_rate_conf.tx_bits_mod=cfg->bits;
     dev->sample_rate_conf.rx_bck_div_num=2;
-    dev->sample_rate_conf.tx_bck_div_num=8;
+    dev->sample_rate_conf.tx_bck_div_num=63; // M - max 63 - 5 bits
     
     dev->clkm_conf.val=0;
     dev->clkm_conf.clka_en=0;
-    dev->clkm_conf.clkm_div_a=1; //63
-    dev->clkm_conf.clkm_div_b=1; //63
-    dev->clkm_conf.clkm_div_num=cfg->clkspeed;
+    dev->clkm_conf.clkm_div_a=1; // A - max 63 - 5 bits
+    dev->clkm_conf.clkm_div_b=63; //B - max 63 - 5 bits
+    dev->clkm_conf.clkm_div_num=cfg->clkspeed; // N
     
     dev->fifo_conf.val=0;
     dev->fifo_conf.rx_fifo_mod_force_en=1;

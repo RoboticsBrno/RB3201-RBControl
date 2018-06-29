@@ -41,13 +41,13 @@ int clamp(int val, int min, int max) {
 }
 
 void motorPwmSet(SerialPCM::value_type & pwm0, SerialPCM::value_type & pwm1, int power) {
-    int _power = clamp(power, 0, 255);
+    power = clamp(power, -255, 255);
     
     if(power > 0) {
         pwm0 = 0;
-        pwm1 = _power;
+        pwm1 = power;
     } else {
-        pwm0 = _power;
+        pwm0 = -power;
         pwm1 = 0;
     }
 }
@@ -56,13 +56,13 @@ BluetoothSerial SerialBT;
 
 void setup() {
     Serial.begin(115200);
-    print(Serial, "\n\nMickoflus BT test\n\t{} {}\n\n", __DATE__, __TIME__);
+    print(Serial, "\n\nMickoflus BT control test\n\t{} {}\n\n", __DATE__, __TIME__);
 
-    if (!SerialBT.begin("Mickoflus")) //Bluetooth device name
+    if (!SerialBT.begin("Mickoflus")) { //Bluetooth device name
         print(Serial, "!!! Bluetooth initialization failed!\n");
-    
-    const int channels = 16;
+    }
 
+    const int channels = 16;
     // After uncomment get exception in terminal from ESP32 
     SerialPCM pwm {channels, {2}, 0, 12};
     // int pwmi = 0;
@@ -84,17 +84,17 @@ void setup() {
             if(packet.push_byte(c)) {
                 if((int)packet.get_command() == 1) { //&& (int)in.size() == 9) {
                     for(int i = 0; i < 4; ++i) {
-                        axe[i] = (packet.get<int16_t>(i*2))>>8;
+                        axe[i] = (packet.get<int16_t>(i*2))>>7;
                         //print(Serial, "{:6}", axe[i]);
                     }
                     Serial.println();
 
-                    lmot = axe[0]/2 + axe[1]/2;
-                    rmot = axe[0]/2 - axe[1]/2;
+                    lmot = axe[0] + axe[1];
+                    rmot = axe[0] - axe[1];
 
-                    // motorPwmSet(pwm[12], pwm[13], lmot);
-                    // motorPwmSet(pwm[2], pwm[3], rmot);
-                    // pwm.update();
+                    motorPwmSet(pwm[12], pwm[13], lmot);
+                    motorPwmSet(pwm[2], pwm[3], rmot);
+                    pwm.update();
 
                     print(Serial, "{:3} {:3}\n", lmot, rmot);
 
