@@ -58,7 +58,7 @@ void setup() {
     Serial.begin(115200);
     print(Serial, "\n\nMickoflus BT control test\n\t{} {}\n\n", __DATE__, __TIME__);
 
-    if (!SerialBT.begin("Mickoflus")) { //Bluetooth device name
+    if (!SerialBT.begin("Mickoflus01")) { //Bluetooth device name
         print(Serial, "!!! Bluetooth initialization failed!\n");
     }
 
@@ -82,7 +82,7 @@ void setup() {
             //Serial.write(c);
             
             if(packet.push_byte(c)) {
-                if((int)packet.get_command() == 1) { //&& (int)in.size() == 9) {
+                if((packet.get_command() == 1) && (packet.size() == 9)) {
                     for(int i = 0; i < 4; ++i) {
                         axe[i] = (packet.get<int16_t>(i*2))>>7;
                         //print(Serial, "{:6}", axe[i]);
