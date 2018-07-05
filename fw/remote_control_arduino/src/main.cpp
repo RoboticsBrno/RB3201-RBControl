@@ -20,6 +20,54 @@ using fmt::print;
      printf("pwm[%i] = %3i \n", pwmi, pwm);
  }
 
+#define PRINT_WARNING(x) do {Serial.print("[Warning] "); Serial.println(x);} while(false)
+
+class Joystick {   
+    int m_axe[4] = {0};
+    int m_buttons = 0;
+    atoms::AvakarPacket packet;
+
+public:
+    bool onByte(int byte) {
+        if(byte == -1) {
+            PRINT_WARNING("Byte is -1. Check if you are not reading empty stream/Serial/...");
+        }
+        if(packet.push_byte(byte)) {
+            if((packet.get_command() == 1) && (packet.size() == 9)) {
+                for(int i = 0; i < 4; ++i) {
+                    m_axe[i] = packet.get<int16_t>(i*2);
+                }
+                m_buttons = packet.get<uint8_t>(8);
+                packet.clear();
+                return true;
+            } else {
+                PRINT_WARNING("Unknown packet");
+            }
+        }
+        return false;
+    }
+
+    int axe(int index) {
+        if(index < 0 || index > 3) {
+            PRINT_WARNING("axe index - out of range");
+            return 0;
+        }
+        return m_axe[index];
+    }
+
+    int buttons() {
+        return m_buttons;
+    }
+
+    bool button(int index) {
+        if(index < 0 || index > 7) {
+            PRINT_WARNING("button index - out of range");
+            return false;
+        }
+        return m_buttons & (1 << index);
+    }
+};
+
 // channels
 // M1: 12, 13
 // M2: 2, 3 
@@ -70,10 +118,9 @@ void setup() {
     //     pwm[i] = 0;
     // pwm.update();
 
-    atoms::AvakarPacket packet;
-
-    int axe[4];
+    Joystick joy;
     int lmot, rmot;
+    int axe[2];
 
     for (;;) {
         micros(); // update overflow
@@ -81,25 +128,17 @@ void setup() {
             char c = SerialBT.read();
             //Serial.write(c);
             
-            if(packet.push_byte(c)) {
-                if((packet.get_command() == 1) && (packet.size() == 9)) {
-                    for(int i = 0; i < 4; ++i) {
-                        axe[i] = (packet.get<int16_t>(i*2))>>7;
-                        //print(Serial, "{:6}", axe[i]);
-                    }
-                    Serial.println();
+            if(joy.onByte(c)) {         
+                axe[0] = joy.axe(0) >> 7;
+                axe[1] = joy.axe(1) >> 7; 
+                lmot = axe[0] + axe[1];
+                rmot = axe[0] - axe[1];
 
-                    lmot = axe[0] + axe[1];
-                    rmot = axe[0] - axe[1];
+                motorPwmSet(pwm[12], pwm[13], lmot);
+                motorPwmSet(pwm[2], pwm[3], rmot);
+                pwm.update();
 
-                    motorPwmSet(pwm[12], pwm[13], lmot);
-                    motorPwmSet(pwm[2], pwm[3], rmot);
-                    pwm.update();
-
-                    print(Serial, "{:3} {:3}\n", lmot, rmot);
-
-                    packet.clear();
-                }
+                print(Serial, "{:3} {:3}\n", lmot, rmot);
             }
         }
     }
