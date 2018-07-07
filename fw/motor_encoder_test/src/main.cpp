@@ -14,7 +14,7 @@
 #include <driver/adc.h>
 #include "esp_system.h"
 #include "driver/spi_master.h"
-#include "rotEncoder.h"
+#include "motorEncoder.h"
 
 
 #define MEASURE_TASK_PERIOD 10     //in [ms]
@@ -27,10 +27,10 @@ void taskOne(void * parameter)
 {
     TickType_t xLastWakeTime;
     const TickType_t xPeriod = MEASURE_TASK_PERIOD / portTICK_PERIOD_MS;
-    xLastWakeTime = xTaskGetTickCount ();
+    xLastWakeTime = xTaskGetTickCount();
 
-    int16_t counterWheel[4] = {0, };
-    float freqWheel[4] = {0, };
+    int16_t counterEngine[ENGINES_NUMBER] = {0, };
+    float freqWheel[ENGINES_NUMBER] = {0.0, };
 
     for( ;; )
     {
@@ -38,9 +38,9 @@ void taskOne(void * parameter)
         vTaskDelayUntil( &xLastWakeTime, xPeriod );
 
         // Perform action here.
-        updateWheelCounters(counterWheel, freqWheel, MEASURE_TASK_PERIOD);
-        printf("Current wheel freqency: ");
-        for(uint8_t i = 0; i < 4; ++i)
+        updateWheelCounters(counterEngine, freqWheel, MEASURE_TASK_PERIOD);
+        printf("Current wheel freqency in time %dms :", millis());
+        for(uint8_t i = 0; i < ENGINES_NUMBER; ++i)
         {
             printf("%.1f Hz, ", freqWheel[i]);
         }
