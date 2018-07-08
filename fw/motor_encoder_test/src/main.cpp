@@ -16,8 +16,17 @@
 #include "driver/spi_master.h"
 #include "motorEncoder.h"
 
-
 #define MEASURE_TASK_PERIOD 10     //in [ms]
+
+static void gpio_task_example(void* arg)
+{
+    gpio_num_t io_num;
+    for(;;) {
+        if(xQueueReceive(gpio_evt_queue, &io_num, portMAX_DELAY)) {
+            printf("GPIO[%d] intr, val: %d\n", io_num, gpio_get_level(io_num));
+        }
+    }
+}
 
 extern "C" {
     void app_main(void);
@@ -50,8 +59,16 @@ void taskOne(void * parameter)
 
 void app_main()
 {
+    //create a queue to handle gpio event from isr
+    gpio_evt_queue = xQueueCreate(10, sizeof(uint32_t));
+
     initWheelCounters();
+    //start gpio task
+    xTaskCreate(gpio_task_example, "gpio_task_example", 2048, NULL, 10, NULL);
+
     xTaskCreate(&taskOne, "taskOne", 2048, NULL, 5, NULL);
+
+    hookInterruptPins();
 
     while (1) {
         delay(10);

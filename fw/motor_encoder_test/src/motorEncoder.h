@@ -7,12 +7,14 @@ extern "C" {
 //*************************************************************** Lib begin
 #include "driver/pcnt.h"
 
-#define ENGINES_NUMBER 8    //number of engines being measured
+#define ENGINES_NUMBER 3    //number of engines being measured
 #define PCNT_H_LIM_VAL      32767
 #define PCNT_L_LIM_VAL     -32768
 #define PCNT_THRESH1_VAL    32766
 #define PCNT_THRESH0_VAL   -32767
 #define INC_PER_REVOLUTION  2//2880    //PCNT increments per 1 wheel revolution
+#define ESP_INTR_FLAG_DEFAULT 0
+//#define GPIO_INPUT_PIN_SEL  (1ULL<<18)
 
 const pcnt_unit_t pcntUnits[8] = {
     PCNT_UNIT_0,    //engine1
@@ -35,10 +37,14 @@ const uint8_t encPins[16] = {
     32, 35      //engine8 - ENC8A, ENC8B
 };
 
+xQueueHandle gpio_evt_queue;    //originally: static xQueueHandle gpio_evt_queue = NULL;
+
+static void IRAM_ATTR gpio_isr_handler(void* arg);
+//static void gpio_task_example(void* arg);
 static void pcnt_example_init(pcnt_unit_t pcntUnit, uint8_t GPIO_A, uint8_t GPIO_B);
 void initWheelCounters();
 void updateWheelCounters(int16_t * aCounterWheel, float * aFreqWheel, uint16_t aMeasureTaskPeriod);
-
+void hookInterruptPins();
 
 //*************************************************************** Lib end
 #ifdef __cplusplus

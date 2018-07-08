@@ -13,6 +13,16 @@
 #include "esp_system.h"
 #include "motorEncoder.h"
 
+unsigned long long gpioInputPinSel = 1;
+
+static void IRAM_ATTR gpio_isr_handler(void* arg)
+{
+    uint32_t gpio_num = (uint32_t) arg;
+    xQueueSendFromISR(gpio_evt_queue, &gpio_num, NULL);
+}
+
+
+
 /* Initialize PCNT functions:
  *  - configure and initialize PCNT
  *  - set up the input filter
@@ -82,7 +92,18 @@ void initWheelCounters(){
     /* Initialize PCNT functions */
     for( uint8_t i = 0; i < ENGINES_NUMBER; ++i){
         pcnt_example_init(pcntUnits[i], encPins[2*i], encPins[2*i + 1]);
+        gpioInputPinSel = gpioInputPinSel | (1ULL<<encPins[2*i]);
     }
+    gpio_config_t io_conf;
+    //disable interrupt
+    io_conf.intr_type = GPIO_PIN_INTR_DISABLE;
+    //interrupt of rising edge
+    io_conf.intr_type = GPIO_INTR_ANYEDGE;
+    //bit mask of the pins
+    io_conf.pin_bit_mask = gpioInputPinSel;
+    //set as input mode    
+    io_conf.mode = GPIO_MODE_INPUT;
+    gpio_config(&io_conf);
 }
 void updateWheelCounters(int16_t * aCounterWheel, float * aFreqWheel, uint16_t aMeasureTaskPeriod){
     for( uint8_t i = 0; i < ENGINES_NUMBER; ++i){
@@ -97,4 +118,12 @@ void updateWheelCounters(int16_t * aCounterWheel, float * aFreqWheel, uint16_t a
         {
             aFreqWheel[i] = 1000 * (float)aCounterWheel[i] / (INC_PER_REVOLUTION * aMeasureTaskPeriod);
         }
+}
+void hookInterruptPins(){
+    //install gpio isr service
+    gpio_install_isr_service(ESP_INTR_FLAG_DEFAULT);
+    //hook isr handler for specific gpio pins
+    for( uint8_t i = 0; i < ENGINES_NUMBER; i = i+2){
+        gpio_isr_handler_add(encPins[i], gpio_isr_handler, (void*)encPins[i]);
+    }
 }
