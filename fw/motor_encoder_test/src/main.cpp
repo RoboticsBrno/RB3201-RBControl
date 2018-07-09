@@ -20,10 +20,10 @@
 
 static void gpio_task_example(void* arg)
 {
-    gpio_num_t io_num;
+    gpio_num_t counterIndex;
     for(;;) {
-        if(xQueueReceive(gpio_evt_queue, &io_num, portMAX_DELAY)) {
-            printf("GPIO[%d] intr, val: %d\n", io_num, gpio_get_level(io_num));
+        if(xQueueReceive(gpio_evt_queue, &counterIndex, portMAX_DELAY)) {
+            printf("--counter index: %d, micros: %d\n", counterIndex, counterTimeDiff[counterIndex]);
         }
     }
 }
@@ -38,8 +38,8 @@ void taskOne(void * parameter)
     const TickType_t xPeriod = MEASURE_TASK_PERIOD / portTICK_PERIOD_MS;
     xLastWakeTime = xTaskGetTickCount();
 
-    int16_t counterEngine[ENGINES_NUMBER] = {0, };
-    float freqWheel[ENGINES_NUMBER] = {0.0, };
+    int16_t counterEngine[COUNTERS_NUMBER] = {0, };
+    float freqWheel[COUNTERS_NUMBER] = {0.0, };
 
     for( ;; )
     {
@@ -47,13 +47,16 @@ void taskOne(void * parameter)
         vTaskDelayUntil( &xLastWakeTime, xPeriod );
 
         // Perform action here.
-        updateWheelCounters(counterEngine, freqWheel, MEASURE_TASK_PERIOD);
+        /*updateWheelCounters(counterEngine, freqWheel, MEASURE_TASK_PERIOD);
         printf("Current wheel freqency in time %dms :", millis());
-        for(uint8_t i = 0; i < ENGINES_NUMBER; ++i)
+        for(uint8_t i = 0; i < COUNTERS_NUMBER; ++i)
         {
             printf("%.1f Hz, ", freqWheel[i]);
         }
-        printf("\n");
+        printf("\n");*/
+        int16_t counter = 0;
+        pcnt_get_counter_value(pcntUnits[1], &counter);
+        printf("Counter1 val: %d, tDiffUs: %d\n", counter, counterTimeDiff[1]);
     }
 }
 

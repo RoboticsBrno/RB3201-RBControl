@@ -17,8 +17,13 @@ unsigned long long gpioInputPinSel = 1;
 
 static void IRAM_ATTR gpio_isr_handler(void* arg)
 {
-    uint32_t gpio_num = (uint32_t) arg;
-    xQueueSendFromISR(gpio_evt_queue, &gpio_num, NULL);
+    int64_t currentTime = esp_timer_get_time();
+    uint32_t counterIndex = (uint32_t) arg;
+    if(currentTime > counterPrevTime[counterIndex] + ENC_DEBOUNCE_US){
+        counterTimeDiff[counterIndex] = currentTime - counterPrevTime[counterIndex];
+        counterPrevTime[counterIndex] = currentTime;
+        xQueueSendFromISR(gpio_evt_queue, &counterIndex, NULL);
+    }
 }
 
 
@@ -90,7 +95,7 @@ static void pcnt_example_init(pcnt_unit_t pcntUnit, uint8_t GPIO_A, uint8_t GPIO
 }
 void initWheelCounters(){
     /* Initialize PCNT functions */
-    for( uint8_t i = 0; i < ENGINES_NUMBER; ++i){
+    for( uint8_t i = 0; i < COUNTERS_NUMBER; ++i){
         pcnt_example_init(pcntUnits[i], encPins[2*i], encPins[2*i + 1]);
         gpioInputPinSel = gpioInputPinSel | (1ULL<<encPins[2*i]);
     }
@@ -98,23 +103,25 @@ void initWheelCounters(){
     //disable interrupt
     io_conf.intr_type = GPIO_PIN_INTR_DISABLE;
     //interrupt of rising edge
-    io_conf.intr_type = GPIO_INTR_ANYEDGE;
+    io_conf.intr_type = GPIO_INTR_POSEDGE;  //ANYEDGE gives oscillating time differences in engine rotor half turns
     //bit mask of the pins
     io_conf.pin_bit_mask = gpioInputPinSel;
     //set as input mode    
     io_conf.mode = GPIO_MODE_INPUT;
+    //enable pull-up mode - unconnected GPIOs tend to invoke interrupts unintentionally
+    io_conf.pull_up_en = 1;
     gpio_config(&io_conf);
 }
 void updateWheelCounters(int16_t * aCounterWheel, float * aFreqWheel, uint16_t aMeasureTaskPeriod){
-    for( uint8_t i = 0; i < ENGINES_NUMBER; ++i){
+    for( uint8_t i = 0; i < COUNTERS_NUMBER; ++i){
         pcnt_get_counter_value(pcntUnits[i], &aCounterWheel[i]);        
     }
 
-    for( uint8_t i = 0; i < ENGINES_NUMBER; ++i){
+    for( uint8_t i = 0; i < COUNTERS_NUMBER; ++i){
         pcnt_counter_clear(pcntUnits[i]);
     }
 
-    for(uint8_t i = 0; i < ENGINES_NUMBER; ++i)
+    for(uint8_t i = 0; i < COUNTERS_NUMBER; ++i)
         {
             aFreqWheel[i] = 1000 * (float)aCounterWheel[i] / (INC_PER_REVOLUTION * aMeasureTaskPeriod);
         }
@@ -123,7 +130,7 @@ void hookInterruptPins(){
     //install gpio isr service
     gpio_install_isr_service(ESP_INTR_FLAG_DEFAULT);
     //hook isr handler for specific gpio pins
-    for( uint8_t i = 0; i < ENGINES_NUMBER; i = i+2){
-        gpio_isr_handler_add(encPins[i], gpio_isr_handler, (void*)encPins[i]);
+    for( uint8_t i = 0; i < 2*COUNTERS_NUMBER; i = i+2){
+        gpio_isr_handler_add(encPins[i], gpio_isr_handler, (void*)(i/2));   //interrupts use counter index 0-7 instead of invoking GPIO pin number
     }
 }
