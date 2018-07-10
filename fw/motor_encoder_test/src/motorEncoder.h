@@ -14,6 +14,7 @@ extern "C" {
 #define INC_PER_REVOLUTION  2//2880    //PCNT increments per 1 engine revolution
 #define ESP_INTR_FLAG_DEFAULT 0
 #define ENC_DEBOUNCE_US 20 //[microseconds]
+#define MAX_ENGINE_PERIOD 100000 //engine period limit separating zero result [us]
 
 const pcnt_unit_t pcntUnits[8] = {
     PCNT_UNIT_0,    //engine1
@@ -37,17 +38,19 @@ const uint8_t encPins[16] = {
 };
 struct counterTimeData{
         volatile int64_t counterPrevTime;   //prev time of pulse interrupt call
-        volatile uint32_t counterTimeDiff;   //time difference of pulse interrupt calls
+        volatile int32_t counterTimeDiff;   //time difference of pulse interrupt calls
     };
 
-static void IRAM_ATTR gpio_isr_handler(void* arg);
-static void pcnt_example_init(pcnt_unit_t pcntUnit, uint8_t GPIO_A, uint8_t GPIO_B);
+//static void IRAM_ATTR gpio_isr_handler(void* arg);
 
 class MotorEncoder{
     uint8_t counterIndex;   //0-7
     int16_t PCNT_val;
+    float frequency;
     static unsigned long long gpioInputPinSel;
     struct counterTimeData CounterTimeData;
+    static void pcnt_init(pcnt_unit_t pcntUnit, uint8_t GPIO_A, uint8_t GPIO_B);
+    static void IRAM_ATTR gpio_isr_handler(void* arg);
 public:
     MotorEncoder(uint8_t index);
     uint32_t getTimeDiff(){
@@ -56,6 +59,15 @@ public:
     int16_t getPCNT(){
         pcnt_get_counter_value(pcntUnits[counterIndex], &PCNT_val);
         return PCNT_val;
+    }
+    float getFrequency(){
+        if(esp_timer_get_time() > (CounterTimeData.counterPrevTime + MAX_ENGINE_PERIOD)){
+            frequency = 0.0;
+        }
+        else{
+            frequency = 1000000.0 / CounterTimeData.counterTimeDiff;
+        }
+        return frequency; 
     }
 };
 

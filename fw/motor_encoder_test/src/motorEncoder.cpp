@@ -15,20 +15,17 @@
 
 unsigned long long MotorEncoder::gpioInputPinSel = 1;
 
-static void IRAM_ATTR gpio_isr_handler(void* arg)
+void IRAM_ATTR MotorEncoder::gpio_isr_handler(void* arg)
 {
     int64_t currentTime = esp_timer_get_time();
     struct counterTimeData * aCounterTimeData = (struct counterTimeData *)arg;
     if(currentTime > aCounterTimeData->counterPrevTime + ENC_DEBOUNCE_US){
         aCounterTimeData->counterTimeDiff = currentTime - aCounterTimeData->counterPrevTime;
+        //if(gpio_get_level(2*counterIndex + 1))
         aCounterTimeData->counterPrevTime = currentTime;
     }
 }
-/* Initialize PCNT functions:
- *  - configure and initialize PCNT
- *  - set up the input filter
- *  - set up the counter events to watch*/
-static void pcnt_init(pcnt_unit_t pcntUnit, uint8_t GPIO_A, uint8_t GPIO_B)
+void MotorEncoder::pcnt_init(pcnt_unit_t pcntUnit, uint8_t GPIO_A, uint8_t GPIO_B)
 {
     pcnt_config_t pcnt_config = {
         // Set PCNT input signal and control GPIOs

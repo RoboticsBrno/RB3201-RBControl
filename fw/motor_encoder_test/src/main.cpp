@@ -34,7 +34,7 @@ void taskOne(void * parameter)
         // Wait for the next cycle.
         vTaskDelayUntil( &xLastWakeTime, xPeriod );
         // Perform action here.
-        printf("Counter1 val: %d, tDiffUs: %d\n", encoder1.getPCNT(), encoder1.getTimeDiff());
+        printf("Counter1 val: %d, tDiffUs: %d, freqency: %.2f\n", encoder1.getPCNT(), encoder1.getTimeDiff(), encoder1.getFrequency());
     }
 }
 
