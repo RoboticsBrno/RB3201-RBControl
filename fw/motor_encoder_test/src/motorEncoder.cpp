@@ -13,7 +13,10 @@
 #include "esp_system.h"
 #include "motorEncoder.h"
 
+
 unsigned long long gpioInputPinSel = 1;
+volatile uint64_t counterPrevTime[COUNTERS_NUMBER];   //prev time of pulse interrupt call
+volatile uint32_t counterTimeDiff[COUNTERS_NUMBER];   //time difference of pulse interrupt calls
 
 static void IRAM_ATTR gpio_isr_handler(void* arg)
 {
@@ -22,12 +25,8 @@ static void IRAM_ATTR gpio_isr_handler(void* arg)
     if(currentTime > counterPrevTime[counterIndex] + ENC_DEBOUNCE_US){
         counterTimeDiff[counterIndex] = currentTime - counterPrevTime[counterIndex];
         counterPrevTime[counterIndex] = currentTime;
-        xQueueSendFromISR(gpio_evt_queue, &counterIndex, NULL);
     }
 }
-
-
-
 /* Initialize PCNT functions:
  *  - configure and initialize PCNT
  *  - set up the input filter
@@ -35,23 +34,6 @@ static void IRAM_ATTR gpio_isr_handler(void* arg)
  */
 static void pcnt_example_init(pcnt_unit_t pcntUnit, uint8_t GPIO_A, uint8_t GPIO_B)
 {
-    /* Prepare configuration for the PCNT unit */
-    /*pcnt_config_t pcnt_config = {
-        // Set PCNT input signal and control GPIOs
-        .pulse_gpio_num = GPIO_A,
-        .ctrl_gpio_num = GPIO_B,
-        .channel = PCNT_CHANNEL_0,
-        .unit = pcntUnit,
-        // What to do on the positive / negative edge of pulse input?
-        .pos_mode = PCNT_COUNT_INC,   // Count up on the positive edge
-        .neg_mode = PCNT_COUNT_DEC,   // Keep the counter value on the negative edge
-        // What to do when control input is low or high?
-        .lctrl_mode = PCNT_MODE_KEEP,  // Keep the primary counter mode if high
-        .hctrl_mode = PCNT_MODE_REVERSE,   // Reverse counting direction if low 
-        // Set the maximum and minimum limit values to watch
-        .counter_h_lim = PCNT_H_LIM_VAL,
-        .counter_l_lim = PCNT_L_LIM_VAL,
-    };*/
     pcnt_config_t pcnt_config = {
         // Set PCNT input signal and control GPIOs
         GPIO_A,   //pulse_gpio_num
@@ -68,7 +50,6 @@ static void pcnt_example_init(pcnt_unit_t pcntUnit, uint8_t GPIO_A, uint8_t GPIO
         pcntUnit,   //unit
         PCNT_CHANNEL_0, //channel
     };
-
 
     pcnt_unit_config(&pcnt_config); //Initialize PCNT units
 
@@ -101,7 +82,7 @@ void initWheelCounters(){
     }
     gpio_config_t io_conf;
     //disable interrupt
-    io_conf.intr_type = GPIO_PIN_INTR_DISABLE;
+    io_conf.intr_type = static_cast<gpio_int_type_t>(GPIO_PIN_INTR_DISABLE);
     //interrupt of rising edge
     io_conf.intr_type = GPIO_INTR_POSEDGE;  //ANYEDGE gives oscillating time differences in engine rotor half turns
     //bit mask of the pins
@@ -109,7 +90,7 @@ void initWheelCounters(){
     //set as input mode    
     io_conf.mode = GPIO_MODE_INPUT;
     //enable pull-up mode - unconnected GPIOs tend to invoke interrupts unintentionally
-    io_conf.pull_up_en = 1;
+    io_conf.pull_up_en = static_cast<gpio_pullup_t>(1);
     gpio_config(&io_conf);
 }
 void updateWheelCounters(int16_t * aCounterWheel, float * aFreqWheel, uint16_t aMeasureTaskPeriod){
@@ -121,16 +102,15 @@ void updateWheelCounters(int16_t * aCounterWheel, float * aFreqWheel, uint16_t a
         pcnt_counter_clear(pcntUnits[i]);
     }
 
-    for(uint8_t i = 0; i < COUNTERS_NUMBER; ++i)
-        {
-            aFreqWheel[i] = 1000 * (float)aCounterWheel[i] / (INC_PER_REVOLUTION * aMeasureTaskPeriod);
-        }
+    for(uint8_t i = 0; i < COUNTERS_NUMBER; ++i){
+        aFreqWheel[i] = 1000 * (float)aCounterWheel[i] / (INC_PER_REVOLUTION * aMeasureTaskPeriod);
+    }
 }
 void hookInterruptPins(){
     //install gpio isr service
     gpio_install_isr_service(ESP_INTR_FLAG_DEFAULT);
     //hook isr handler for specific gpio pins
     for( uint8_t i = 0; i < 2*COUNTERS_NUMBER; i = i+2){
-        gpio_isr_handler_add(encPins[i], gpio_isr_handler, (void*)(i/2));   //interrupts use counter index 0-7 instead of invoking GPIO pin number
+        gpio_isr_handler_add(static_cast<gpio_num_t>(encPins[i]), gpio_isr_handler, (void*)(i/2));   //interrupts use counter index 0-7 instead of invoking GPIO pin number
     }
 }

@@ -9,6 +9,7 @@
         "pcnt.h": "c",
         "esp_system.h": "c",
         "adc.h": "c",
-        "esp32-hal-adc.h": "c"
+        "esp32-hal-adc.h": "c",
+        "motorencoder.h": "c"
     }
 }

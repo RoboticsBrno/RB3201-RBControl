@@ -37,16 +37,14 @@ const uint8_t encPins[16] = {
     32, 35      //engine8 - ENC8A, ENC8B
 };
 
-xQueueHandle gpio_evt_queue;    //originally: static xQueueHandle gpio_evt_queue = NULL;
-volatile uint64_t counterPrevTime[COUNTERS_NUMBER];   //prev time of pulse interrupt call
-volatile uint32_t counterTimeDiff[COUNTERS_NUMBER];   //time difference of pulse interrupr calls
+extern volatile uint64_t counterPrevTime[COUNTERS_NUMBER];   //prev time of pulse interrupt call
+extern volatile uint32_t counterTimeDiff[COUNTERS_NUMBER];   //time difference of pulse interrupt calls
 
 static void IRAM_ATTR gpio_isr_handler(void* arg);
 static void pcnt_example_init(pcnt_unit_t pcntUnit, uint8_t GPIO_A, uint8_t GPIO_B);
 void initWheelCounters();
 void updateWheelCounters(int16_t * aCounterWheel, float * aFreqWheel, uint16_t aMeasureTaskPeriod);
 void hookInterruptPins();
-
 //*************************************************************** Lib end
 #ifdef __cplusplus
 }

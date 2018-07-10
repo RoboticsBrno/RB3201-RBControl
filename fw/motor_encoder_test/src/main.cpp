@@ -18,20 +18,9 @@
 
 #define MEASURE_TASK_PERIOD 10     //in [ms]
 
-static void gpio_task_example(void* arg)
-{
-    gpio_num_t counterIndex;
-    for(;;) {
-        if(xQueueReceive(gpio_evt_queue, &counterIndex, portMAX_DELAY)) {
-            printf("--counter index: %d, micros: %d\n", counterIndex, counterTimeDiff[counterIndex]);
-        }
-    }
-}
-
 extern "C" {
     void app_main(void);
 }
-
 void taskOne(void * parameter)
 {
     TickType_t xLastWakeTime;
@@ -62,12 +51,7 @@ void taskOne(void * parameter)
 
 void app_main()
 {
-    //create a queue to handle gpio event from isr
-    gpio_evt_queue = xQueueCreate(10, sizeof(uint32_t));
-
     initWheelCounters();
-    //start gpio task
-    xTaskCreate(gpio_task_example, "gpio_task_example", 2048, NULL, 10, NULL);
 
     xTaskCreate(&taskOne, "taskOne", 2048, NULL, 5, NULL);
 
