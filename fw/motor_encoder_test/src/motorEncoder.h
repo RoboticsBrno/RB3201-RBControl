@@ -7,12 +7,11 @@ extern "C" {
 //*************************************************************** Lib begin
 #include "driver/pcnt.h"
 
-#define COUNTERS_NUMBER 2    //number of engine counters being used
 #define PCNT_H_LIM_VAL      32767
 #define PCNT_L_LIM_VAL     -32768
 #define PCNT_THRESH1_VAL    32766
 #define PCNT_THRESH0_VAL   -32767
-#define INC_PER_REVOLUTION  2//2880    //PCNT increments per 1 wheel revolution
+#define INC_PER_REVOLUTION  2//2880    //PCNT increments per 1 engine revolution
 #define ESP_INTR_FLAG_DEFAULT 0
 #define ENC_DEBOUNCE_US 20 //[microseconds]
 
@@ -36,23 +35,22 @@ const uint8_t encPins[16] = {
     25, 33,     //engine7 - ENC7A, ENC7B
     32, 35      //engine8 - ENC8A, ENC8B
 };
-
-extern volatile int64_t counterPrevTime[COUNTERS_NUMBER];   //prev time of pulse interrupt call
-extern volatile uint32_t counterTimeDiff[COUNTERS_NUMBER];   //time difference of pulse interrupt calls
+struct counterTimeData{
+        volatile int64_t counterPrevTime;   //prev time of pulse interrupt call
+        volatile uint32_t counterTimeDiff;   //time difference of pulse interrupt calls
+    };
 
 static void IRAM_ATTR gpio_isr_handler(void* arg);
 static void pcnt_example_init(pcnt_unit_t pcntUnit, uint8_t GPIO_A, uint8_t GPIO_B);
-//void initWheelCounters();
-void updateWheelCounters(int16_t * aCounterWheel, float * aFreqWheel, uint16_t aMeasureTaskPeriod);
-void hookInterruptPins(uint8_t aCounter);
 
 class MotorEncoder{
     uint8_t counterIndex;   //0-7
     int16_t PCNT_val;
+    struct counterTimeData CounterTimeData;
 public:
     MotorEncoder(uint8_t index);
     uint32_t getTimeDiff(){
-        return counterTimeDiff[counterIndex];
+        return CounterTimeData.counterTimeDiff;
     }
     int16_t getPCNT(){
         pcnt_get_counter_value(pcntUnits[counterIndex], &PCNT_val);

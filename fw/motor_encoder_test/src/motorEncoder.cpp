@@ -14,16 +14,14 @@
 #include "motorEncoder.h"
 
 unsigned long long gpioInputPinSel = 1;
-volatile int64_t counterPrevTime[COUNTERS_NUMBER];   //prev time of pulse interrupt call
-volatile uint32_t counterTimeDiff[COUNTERS_NUMBER];   //time difference of pulse interrupt calls
 
 static void IRAM_ATTR gpio_isr_handler(void* arg)
 {
     int64_t currentTime = esp_timer_get_time();
-    uint32_t counterIndex = (uint32_t) arg;
-    if(currentTime > counterPrevTime[counterIndex] + ENC_DEBOUNCE_US){
-        counterTimeDiff[counterIndex] = currentTime - counterPrevTime[counterIndex];
-        counterPrevTime[counterIndex] = currentTime;
+    struct counterTimeData * aCounterTimeData = (struct counterTimeData *)arg;
+    if(currentTime > aCounterTimeData->counterPrevTime + ENC_DEBOUNCE_US){
+        aCounterTimeData->counterTimeDiff = currentTime - aCounterTimeData->counterPrevTime;
+        aCounterTimeData->counterPrevTime = currentTime;
     }
 }
 /* Initialize PCNT functions:
@@ -71,19 +69,6 @@ static void pcnt_init(pcnt_unit_t pcntUnit, uint8_t GPIO_A, uint8_t GPIO_B)
     /* Everything is set up, now go to counting */
     pcnt_counter_resume(pcntUnit);
 }
-void updateWheelCounters(int16_t * aCounterWheel, float * aFreqWheel, uint16_t aMeasureTaskPeriod){
-    for( uint8_t i = 0; i < COUNTERS_NUMBER; ++i){
-        pcnt_get_counter_value(pcntUnits[i], &aCounterWheel[i]);        
-    }
-
-    for( uint8_t i = 0; i < COUNTERS_NUMBER; ++i){
-        pcnt_counter_clear(pcntUnits[i]);
-    }
-
-    for(uint8_t i = 0; i < COUNTERS_NUMBER; ++i){
-        aFreqWheel[i] = 1000 * (float)aCounterWheel[i] / (INC_PER_REVOLUTION * aMeasureTaskPeriod);
-    }
-}
 MotorEncoder::MotorEncoder(uint8_t index){
     counterIndex = index;
 
@@ -108,5 +93,5 @@ MotorEncoder::MotorEncoder(uint8_t index){
     //install gpio isr service
     gpio_install_isr_service(ESP_INTR_FLAG_DEFAULT);
     //hook isr handler for specific gpio pins
-    gpio_isr_handler_add(static_cast<gpio_num_t>(encPins[2*counterIndex]), gpio_isr_handler, (void*)counterIndex);   //interrupts use counter index 0-7 instead of invoking GPIO pin number
+    gpio_isr_handler_add(static_cast<gpio_num_t>(encPins[2*counterIndex]), gpio_isr_handler, (void*)&CounterTimeData);   //interrupts use counter index 0-7 instead of invoking GPIO pin number
 }
