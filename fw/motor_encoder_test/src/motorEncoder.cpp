@@ -13,7 +13,7 @@
 #include "esp_system.h"
 #include "motorEncoder.h"
 
-unsigned long long gpioInputPinSel = 1;
+unsigned long long MotorEncoder::gpioInputPinSel = 1;
 
 static void IRAM_ATTR gpio_isr_handler(void* arg)
 {
@@ -73,10 +73,9 @@ MotorEncoder::MotorEncoder(uint8_t index){
     counterIndex = index;
 
     // Initialize PCNT functions
-    for( uint8_t i = 0; i < COUNTERS_NUMBER; ++i){
-        pcnt_init(pcntUnits[i], encPins[2*i], encPins[2*i + 1]);
-        gpioInputPinSel = gpioInputPinSel | (1ULL<<encPins[2*i]);
-    }
+    pcnt_init(pcntUnits[counterIndex], encPins[2*counterIndex], encPins[2*counterIndex + 1]);
+    gpioInputPinSel = gpioInputPinSel | (1ULL<<encPins[2*counterIndex]);
+
     gpio_config_t io_conf;
     //disable interrupt
     io_conf.intr_type = static_cast<gpio_int_type_t>(GPIO_PIN_INTR_DISABLE);

@@ -46,6 +46,7 @@ static void pcnt_example_init(pcnt_unit_t pcntUnit, uint8_t GPIO_A, uint8_t GPIO
 class MotorEncoder{
     uint8_t counterIndex;   //0-7
     int16_t PCNT_val;
+    static unsigned long long gpioInputPinSel;
     struct counterTimeData CounterTimeData;
 public:
     MotorEncoder(uint8_t index);
