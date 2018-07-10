@@ -37,14 +37,29 @@ const uint8_t encPins[16] = {
     32, 35      //engine8 - ENC8A, ENC8B
 };
 
-extern volatile uint64_t counterPrevTime[COUNTERS_NUMBER];   //prev time of pulse interrupt call
+extern volatile int64_t counterPrevTime[COUNTERS_NUMBER];   //prev time of pulse interrupt call
 extern volatile uint32_t counterTimeDiff[COUNTERS_NUMBER];   //time difference of pulse interrupt calls
 
 static void IRAM_ATTR gpio_isr_handler(void* arg);
 static void pcnt_example_init(pcnt_unit_t pcntUnit, uint8_t GPIO_A, uint8_t GPIO_B);
-void initWheelCounters();
+//void initWheelCounters();
 void updateWheelCounters(int16_t * aCounterWheel, float * aFreqWheel, uint16_t aMeasureTaskPeriod);
-void hookInterruptPins();
+void hookInterruptPins(uint8_t aCounter);
+
+class MotorEncoder{
+    uint8_t counterIndex;   //0-7
+    int16_t PCNT_val;
+public:
+    MotorEncoder(uint8_t index);
+    uint32_t getTimeDiff(){
+        return counterTimeDiff[counterIndex];
+    }
+    int16_t getPCNT(){
+        pcnt_get_counter_value(pcntUnits[counterIndex], &PCNT_val);
+        return PCNT_val;
+    }
+};
+
 //*************************************************************** Lib end
 #ifdef __cplusplus
 }
