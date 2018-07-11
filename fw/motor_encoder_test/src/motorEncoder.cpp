@@ -17,14 +17,16 @@ unsigned long long MotorEncoder::gpioInputPinSel = 1;
 
 void IRAM_ATTR MotorEncoder::gpio_isr_handler(void* arg)
 {
+    //Handle edge interrupt time for frequency calculation
     int64_t currentTime = esp_timer_get_time();
-    struct counterTimeData * aCounterTimeData = (struct counterTimeData *)arg;
+    struct CounterTimeData * aCounterTimeData = (struct CounterTimeData *)arg;
     if(currentTime > aCounterTimeData->counterPrevTime + ENC_DEBOUNCE_US){
         aCounterTimeData->counterTimeDiff = currentTime - aCounterTimeData->counterPrevTime;
         if(gpio_get_level(static_cast<gpio_num_t>(encPins[2*(aCounterTimeData->aCounterIndex) + 1])))
             aCounterTimeData->counterTimeDiff = -aCounterTimeData->counterTimeDiff;
         aCounterTimeData->counterPrevTime = currentTime;
     }
+    //TODO - Handle possible PCNT overflow interrupt...
 }
 void MotorEncoder::pcnt_init(pcnt_unit_t pcntUnit, uint8_t GPIO_A, uint8_t GPIO_B)
 {
@@ -68,7 +70,10 @@ void MotorEncoder::pcnt_init(pcnt_unit_t pcntUnit, uint8_t GPIO_A, uint8_t GPIO_
     pcnt_counter_resume(pcntUnit);
 }
 MotorEncoder::MotorEncoder(uint8_t index){
-    counterIndex = index;
+    if(index >= 1 && index <= 8)
+        counterIndex = index - 1;
+    else //wrong input encoder slot
+        counterIndex = 0;
 
     // Initialize PCNT functions
     pcnt_init(pcntUnits[counterIndex], encPins[2*counterIndex], encPins[2*counterIndex + 1]);
@@ -90,9 +95,29 @@ MotorEncoder::MotorEncoder(uint8_t index){
     //install gpio isr service
     gpio_install_isr_service(ESP_INTR_FLAG_DEFAULT);
     //hook isr handler for specific gpio pins
-    gpio_isr_handler_add(static_cast<gpio_num_t>(encPins[2*counterIndex]), gpio_isr_handler, (void*)&CounterTimeData);   //interrupts use counter index 0-7 instead of invoking GPIO pin number
+    gpio_isr_handler_add(static_cast<gpio_num_t>(encPins[2*counterIndex]), gpio_isr_handler, (void*)&counterTimeData);   //interrupts use counter index 0-7 instead of invoking GPIO pin number
 
-    CounterTimeData.counterTimeDiff = 0;
-    CounterTimeData.counterPrevTime = 0;
-    CounterTimeData.aCounterIndex = counterIndex;
+    PCNT_count = 0;
+    counterTimeData.counterTimeDiff = 0;
+    counterTimeData.counterPrevTime = 0;
+    counterTimeData.aCounterIndex = counterIndex;
 }
+int32_t MotorEncoder::getCount(){
+        //return number of MotorEncoder increments with resolution 2 increments per revolution
+        pcnt_get_counter_value(pcntUnits[counterIndex], &PCNT_internal_count);
+        pcnt_counter_clear(pcntUnits[counterIndex]);
+        PCNT_count += PCNT_internal_count;
+        return PCNT_count;
+    }
+float MotorEncoder::getFrequency(){
+        //return motor axis frequency in [Hz]
+        if(esp_timer_get_time() > (counterTimeData.counterPrevTime + MAX_ENGINE_PERIOD))
+            frequency = 0.0;
+        else if(abs(counterTimeData.counterTimeDiff) < MIN_ENGINE_PERIOD){
+            frequency = 0.0;
+            counterTimeData.counterTimeDiff = 0;
+        }
+        else
+            frequency = 1000000.0 / counterTimeData.counterTimeDiff;
+        return frequency; 
+    }

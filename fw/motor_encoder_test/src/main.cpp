@@ -10,7 +10,6 @@
 #include "esp_log.h"
 #include "soc/gpio_sig_map.h"
 #include "esp32-hal-adc.h"
-
 #include <driver/adc.h>
 #include "esp_system.h"
 #include "driver/spi_master.h"
@@ -27,14 +26,13 @@ void taskOne(void * parameter)
     const TickType_t xPeriod = MEASURE_TASK_PERIOD / portTICK_PERIOD_MS;
     xLastWakeTime = xTaskGetTickCount();
 
-    MotorEncoder encoder1(1);
-
+    MotorEncoder encoder1(1);   //slot 1
     for( ;; )
     {
         // Wait for the next cycle.
         vTaskDelayUntil( &xLastWakeTime, xPeriod );
         // Perform action here.
-        printf("Counter1 val: %d, tDiffUs: %d, freqency: %.2f\n", encoder1.getPCNT(), encoder1.getTimeDiff(), encoder1.getFrequency());
+        printf("Counter1 val: %d, freqency: %.2f\n", encoder1.getCount(), encoder1.getFrequency());
     }
 }
 void app_main()
