@@ -37,7 +37,6 @@ void taskOne(void * parameter)
         printf("Counter1 val: %d, tDiffUs: %d, freqency: %.2f\n", encoder1.getPCNT(), encoder1.getTimeDiff(), encoder1.getFrequency());
     }
 }
-
 void app_main()
 {
     xTaskCreate(&taskOne, "taskOne", 2048, NULL, 5, NULL);

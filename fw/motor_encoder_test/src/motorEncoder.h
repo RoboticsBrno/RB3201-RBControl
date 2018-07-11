@@ -15,6 +15,7 @@ extern "C" {
 #define ESP_INTR_FLAG_DEFAULT 0
 #define ENC_DEBOUNCE_US 20 //[microseconds]
 #define MAX_ENGINE_PERIOD 100000 //engine period limit separating zero result [us]
+#define MIN_ENGINE_PERIOD 1000  //engine period limit separating zero results [us]
 
 const pcnt_unit_t pcntUnits[8] = {
     PCNT_UNIT_0,    //engine1
@@ -39,10 +40,8 @@ const uint8_t encPins[16] = {
 struct counterTimeData{
         volatile int64_t counterPrevTime;   //prev time of pulse interrupt call
         volatile int32_t counterTimeDiff;   //time difference of pulse interrupt calls
+        uint8_t aCounterIndex;
     };
-
-//static void IRAM_ATTR gpio_isr_handler(void* arg);
-
 class MotorEncoder{
     uint8_t counterIndex;   //0-7
     int16_t PCNT_val;
@@ -61,12 +60,12 @@ public:
         return PCNT_val;
     }
     float getFrequency(){
-        if(esp_timer_get_time() > (CounterTimeData.counterPrevTime + MAX_ENGINE_PERIOD)){
+        if(esp_timer_get_time() > (CounterTimeData.counterPrevTime + MAX_ENGINE_PERIOD))
             frequency = 0.0;
-        }
-        else{
+        else if(abs(CounterTimeData.counterTimeDiff) < MIN_ENGINE_PERIOD)
+            frequency = 0.0;
+        else
             frequency = 1000000.0 / CounterTimeData.counterTimeDiff;
-        }
         return frequency; 
     }
 };

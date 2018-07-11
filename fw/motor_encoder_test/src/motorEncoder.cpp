@@ -21,7 +21,8 @@ void IRAM_ATTR MotorEncoder::gpio_isr_handler(void* arg)
     struct counterTimeData * aCounterTimeData = (struct counterTimeData *)arg;
     if(currentTime > aCounterTimeData->counterPrevTime + ENC_DEBOUNCE_US){
         aCounterTimeData->counterTimeDiff = currentTime - aCounterTimeData->counterPrevTime;
-        //if(gpio_get_level(2*counterIndex + 1))
+        if(gpio_get_level(static_cast<gpio_num_t>(encPins[2*(aCounterTimeData->aCounterIndex) + 1])))
+            aCounterTimeData->counterTimeDiff = -aCounterTimeData->counterTimeDiff;
         aCounterTimeData->counterPrevTime = currentTime;
     }
 }
@@ -90,4 +91,8 @@ MotorEncoder::MotorEncoder(uint8_t index){
     gpio_install_isr_service(ESP_INTR_FLAG_DEFAULT);
     //hook isr handler for specific gpio pins
     gpio_isr_handler_add(static_cast<gpio_num_t>(encPins[2*counterIndex]), gpio_isr_handler, (void*)&CounterTimeData);   //interrupts use counter index 0-7 instead of invoking GPIO pin number
+
+    CounterTimeData.counterTimeDiff = 0;
+    CounterTimeData.counterPrevTime = 0;
+    CounterTimeData.aCounterIndex = counterIndex;
 }
