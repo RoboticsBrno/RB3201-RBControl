@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -24189,7 +24189,7 @@ RobotikaBrno.cz
 Robotarna
 CC BY-SA 4.0</text>
 <text x="344.17" y="20.32" size="2.54" layer="97" font="vector" ratio="14">RobotikaBrno</text>
-<text x="374.65" y="5.08" size="2.54" layer="97" font="vector" ratio="14">v1.1</text>
+<text x="374.65" y="5.08" size="2.54" layer="97" font="vector" ratio="14">v1.2</text>
 <rectangle x1="338.570040625" y1="18.3900375" x2="338.783396875" y2="18.4002" layer="102"/>
 <rectangle x1="338.4278" y1="18.4002" x2="338.9256375" y2="18.41035625" layer="102"/>
 <rectangle x1="338.34651875" y1="18.410359375" x2="339.00691875" y2="18.420515625" layer="102"/>
