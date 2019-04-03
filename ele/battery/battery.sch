@@ -65,159 +65,159 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x01_Female J16
 U 1 1 5C111C3E
-P 5600 2100
-F 0 "J16" H 5494 1875 50  0000 C CNN
-F 1 "B1_P_tans_b" H 5494 1966 50  0000 C CNN
-F 2 "yaqwsx:slot_1.8x2" H 5600 2100 50  0001 C CNN
-F 3 "~" H 5600 2100 50  0001 C CNN
-	1    5600 2100
+P 7900 1850
+F 0 "J16" H 7794 1625 50  0000 C CNN
+F 1 "B1_P_tans_b" H 7794 1716 50  0000 C CNN
+F 2 "yaqwsx:slot_1.8x2" H 7900 1850 50  0001 C CNN
+F 3 "~" H 7900 1850 50  0001 C CNN
+	1    7900 1850
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J17
 U 1 1 5C111DAA
-P 5600 2450
-F 0 "J17" H 5494 2225 50  0000 C CNN
-F 1 "B1_M_tans_b" H 5494 2316 50  0000 C CNN
-F 2 "yaqwsx:slot_1.8x2" H 5600 2450 50  0001 C CNN
-F 3 "~" H 5600 2450 50  0001 C CNN
-	1    5600 2450
+P 7900 2200
+F 0 "J17" H 7794 1975 50  0000 C CNN
+F 1 "B1_M_tans_b" H 7794 2066 50  0000 C CNN
+F 2 "yaqwsx:slot_1.8x2" H 7900 2200 50  0001 C CNN
+F 3 "~" H 7900 2200 50  0001 C CNN
+	1    7900 2200
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J18
 U 1 1 5C111DE6
-P 5600 2950
-F 0 "J18" H 5494 2725 50  0000 C CNN
-F 1 "B2_P_tans_b" H 5494 2816 50  0000 C CNN
-F 2 "yaqwsx:slot_1.8x2" H 5600 2950 50  0001 C CNN
-F 3 "~" H 5600 2950 50  0001 C CNN
-	1    5600 2950
+P 7900 2700
+F 0 "J18" H 7794 2475 50  0000 C CNN
+F 1 "B2_P_tans_b" H 7794 2566 50  0000 C CNN
+F 2 "yaqwsx:slot_1.8x2" H 7900 2700 50  0001 C CNN
+F 3 "~" H 7900 2700 50  0001 C CNN
+	1    7900 2700
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J19
 U 1 1 5C111E4F
-P 5600 3250
-F 0 "J19" H 5494 3025 50  0000 C CNN
-F 1 "B2_M_tans_b" H 5494 3116 50  0000 C CNN
-F 2 "yaqwsx:slot_1.8x2" H 5600 3250 50  0001 C CNN
-F 3 "~" H 5600 3250 50  0001 C CNN
-	1    5600 3250
+P 7900 3000
+F 0 "J19" H 7794 2775 50  0000 C CNN
+F 1 "B2_M_tans_b" H 7794 2866 50  0000 C CNN
+F 2 "yaqwsx:slot_1.8x2" H 7900 3000 50  0001 C CNN
+F 3 "~" H 7900 3000 50  0001 C CNN
+	1    7900 3000
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J21
 U 1 1 5C111F45
-P 6650 2100
-F 0 "J21" H 6678 2126 50  0000 L CNN
-F 1 "B1_P_a" H 6678 2035 50  0000 L CNN
-F 2 "yaqwsx:banana_2mm_hole" H 6650 2100 50  0001 C CNN
-F 3 "~" H 6650 2100 50  0001 C CNN
-	1    6650 2100
+P 8950 1850
+F 0 "J21" H 8978 1876 50  0000 L CNN
+F 1 "B1_P_a" H 8978 1785 50  0000 L CNN
+F 2 "yaqwsx:banana_2mm_hole" H 8950 1850 50  0001 C CNN
+F 3 "~" H 8950 1850 50  0001 C CNN
+	1    8950 1850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J20
 U 1 1 5C11203B
-P 6650 1900
-F 0 "J20" H 6678 1926 50  0000 L CNN
-F 1 "B1_P_b" H 6678 1835 50  0000 L CNN
-F 2 "yaqwsx:banana_2mm_hole" H 6650 1900 50  0001 C CNN
-F 3 "~" H 6650 1900 50  0001 C CNN
-	1    6650 1900
+P 8950 1650
+F 0 "J20" H 8978 1676 50  0000 L CNN
+F 1 "B1_P_b" H 8978 1585 50  0000 L CNN
+F 2 "yaqwsx:banana_2mm_hole" H 8950 1650 50  0001 C CNN
+F 3 "~" H 8950 1650 50  0001 C CNN
+	1    8950 1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5800 2100 6450 2100
+	8100 1850 8750 1850
 Wire Wire Line
-	6450 1900 6450 2100
-Connection ~ 6450 2100
+	8750 1650 8750 1850
+Connection ~ 8750 1850
 $Comp
 L Connector:Conn_01x01_Female J22
 U 1 1 5C1121FF
-P 6650 2300
-F 0 "J22" H 6677 2326 50  0000 L CNN
-F 1 "B1_M_a" H 6677 2235 50  0000 L CNN
-F 2 "yaqwsx:banana_2mm_hole" H 6650 2300 50  0001 C CNN
-F 3 "~" H 6650 2300 50  0001 C CNN
-	1    6650 2300
+P 8950 2050
+F 0 "J22" H 8977 2076 50  0000 L CNN
+F 1 "B1_M_a" H 8977 1985 50  0000 L CNN
+F 2 "yaqwsx:banana_2mm_hole" H 8950 2050 50  0001 C CNN
+F 3 "~" H 8950 2050 50  0001 C CNN
+	1    8950 2050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J23
 U 1 1 5C112249
-P 6650 2550
-F 0 "J23" H 6677 2576 50  0000 L CNN
-F 1 "B1_M_b" H 6677 2485 50  0000 L CNN
-F 2 "yaqwsx:banana_2mm_hole" H 6650 2550 50  0001 C CNN
-F 3 "~" H 6650 2550 50  0001 C CNN
-	1    6650 2550
+P 8950 2300
+F 0 "J23" H 8977 2326 50  0000 L CNN
+F 1 "B1_M_b" H 8977 2235 50  0000 L CNN
+F 2 "yaqwsx:banana_2mm_hole" H 8950 2300 50  0001 C CNN
+F 3 "~" H 8950 2300 50  0001 C CNN
+	1    8950 2300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5800 2450 6450 2450
+	8100 2200 8750 2200
 Wire Wire Line
-	6450 2450 6450 2300
+	8750 2200 8750 2050
 Wire Wire Line
-	6450 2550 6450 2450
-Connection ~ 6450 2450
+	8750 2300 8750 2200
+Connection ~ 8750 2200
 $Comp
 L Connector:Conn_01x01_Female J25
 U 1 1 5C112596
-P 6650 2950
-F 0 "J25" H 6678 2976 50  0000 L CNN
-F 1 "B2_P_a" H 6678 2885 50  0000 L CNN
-F 2 "yaqwsx:banana_2mm_hole" H 6650 2950 50  0001 C CNN
-F 3 "~" H 6650 2950 50  0001 C CNN
-	1    6650 2950
+P 8950 2700
+F 0 "J25" H 8978 2726 50  0000 L CNN
+F 1 "B2_P_a" H 8978 2635 50  0000 L CNN
+F 2 "yaqwsx:banana_2mm_hole" H 8950 2700 50  0001 C CNN
+F 3 "~" H 8950 2700 50  0001 C CNN
+	1    8950 2700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J24
 U 1 1 5C11259C
-P 6650 2750
-F 0 "J24" H 6678 2776 50  0000 L CNN
-F 1 "B2_P_b" H 6678 2685 50  0000 L CNN
-F 2 "yaqwsx:banana_2mm_hole" H 6650 2750 50  0001 C CNN
-F 3 "~" H 6650 2750 50  0001 C CNN
-	1    6650 2750
+P 8950 2500
+F 0 "J24" H 8978 2526 50  0000 L CNN
+F 1 "B2_P_b" H 8978 2435 50  0000 L CNN
+F 2 "yaqwsx:banana_2mm_hole" H 8950 2500 50  0001 C CNN
+F 3 "~" H 8950 2500 50  0001 C CNN
+	1    8950 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5800 2950 6450 2950
+	8100 2700 8750 2700
 Wire Wire Line
-	6450 2750 6450 2950
-Connection ~ 6450 2950
+	8750 2500 8750 2700
+Connection ~ 8750 2700
 $Comp
 L Connector:Conn_01x01_Female J26
 U 1 1 5C1125A5
-P 6650 3100
-F 0 "J26" H 6677 3126 50  0000 L CNN
-F 1 "B2_M_a" H 6677 3035 50  0000 L CNN
-F 2 "yaqwsx:banana_2mm_hole" H 6650 3100 50  0001 C CNN
-F 3 "~" H 6650 3100 50  0001 C CNN
-	1    6650 3100
+P 8950 2850
+F 0 "J26" H 8977 2876 50  0000 L CNN
+F 1 "B2_M_a" H 8977 2785 50  0000 L CNN
+F 2 "yaqwsx:banana_2mm_hole" H 8950 2850 50  0001 C CNN
+F 3 "~" H 8950 2850 50  0001 C CNN
+	1    8950 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J27
 U 1 1 5C1125AB
-P 6650 3350
-F 0 "J27" H 6677 3376 50  0000 L CNN
-F 1 "B2_M_b" H 6677 3285 50  0000 L CNN
-F 2 "yaqwsx:banana_2mm_hole" H 6650 3350 50  0001 C CNN
-F 3 "~" H 6650 3350 50  0001 C CNN
-	1    6650 3350
+P 8950 3100
+F 0 "J27" H 8977 3126 50  0000 L CNN
+F 1 "B2_M_b" H 8977 3035 50  0000 L CNN
+F 2 "yaqwsx:banana_2mm_hole" H 8950 3100 50  0001 C CNN
+F 3 "~" H 8950 3100 50  0001 C CNN
+	1    8950 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5800 3250 6450 3250
+	8100 3000 8750 3000
 Wire Wire Line
-	6450 3250 6450 3100
+	8750 3000 8750 2850
 Wire Wire Line
-	6450 3350 6450 3250
-Connection ~ 6450 3250
+	8750 3100 8750 3000
+Connection ~ 8750 3000
 $Comp
 L Connector:Conn_01x01_Male J9
 U 1 1 5C112909
@@ -302,16 +302,16 @@ Text Label 4000 2100 0    50   ~ 0
 B1_trans
 Text Label 4000 2450 0    50   ~ 0
 B2_trans
-Text Label 6050 2100 0    50   ~ 0
+Text Label 8350 1850 0    50   ~ 0
 B1+
-Text Label 6050 2450 0    50   ~ 0
+Text Label 8350 2200 0    50   ~ 0
 B1-
-Text Label 6050 2950 0    50   ~ 0
+Text Label 8350 2700 0    50   ~ 0
 B2+
-Text Label 6050 3250 0    50   ~ 0
+Text Label 8350 3000 0    50   ~ 0
 B2-
 $Comp
-L yaqwsx:ChinaLiIonCharger U1
+L battery-rescue:ChinaLiIonCharger-yaqwsx U1
 U 1 1 5C13AEE9
 P 3700 4200
 F 0 "U1" H 3700 4525 50  0000 C CNN
@@ -322,7 +322,7 @@ F 3 "" H 3700 4200 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L yaqwsx:ChinaLiIonCharger U2
+L battery-rescue:ChinaLiIonCharger-yaqwsx U2
 U 1 1 5C13AF67
 P 3700 4800
 F 0 "U2" H 3700 5125 50  0000 C CNN
@@ -446,4 +446,128 @@ Text Label 4900 4700 0    50   ~ 0
 B2_P_ch
 Text Label 4900 4900 0    50   ~ 0
 B2_M_ch
+$Comp
+L Device:LED D1
+U 1 1 5CA4BABE
+P 6850 2700
+F 0 "D1" H 6841 2916 50  0000 C CNN
+F 1 "LED_RED" H 6841 2825 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6850 2700 50  0001 C CNN
+F 3 "~" H 6850 2700 50  0001 C CNN
+	1    6850 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D4
+U 1 1 5CA4BCEC
+P 7400 2700
+F 0 "D4" H 7400 2484 50  0000 C CNN
+F 1 "D_Zener_2V" H 7400 2575 50  0000 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7400 2700 50  0001 C CNN
+F 3 "~" H 7400 2700 50  0001 C CNN
+	1    7400 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5CA4BE3E
+P 7400 3200
+F 0 "R1" V 7193 3200 50  0000 C CNN
+F 1 "R" V 7284 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7330 3200 50  0001 C CNN
+F 3 "~" H 7400 3200 50  0001 C CNN
+	1    7400 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5CA4C10E
+P 6800 3200
+F 0 "SW1" H 6800 3485 50  0000 C CNN
+F 1 "SW_Push" H 6800 3394 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 6800 3400 50  0001 C CNN
+F 3 "" H 6800 3400 50  0001 C CNN
+	1    6800 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2700 7550 2700
+Wire Wire Line
+	7250 2700 7000 2700
+Wire Wire Line
+	6700 2700 6500 2700
+Wire Wire Line
+	6500 2700 6500 3200
+Wire Wire Line
+	8100 3200 8100 3000
+Connection ~ 8100 3000
+Connection ~ 8100 2700
+$Comp
+L Device:LED D2
+U 1 1 5CA52B33
+P 6900 1850
+F 0 "D2" H 6891 2066 50  0000 C CNN
+F 1 "LED_RED" H 6891 1975 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6900 1850 50  0001 C CNN
+F 3 "~" H 6900 1850 50  0001 C CNN
+	1    6900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D3
+U 1 1 5CA52BB9
+P 7400 1850
+F 0 "D3" H 7400 1634 50  0000 C CNN
+F 1 "D_Zener_2V" H 7400 1725 50  0000 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7400 1850 50  0001 C CNN
+F 3 "~" H 7400 1850 50  0001 C CNN
+	1    7400 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CA5395D
+P 7400 2350
+F 0 "R2" V 7193 2350 50  0000 C CNN
+F 1 "R" V 7284 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7330 2350 50  0001 C CNN
+F 3 "~" H 7400 2350 50  0001 C CNN
+	1    7400 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5CA539E1
+P 6850 2350
+F 0 "SW2" H 6850 2635 50  0000 C CNN
+F 1 "SW_Push" H 6850 2544 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 6850 2550 50  0001 C CNN
+F 3 "" H 6850 2550 50  0001 C CNN
+	1    6850 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2350 8100 2200
+Connection ~ 8100 2200
+Wire Wire Line
+	8100 2350 7550 2350
+Wire Wire Line
+	7250 2350 7050 2350
+Wire Wire Line
+	6500 2350 6500 1850
+Wire Wire Line
+	6500 1850 6750 1850
+Wire Wire Line
+	6500 2350 6650 2350
+Wire Wire Line
+	7050 1850 7250 1850
+Wire Wire Line
+	7550 1850 8100 1850
+Connection ~ 8100 1850
+Wire Wire Line
+	7250 3200 7000 3200
+Wire Wire Line
+	6600 3200 6500 3200
+Wire Wire Line
+	7550 3200 8100 3200
 $EndSCHEMATC
