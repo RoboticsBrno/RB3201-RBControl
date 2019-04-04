@@ -224,7 +224,7 @@ U 1 1 5C112909
 P 4550 1150
 F 0 "J9" H 4523 1080 50  0000 R CNN
 F 1 "mech" H 4523 1171 50  0000 R CNN
-F 2 "yaqwsx:pad_3x5" H 4550 1150 50  0001 C CNN
+F 2 "BATTERY:pad_3x5" H 4550 1150 50  0001 C CNN
 F 3 "~" H 4550 1150 50  0001 C CNN
 	1    4550 1150
 	-1   0    0    1   
@@ -311,18 +311,18 @@ B2+
 Text Label 8350 3000 0    50   ~ 0
 B2-
 $Comp
-L battery-rescue:ChinaLiIonCharger-yaqwsx U1
+L battery:ChinaLiIonCharger U1
 U 1 1 5C13AEE9
 P 3700 4200
 F 0 "U1" H 3700 4525 50  0000 C CNN
 F 1 "ChinaLiIonCharger" H 3700 4434 50  0000 C CNN
-F 2 "yaqwsx:LiOnCharger" H 3700 4200 50  0001 C CNN
+F 2 "battery:LiOnCharger" H 3700 4200 50  0001 C CNN
 F 3 "" H 3700 4200 50  0001 C CNN
 	1    3700 4200
 	1    0    0    1   
 $EndComp
 $Comp
-L battery-rescue:ChinaLiIonCharger-yaqwsx U2
+L battery:ChinaLiIonCharger U2
 U 1 1 5C13AF67
 P 3700 4800
 F 0 "U2" H 3700 5125 50  0000 C CNN
@@ -620,4 +620,16 @@ Text Notes 6300 4200 0    50   ~ 0
 1S
 Text Notes 6300 4100 0    50   ~ 0
 2S
+$Comp
+L Connector:Conn_01x01_Male J30
+U 1 1 5CA7C8EA
+P 4550 1400
+F 0 "J30" H 4523 1330 50  0000 R CNN
+F 1 "mech" H 4523 1421 50  0000 R CNN
+F 2 "BATTERY:pad_3x5" H 4550 1400 50  0001 C CNN
+F 3 "~" H 4550 1400 50  0001 C CNN
+	1    4550 1400
+	-1   0    0    1   
+$EndComp
+NoConn ~ 4350 1400
 $EndSCHEMATC

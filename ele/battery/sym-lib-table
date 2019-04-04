@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name battery-rescue)(type Legacy)(uri ${KIPRJMOD}/battery-rescue.lib)(options "")(descr ""))
+  (lib (name battery)(type Legacy)(uri ${KIPRJMOD}/battery.lib)(options "")(descr ""))
 )
