@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:battery-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -389,7 +389,7 @@ F 3 "~" H 5550 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 4100 4650 4100
+	5350 4100 5300 4100
 Wire Wire Line
 	4100 4300 4800 4300
 Wire Wire Line
@@ -402,7 +402,7 @@ U 1 1 5C13C8C5
 P 4650 5400
 F 0 "J7" V 4803 5212 50  0000 R CNN
 F 1 "OUT" V 4712 5212 50  0000 R CNN
-F 2 "yaqwsx:2_pads_5mm" H 4650 5400 50  0001 C CNN
+F 2 "BATTERY:2_pads_5mm" H 4650 5400 50  0001 C CNN
 F 3 "~" H 4650 5400 50  0001 C CNN
 	1    4650 5400
 	0    -1   -1   0   
@@ -416,7 +416,7 @@ Wire Wire Line
 	4750 5200 4750 4900
 Connection ~ 4750 4900
 Wire Wire Line
-	4750 4900 5350 4900
+	4750 4900 5300 4900
 $Comp
 L Device:Jumper_NC_Small JP1
 U 1 1 5C13D0C3
@@ -432,7 +432,7 @@ Wire Wire Line
 	4800 4400 4800 4300
 Connection ~ 4800 4300
 Wire Wire Line
-	4800 4300 5350 4300
+	4800 4300 5300 4300
 Wire Wire Line
 	4800 4600 4800 4700
 Connection ~ 4800 4700
@@ -570,4 +570,54 @@ Wire Wire Line
 	6600 3200 6500 3200
 Wire Wire Line
 	7550 3200 8100 3200
+Wire Wire Line
+	5300 4900 5300 5100
+Wire Wire Line
+	5300 5100 6100 5100
+Wire Wire Line
+	6100 4300 6500 4300
+Connection ~ 5300 4900
+Wire Wire Line
+	5300 4900 5350 4900
+Wire Wire Line
+	5300 4300 5300 4450
+Wire Wire Line
+	5300 4450 5900 4450
+Wire Wire Line
+	5900 4450 5900 4200
+Wire Wire Line
+	5900 4200 6500 4200
+Connection ~ 5300 4300
+Wire Wire Line
+	5300 4300 5350 4300
+Wire Wire Line
+	5300 4100 5300 4000
+Wire Wire Line
+	5300 4000 6000 4000
+Connection ~ 5300 4100
+Wire Wire Line
+	5300 4100 4650 4100
+$Comp
+L Connector:Conn_01x03_Female J29
+U 1 1 5CA69FC1
+P 6700 4200
+F 0 "J29" H 6593 3875 50  0000 C CNN
+F 1 "Balancer" H 6593 3966 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Horizontal" H 6700 4200 50  0001 C CNN
+F 3 "~" H 6700 4200 50  0001 C CNN
+	1    6700 4200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6100 4300 6100 5100
+Wire Wire Line
+	6000 4100 6500 4100
+Wire Wire Line
+	6000 4000 6000 4100
+Text Notes 6300 4300 0    50   ~ 0
+GND
+Text Notes 6300 4200 0    50   ~ 0
+1S
+Text Notes 6300 4100 0    50   ~ 0
+2S
 $EndSCHEMATC
