@@ -311,23 +311,23 @@ B2+
 Text Label 8350 3000 0    50   ~ 0
 B2-
 $Comp
-L battery:ChinaLiIonCharger U1
+L RB3201:ChinaLiIonCharger U1
 U 1 1 5C13AEE9
 P 3700 4200
 F 0 "U1" H 3700 4525 50  0000 C CNN
 F 1 "ChinaLiIonCharger" H 3700 4434 50  0000 C CNN
-F 2 "battery:LiOnCharger" H 3700 4200 50  0001 C CNN
+F 2 "RB3201:LiOnCharger" H 3700 4200 50  0001 C CNN
 F 3 "" H 3700 4200 50  0001 C CNN
 	1    3700 4200
 	1    0    0    1   
 $EndComp
 $Comp
-L battery:ChinaLiIonCharger U2
+L RB3201:ChinaLiIonCharger U2
 U 1 1 5C13AF67
 P 3700 4800
 F 0 "U2" H 3700 5125 50  0000 C CNN
 F 1 "ChinaLiIonCharger" H 3700 5034 50  0000 C CNN
-F 2 "yaqwsx:LiOnCharger" H 3700 4800 50  0001 C CNN
+F 2 "RB3201:LiOnCharger" H 3700 4800 50  0001 C CNN
 F 3 "" H 3700 4800 50  0001 C CNN
 	1    3700 4800
 	1    0    0    1   
@@ -402,7 +402,7 @@ U 1 1 5C13C8C5
 P 4650 5400
 F 0 "J7" V 4803 5212 50  0000 R CNN
 F 1 "OUT" V 4712 5212 50  0000 R CNN
-F 2 "BATTERY:2_pads_5mm" H 4650 5400 50  0001 C CNN
+F 2 "RB3201:2_pads_5mm" H 4650 5400 50  0001 C CNN
 F 3 "~" H 4650 5400 50  0001 C CNN
 	1    4650 5400
 	0    -1   -1   0   

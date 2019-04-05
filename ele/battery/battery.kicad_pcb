@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.0)-1")
+(kicad_pcb (version 20171130) (host pcbnew 5.1.0-060a0da~80~ubuntu18.04.1)
 
   (general
     (thickness 1.6)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.8)
+    (last_trace_width 2)
     (user_trace_width 0.5)
     (user_trace_width 0.8)
     (user_trace_width 3)
@@ -2145,7 +2145,6 @@
   (segment (start 168.529 96.901) (end 166.37 96.901) (width 0.8) (layer B.Cu) (net 20))
   (segment (start 168.688 97.06) (end 168.529 96.901) (width 0.8) (layer B.Cu) (net 20))
   (segment (start 171.11 97.06) (end 176.87 97.06) (width 0.8) (layer B.Cu) (net 20))
-  (segment (start 163.395 96.901) (end 152.581 96.901) (width 0.8) (layer B.Cu) (net 25))
   (segment (start 179.045 101.06) (end 179.578 100.527) (width 0.8) (layer B.Cu) (net 21))
   (segment (start 176.87 101.06) (end 179.045 101.06) (width 0.8) (layer B.Cu) (net 21))
   (segment (start 179.578 100.527) (end 179.578 97.155) (width 0.8) (layer B.Cu) (net 21))
@@ -2162,6 +2161,7 @@
   (segment (start 168.529 91.059) (end 166.5875 91.059) (width 0.8) (layer B.Cu) (net 23))
   (segment (start 171.11 90.9) (end 168.688 90.9) (width 0.8) (layer B.Cu) (net 23))
   (segment (start 168.688 90.9) (end 168.529 91.059) (width 0.8) (layer B.Cu) (net 23))
+  (segment (start 163.395 96.901) (end 152.581 96.901) (width 0.8) (layer B.Cu) (net 25))
   (segment (start 153.43 91.059) (end 163.6125 91.059) (width 0.8) (layer B.Cu) (net 26))
   (segment (start 152.6175 91.059) (end 153.43 91.059) (width 0.8) (layer B.Cu) (net 26))
 
