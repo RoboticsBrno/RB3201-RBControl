@@ -26,3 +26,5 @@ _autosave-*
 
 # Gerbers
 gerber*
+*-gerber
+*-gerber.zip
