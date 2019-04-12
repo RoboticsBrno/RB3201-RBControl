@@ -1,3 +1,5 @@
+.SECONDARY:
+
 BOARDS = $(wildcard [!_autosave]*.kicad_pcb)
 
 .PHONY: manu clean
