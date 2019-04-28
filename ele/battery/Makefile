@@ -1,6 +1,6 @@
 .SECONDARY:
 
-BOARDS = $(wildcard [!_autosave]*.kicad_pcb)
+BOARDS = $(shell find . -name '*.kicad_pcb' ! -name '_autosave*')
 
 .PHONY: manu clean
 
